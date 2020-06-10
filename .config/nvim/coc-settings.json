@@ -1,0 +1,85 @@
+{
+    "suggest.autoTrigger": "always",
+    "diagnostic.refreshOnInsertMode": true,
+    "suggest.noselect": false,
+    "suggest.snippetIndicator": "►",
+    "suggest.floatEnable": false,
+    "diagnostic.messageTarget": "float",
+    "signature.target": "echo",
+    "suggest.timeout": 5000,
+    "coc.preferences.hoverTarget": "float",
+    "suggest.acceptSuggestionOnCommitCharacter": true,
+    "snippets.extends": {
+        "cpp": [
+            "c"
+        ],
+        "javascriptreact": [
+            "javascript"
+        ],
+        "typescript": [
+            "javascript"
+        ]
+    },
+    "coc.preferences.previewAutoClose": true,
+    "coc.source.word.filetypes": [
+        "markdown",
+        "tex"
+    ],
+    "coc.source.dictionary.filetypes": [
+        "markdown",
+        "tex"
+    ],
+    "coc.preferences.formatOnSaveFiletypes": [
+        "c",
+        "cpp",
+        "html",
+        "json",
+        "python",
+        "php",
+        "tex",
+        "java",
+        "javascript"
+    ],
+    "languageserver": {
+        "ccls": {
+            "command": "ccls",
+            "filetypes": [
+                "c",
+                "cpp",
+                "cuda",
+                "objc",
+                "objcpp"
+            ],
+            "rootPatterns": [
+                ".ccls-root",
+                ".ccls",
+                "compile_commands.json"
+            ],
+            "initializationOptions": {
+                "cache": {
+                    "directory": "/tmp/ccls-cache"
+                },
+                "client": {
+                    "snippetSupport": true
+                }
+            }
+        },
+        "bash": {
+            "command": "bash-language-server",
+            "args": [
+                "start"
+            ],
+            "filetypes": [
+                "sh"
+            ],
+            "ignoredRootPaths": [
+                "~"
+            ]
+        }
+    },
+    "python.autoComplete.addBrackets": true,
+    "python.formatting.autopep8Args": [
+        "--aggressive",
+        "--aggressive"
+    ]
+}
