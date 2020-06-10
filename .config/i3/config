@@ -1,6 +1,6 @@
 set $mod Mod4
 
-font pango:Source Code Pro 8
+font Terminus 10
 
 gaps inner 0
 default_border pixel 2
@@ -114,8 +114,8 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 bar {
+    status_command python ~/.config/i3/bar_config.py
     position top
-    font pango: Source Code Pro Semibold,FontAwesome 8
-    status_command $HOME/.local/bin/bumblebee-status -m cpu memory sensors \
-    pasink brightness battery datetime -p date.format="%d-%m-%Y" datetime.left-click="gsimplecal" -t iceberg-dark-powerline
+    font : Terminus 12px
+    workspace_buttons yes
 }
