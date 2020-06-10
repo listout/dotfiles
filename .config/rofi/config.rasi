@@ -1,0 +1,13 @@
+configuration   {
+    theme:      "onedark";
+    font:       "Operator Mono Medium 14";
+    show-icons: true;
+    icon-theme: "Numix Circle";
+    modi:       "drun,windowcd,combi";
+
+    /*
+     *width:      40;
+     *lines:      10;
+     *padding:    30;
+     */
+}
