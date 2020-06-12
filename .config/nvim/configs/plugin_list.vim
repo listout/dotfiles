@@ -3,8 +3,6 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'cocopon/iceberg.vim'
 Plug 'nanotech/jellybeans.vim'
 Plug 'joshdick/onedark.vim'
-Plug 'arzg/vim-substrata'
-Plug 'tpope/vim-vividchalk'
 Plug 'jiangmiao/auto-pairs'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-surround'

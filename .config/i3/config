@@ -1,6 +1,6 @@
 set $mod Mod4
 
-font Terminus 10
+font pango:Source Code Pro 09
 
 gaps inner 0
 default_border pixel 2
@@ -8,7 +8,7 @@ default_border pixel 2
 exec --no-startup-id nm-applet
 exec --no-startup-id picom
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec --no-startup-id feh --bg-fill $HOME/Pictures/wallhaven-13qwrg_1920x1080.png
+exec --no-startup-id feh --bg-fill $HOME/Pictures/for-those-who-wanted-it-without-the-text-1366×768.jpg
 
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
@@ -30,6 +30,7 @@ for_window [class="Pavucontrol"] floating enable
 for_window [class="Gnome-system-monitor"] floating enable
 for_window [class="zoom"] floating enable
 for_window [class="KeePassXC"] floating enable
+for_window [class="nvim-qt"] floating enable
 
 bindsym $mod+w exec --no-startup-id firefox
 bindsym $mod+f exec --no-startup-id thunar
@@ -116,6 +117,6 @@ bindsym $mod+r mode "resize"
 bar {
     status_command python ~/.config/i3/bar_config.py
     position top
-    font : Terminus 12px
+    font pango: Source Code Pro Semibold 9
     workspace_buttons yes
 }
