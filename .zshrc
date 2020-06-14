@@ -16,6 +16,10 @@ fi
 enable kill
 
 setopt auto_cd
+autoload -Uz compinit; compinit
+zstyle ':completion:*' menu select
+setopt COMPLETE_ALIASES
+zstyle ':completion::complete:*' gain-privileges 1
 
 # prompt
 fpath+=('$PWD/functions')
@@ -27,6 +31,10 @@ prompt pure
 typeset -U PATH path
 path=("$HOME/.local/bin" "$path[@]")
 export PATH
+typeset -U PATH path
+path=("$HOME/.local/bin" "$path[@]")
+export PATH
+
 NPM_PACKAGES="${HOME}/.npm-packages"
 export PATH="$PATH:$NPM_PACKAGES/bin"
 export MANPATH="${MANPATH-$(manpath)}:$NPM_PACKAGES/share/man"
@@ -80,11 +88,11 @@ key[Shift-Tab]="${terminfo[kcbt]}"
 # Finally, make sure the terminal is in application mode, when zle is
 # active. Only then are the values from $terminfo valid.
 if (( ${+terminfo[smkx]} && ${+terminfo[rmkx]} )); then
-	autoload -Uz add-zle-hook-widget
-	function zle_application_mode_start { echoti smkx }
-	function zle_application_mode_stop { echoti rmkx }
-	add-zle-hook-widget -Uz zle-line-init zle_application_mode_start
-	add-zle-hook-widget -Uz zle-line-finish zle_application_mode_stop
+    autoload -Uz add-zle-hook-widget
+    function zle_application_mode_start { echoti smkx }
+    function zle_application_mode_stop { echoti rmkx }
+    add-zle-hook-widget -Uz zle-line-init zle_application_mode_start
+    add-zle-hook-widget -Uz zle-line-finish zle_application_mode_stop
 fi
 
 # history search
