@@ -8,8 +8,8 @@ default_border pixel 0
 exec --no-startup-id nm-applet
 exec --no-startup-id picom
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-#exec --no-startup-id feh --bg-fill $HOME/Pictures/for-those-who-wanted-it-without-the-text-1366×768.jpg
 exec --no-startup-id bash $HOME/.config/polybar/launch.sh
+#exec --no-startup-id python $HOME/.config/i3/i3scripts/autoname_workspaces.py
 exec --no-startup-id hsetroot -solid "#2d333f"
 
 

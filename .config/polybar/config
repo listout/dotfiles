@@ -4,7 +4,7 @@ bottom = false
 
 fixed-center = true
 
-height = 20
+height = 22
 width = 100%
 padding-right = 2
 
@@ -27,15 +27,18 @@ module-margin-right = 2
 
 [module/i3]
 type = internal/i3
-label-focused = %index%
+
+label-focused = %icon% %name%
 label-focused-padding = 2
 label-focused-foreground = #161821
 label-focused-background = #d2d4de
-label-unfocused = %index%
+
+label-unfocused = %icon% %name%
 label-unfocused-padding = 2
 label-unfocused-foreground = #161821
 label-unfocused-background = #6b7089
-label-urgent = %index%
+
+label-urgent = %icon% %name%
 label-urgent-padding = 3
 label-urgent-foreground = #161821
 label-urgent-background = #e27878
@@ -45,7 +48,7 @@ type = internal/alsa
 
 format-volume = <ramp-volume> <label-volume>
 
-label-muted = 🔇 muted
+label-muted = ﱝ muted
 label-muted-foreground = #66
 
 ramp-volume-0 = 
@@ -108,7 +111,7 @@ date = %d-%m-%Y
 time = %I:%M
 date-alt = %A, %d %B %Y
 time-alt = %I:%M:%S
-format =  <label>
+format =   <label>
 format-background = #161821
 format-foreground = #d2d4de
 
