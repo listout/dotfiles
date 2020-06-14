@@ -1,18 +1,3 @@
-enable_audio_bell no
-
-font_family      Operator Mono Medium
-bold_font        Operator Mono Bold
-italic_font      Operator Mono Medium Italic
-bold_italic_font Operator Mono Bold Italic
-
-font_size 11.0
-
-background_opacity 1.0
-
-background #161821
-foreground #d2d4de
-cursor #84a0c6
-
 # black
 color0 #161821
 color8 #6b7089

@@ -86,7 +86,6 @@ shadow-exclude = [
     "name *= 'Chromium'",
     "name *= 'Chrome'",
     "name *= 'i3bar'",
-    "name *= 'polybar'",
     "class_g = 'Firefox' && argb",
     "class_g = 'firefox' && argb",
     "class_g = 'Conky'",

@@ -2,13 +2,16 @@ set $mod Mod4
 
 font pango:Source Code Pro 09
 
-gaps inner 0
-default_border pixel 2
+gaps inner 8
+default_border pixel 0
 
 exec --no-startup-id nm-applet
 exec --no-startup-id picom
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec --no-startup-id feh --bg-fill $HOME/Pictures/for-those-who-wanted-it-without-the-text-1366×768.jpg
+#exec --no-startup-id feh --bg-fill $HOME/Pictures/for-those-who-wanted-it-without-the-text-1366×768.jpg
+exec --no-startup-id bash $HOME/.config/polybar/launch.sh
+exec --no-startup-id hsetroot -solid "#2d333f"
+
 
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
@@ -113,10 +116,3 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
-
-bar {
-    status_command python ~/.config/i3/bar_config.py
-    position top
-    font pango: Source Code Pro Semibold 9
-    workspace_buttons yes
-}
