@@ -8,10 +8,10 @@ height = 22
 width = 100%
 padding-right = 2
 
-background = #161821
-foreground = #d2d4de
+background = #111116
+foreground = #cecccf
 
-font-0 = Source Code Pro Semibold:size=09;2
+font-0 = Source Code Pro Semibold:size=9.0;2
 font-1 = Symbols Nerd Font:size=10;2
 font-2 = FontAwesome:size=10;2
 
@@ -28,18 +28,18 @@ module-margin-right = 2
 [module/i3]
 type = internal/i3
 
-label-focused = %icon% %name%
+label-focused = %index%
 label-focused-padding = 2
 label-focused-foreground = #161821
 label-focused-background = #d2d4de
 
-label-unfocused = %icon% %name%
+label-unfocused = %index%
 label-unfocused-padding = 2
 label-unfocused-foreground = #161821
 label-unfocused-background = #6b7089
 
-label-urgent = %icon% %name%
-label-urgent-padding = 3
+label-urgent = %index%
+label-urgent-padding = 2
 label-urgent-foreground = #161821
 label-urgent-background = #e27878
 
