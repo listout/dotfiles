@@ -9,8 +9,8 @@ exec --no-startup-id nm-applet
 exec --no-startup-id picom
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id bash $HOME/.config/polybar/launch.sh
-#exec --no-startup-id python $HOME/.config/i3/i3scripts/autoname_workspaces.py
-exec --no-startup-id hsetroot -solid "#2d333f"
+#exec --no-startup-id hsetroot -solid "#2d333f"
+exec --no-startup-id feh --bg-scale $HOME/Pictures/valorant-wallpaper-omen-4k-1366×768.jpg
 
 
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -34,6 +34,7 @@ for_window [class="Gnome-system-monitor"] floating enable
 for_window [class="zoom"] floating enable
 for_window [class="KeePassXC"] floating enable
 for_window [class="nvim-qt"] floating enable
+for_window [class="qt5ct"] floating enable
 
 bindsym $mod+w exec --no-startup-id firefox
 bindsym $mod+f exec --no-startup-id thunar

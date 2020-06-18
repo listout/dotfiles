@@ -24,16 +24,24 @@ set nobackup noswapfile nowritebackup
 set nohlsearch
 set mouse=a
 set background="dark"
-"if exists('+termguicolors')
-    "let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-    "let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-    "set termguicolors
-"endif
-"colorscheme onedark
-"let g:airline_theme = 'onedark'
+if exists('+termguicolors')
+    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+    set termguicolors
+endif
+
+let g:tokyonight_style = 'night' " available: night, storm
+let g:tokyonight_enable_italic = 0
+let g:tokyonight_disable_italic_comment = 1
+
+colorscheme tokyonight
+let g:airline_theme = 'onedark'
 highlight Comment cterm=italic gui=italic
 
-autocmd FileType tex,latex,markdown setlocal spell spelllang=en_us
+autocmd BufNewfile,BufRead *.md setlocal spell spelllang=en_us
+autocmd BufNewfile,BufRead *.tex setlocal spell spelllang=en_us
+"autocmd BufNewfile,BufRead *.zsh set filetype=sh
+
 autocmd BufWritePre * %s/\s\+$//e
 
 nnoremap <left> <nop>

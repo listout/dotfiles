@@ -8,6 +8,23 @@ augroup END
 " float term
 let g:floaterm_keymap_toggle = '<leader>t'
 
+" auto enable goyo and limelight for latex and markdown
+function! s:auto_goyo()
+    if &ft == 'markdown' || &ft == 'latex'
+        Goyo 80
+        Limelight
+    else
+        let bufnr = bufnr('%')
+        Goyo!
+        execute 'b '.bufnr
+    endif
+endfunction
+
+augroup goyo_markdown
+    autocmd!
+    autocmd BufNewFile,BufRead * call s:auto_goyo()
+augroup END
+
 " airline settings
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
