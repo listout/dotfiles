@@ -12,7 +12,6 @@ let g:floaterm_keymap_toggle = '<leader>t'
 function! s:auto_goyo()
     if &ft == 'markdown' || &ft == 'latex'
         Goyo 80
-        Limelight
     else
         let bufnr = bufnr('%')
         Goyo!

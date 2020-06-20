@@ -40,7 +40,6 @@ highlight Comment cterm=italic gui=italic
 
 autocmd BufNewfile,BufRead *.md setlocal spell spelllang=en_us
 autocmd BufNewfile,BufRead *.tex setlocal spell spelllang=en_us
-"autocmd BufNewfile,BufRead *.zsh set filetype=sh
 
 autocmd BufWritePre * %s/\s\+$//e
 

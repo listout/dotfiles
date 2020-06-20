@@ -22,7 +22,6 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'voldikss/vim-floaterm'
 Plug 'mhinz/vim-startify'
-Plug 'junegunn/limelight.vim'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
