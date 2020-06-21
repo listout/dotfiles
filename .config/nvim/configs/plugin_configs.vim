@@ -1,35 +1,31 @@
 " vim-pencil settings
 augroup pencil
-    autocmd!
-    autocmd FileType markdown,mkd call pencil#init({'wrap':'soft', 'autoformat':1})
-    autocmd FileType text         call pencil#init({'wrap':'soft', 'autoformat':1})
+  autocmd!
+  autocmd FileType markdown,mkd call pencil#init({'wrap':'soft', 'autoformat':1})
+  autocmd FileType text         call pencil#init({'wrap':'soft', 'autoformat':1})
 augroup END
 
 " float term
 let g:floaterm_keymap_toggle = '<leader>t'
 
-" airline settings
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#left_sep = ' '
-let g:airline#extensions#tabline#left_alt_sep = '|'
-let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
-"let g:airline_powerline_fonts = 1
-
-" auto enable goyo and limelight for latex and markdown
-function! s:auto_goyo()
-    if &ft == 'markdown' || &ft == 'latex'
-        Goyo 80
-    else
-        let bufnr = bufnr('%')
-        Goyo!
-        execute 'b '.bufnr
-    endif
+" lightline
+let g:lightline = {
+            \ 'colorscheme': 'onedark',
+            \ }
+function! CocCurrentFunction()
+    return get(b:, 'coc_current_function', '')
 endfunction
-
-augroup goyo_markdown
-    autocmd!
-    autocmd BufNewFile,BufRead * call s:auto_goyo()
-augroup END
+let g:lightline = {
+            \ 'colorscheme': 'wombat',
+            \ 'active': {
+            \   'left': [ [ 'mode', 'paste' ],
+            \             [ 'cocstatus', 'currentfunction', 'readonly', 'filename', 'modified' ] ]
+            \ },
+            \ 'component_function': {
+            \   'cocstatus': 'coc#status',
+            \   'currentfunction': 'CocCurrentFunction'
+            \ },
+            \ }
 
 " easy motion settings
 " <Leader>f{char} to move to {char}
