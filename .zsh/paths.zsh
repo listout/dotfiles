@@ -1,6 +1,6 @@
 # paths
 typeset -U PATH path
-path=("$HOME/.local/bin" "$HOME/.emacs.d/bin" "$path[@]")
+path=("$HOME/.local/bin" "$path[@]")
 export PATH
 
 NPM_PACKAGES="${HOME}/.npm-packages"

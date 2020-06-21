@@ -2,9 +2,9 @@ set $mod Mod4
 
 font pango:Source Code Pro 09
 
-default_border pixel 2
+default_border pixel 0
 
-#gaps inner 10
+gaps inner 6
 
 #smart_gaps on
 #smart_borders on
@@ -45,7 +45,7 @@ bindsym $mod+f exec --no-startup-id thunar
 
 floating_modifier $mod
 
-bindsym $mod+Return exec --no-startup-id kitty
+bindsym $mod+Return exec --no-startup-id urxvt
 
 bindsym $mod+Shift+q kill
 

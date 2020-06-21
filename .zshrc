@@ -6,7 +6,6 @@ bindkey -v
 
 source ~/.zsh/prompt.zsh
 source ~/.zsh/completion.zsh
-source ~/.zsh/kill_completions.zsh
 source ~/.zsh/key_bindings.zsh
 source ~/.zsh/history_search.zsh
 source ~/.zsh/paths.zsh
