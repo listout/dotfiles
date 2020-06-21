@@ -2,8 +2,12 @@ set $mod Mod4
 
 font pango:Source Code Pro 09
 
-gaps inner 8
-default_border pixel 0
+default_border pixel 2
+
+#gaps inner 10
+
+#smart_gaps on
+#smart_borders on
 
 exec --no-startup-id nm-applet
 exec --no-startup-id picom

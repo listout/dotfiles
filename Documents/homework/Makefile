@@ -22,10 +22,10 @@ RM=/bin/rm
 
 PANDOC=/home/gogo/.local/bin/pandoc
 
-PANDOC_OPTIONS=-V mainfont="Noto Serif" -V monofont="Fira Code Retina" --highlight-style="tango" -V fontsize=12pt
+PANDOC_OPTIONS=
 
 PANDOC_HTML_OPTIONS=--to html5 -s
-PANDOC_PDF_OPTIONS=--pdf-engine xelatex
+PANDOC_PDF_OPTIONS=--pdf-engine xelatex -V monofont="Fira Code Retina" --highlight-style="tango" -V fontsize=12pt
 PANDOC_DOCX_OPTIONS=
 PANDOC_RTF_OPTIONS=
 PANDOC_ODT_OPTIONS=

@@ -17,9 +17,9 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'junegunn/goyo.vim'
-Plug 'reedes/vim-pencil'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'reedes/vim-pencil'
 Plug 'voldikss/vim-floaterm'
 Plug 'mhinz/vim-startify'
 

@@ -8,8 +8,8 @@ height = 22
 width = 100%
 padding-right = 2
 
-background = #111116
-foreground = #cecccf
+background = #161821
+foreground = #d2d4de
 
 font-0 = Source Code Pro Semibold:size=9.0;2
 font-1 = Symbols Nerd Font:size=10;2

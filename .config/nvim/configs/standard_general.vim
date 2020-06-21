@@ -30,13 +30,13 @@ if exists('+termguicolors')
     set termguicolors
 endif
 
-let g:tokyonight_style = 'night' " available: night, storm
-let g:tokyonight_enable_italic = 0
-let g:tokyonight_disable_italic_comment = 1
-
-colorscheme tokyonight
-let g:airline_theme = 'onedark'
+colorscheme onedark
+"let g:airline_theme = 'onedark'
 highlight Comment cterm=italic gui=italic
+
+" goyo and airline doesn't play well together, this fixes that issue
+autocmd! User GoyoEnter nested set eventignore=FocusGained
+autocmd! User GoyoLeave nested set eventignore=
 
 autocmd BufNewfile,BufRead *.md setlocal spell spelllang=en_us
 autocmd BufNewfile,BufRead *.tex setlocal spell spelllang=en_us
