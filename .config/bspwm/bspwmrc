@@ -1,0 +1,27 @@
+#! /bin/sh
+
+sxhkd &
+nm-applet &
+picom &
+
+bspc monitor -d I II III IV V VI
+
+bspc config border_width         0
+bspc config window_gap          12
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+bspc rule -a URxvt state=floating follow=on
+bspc rule -a Thunar state=floating follow=on
+bspc rule -a SplashScreen state=floating follow=on
+bspc rule -a Gnome-calculator state=floating follow=on
+bspc rule -a Gnome-disks state=floating follow=on
+bspc rule -a Lxappearance state=floating follow=on
+bspc rule -a Ristretto state=floating follow=on
+bspc rule -a qBittorrent state=floating follow=on
+bspc rule -a Pavucontrol state=floating follow=on
+bspc rule -a Gnome-system-monitor state=floating follow=on
+bspc rule -a zoom state=floating follow=on
+bspc rule -a qt5ct state=floating follow=on
