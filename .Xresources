@@ -1,0 +1,48 @@
+URxvt.scrollBar: false
+URxvt.font: xft:Dina:pixelsize=13
+URxvt.italicFont: xft:Dina:pixelsize=13
+
+URxvt.iso14755 : false
+
+URxvt.keysym.Control-Meta-c: builtin-string:
+URxvt.keysym.Control-Meta-v: builtin-string:
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+
+URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select
+
+URxvt.urlLauncher: firefox
+URxvt.underlineURLs: true
+URxvt.urlButton: 1
+
+
+!! Colorscheme
+
+! special
+*.foreground: #afafd7
+*.background: #1c1c1c
+*.cursorColor: #afafd7
+
+*.color0: #1c1c1c
+*.color8: #afafd7
+
+*.color1: #d7875f
+*.color9: #d7875f
+
+*.color2: #5f5f87
+*.color10: #5f5f87
+
+*.color3: #87afd7
+*.color11: #87afd7
+
+*.color4: #af87af
+*.color12: #af87af
+
+*.color5: #5bb955
+*.color13: #5bb955
+
+*.color6: #659ea2
+*.color14: #659ea2
+
+*.color7: #f0ecfe
+*.color15: #f0ecfe
