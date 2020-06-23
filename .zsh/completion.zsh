@@ -40,6 +40,7 @@ zstyle ':completion:*:*:xdvi:*' file-sort time
 # Completing process IDs with menu selection:
 zstyle ':completion:*:*:kill:*' menu yes select
 zstyle ':completion:*:kill:*'   force-list always
+zstyle ':completion:*:processes' command 'ps -A -o pid,user,comm -w -w'
 
 # If you end up using a directory as argument, this will remove the trailing slash (usefull in ln)
 zstyle ':completion:*' squeeze-slashes true
