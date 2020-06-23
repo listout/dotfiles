@@ -20,6 +20,12 @@ XF86MonBrightnessDown
 super + Return
 	urxvt
 
+super + w
+	firefox
+
+super + f
+	thunar
+
 # program launcher
 super + @space
 	rofi -show drun

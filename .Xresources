@@ -2,6 +2,15 @@ URxvt.scrollBar: false
 URxvt.font: xft:Dina:pixelsize=13
 URxvt.italicFont: xft:Dina:pixelsize=13
 
+URxvt.internalBorder: 05
+
+URxvt.keysym.Shift-Up: command:\033]720;1\007
+URxvt.keysym.Shift-Down: command:\033]721;1\007
+URxvt.keysym.Control-Up: \033[1;5A
+URxvt.keysym.Control-Down: \033[1;5B
+URxvt.keysym.Control-Right: \033[1;5C
+URxvt.keysym.Control-Left: \033[1;5D
+
 URxvt.iso14755 : false
 
 URxvt.keysym.Control-Meta-c: builtin-string:
@@ -9,40 +18,40 @@ URxvt.keysym.Control-Meta-v: builtin-string:
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
 URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
 
-URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select
+!URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select
 
 URxvt.urlLauncher: firefox
 URxvt.underlineURLs: true
 URxvt.urlButton: 1
 
+! Custom
+! Original theme https://github.com/nathanbuchar/atom-one-dark-terminal
+URxvt.foreground:    #ABB2BF
+URxvt.background:    #1E2127
+URxvt.cursorColor:   #5C6370
+URxvt.highlightColor:#3A3F4B
 
-!! Colorscheme
-
-! special
-*.foreground: #afafd7
-*.background: #1c1c1c
-*.cursorColor: #afafd7
-
-*.color0: #1c1c1c
-*.color8: #afafd7
-
-*.color1: #d7875f
-*.color9: #d7875f
-
-*.color2: #5f5f87
-*.color10: #5f5f87
-
-*.color3: #87afd7
-*.color11: #87afd7
-
-*.color4: #af87af
-*.color12: #af87af
-
-*.color5: #5bb955
-*.color13: #5bb955
-
-*.color6: #659ea2
-*.color14: #659ea2
-
-*.color7: #f0ecfe
-*.color15: #f0ecfe
+! Negro y gris
+URxvt.color0:        #1E2127
+URxvt.color8:        #5C6370
+! Rojos
+URxvt.color1:        #E06C75
+URxvt.color9:        #E06C75
+! Verde
+URxvt.color2:        #98C379
+URxvt.color10:       #98C379
+! Amarillo
+URxvt.color3:        #D19A66
+URxvt.color11:       #D19A66
+! Azul
+URxvt.color4:        #61AFEF
+URxvt.color12:       #61AFEF
+! Magenta
+URxvt.color5:        #C678DD
+URxvt.color13:       #C678DD
+! Cyan
+URxvt.color6:        #56B6C2
+URxvt.color14:       #56B6C2
+! Blanco
+URxvt.color7:        #ABB2BF
+URxvt.color15:       #FFFFFF

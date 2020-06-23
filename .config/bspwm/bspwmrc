@@ -3,6 +3,8 @@
 sxhkd &
 nm-applet &
 picom &
+bash $HOME/.config/polybar/launch.sh &
+hsetroot -solid "#3A3F4B" &
 
 bspc monitor -d I II III IV V VI
 
@@ -25,3 +27,5 @@ bspc rule -a Pavucontrol state=floating follow=on
 bspc rule -a Gnome-system-monitor state=floating follow=on
 bspc rule -a zoom state=floating follow=on
 bspc rule -a qt5ct state=floating follow=on
+bspc rule -a nvim-qt state=floating follow=on
+bspc rule -a KeePassXC state=floating follow=on

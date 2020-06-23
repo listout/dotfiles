@@ -1,8 +1,8 @@
 [colors]
-background     = #151515
-foreground     = #afafd7
-foreground-alt = #5f5f87
-alert          = #d7875f
+background     = #1E2127
+foreground     = #ABB2BF
+foreground-alt = #5C6370
+alert          = #E06C75
 
 [bar/mybar]
 
@@ -13,6 +13,7 @@ fixed-center = true
 height = 22
 width = 100%
 padding-right = 2
+padding-left = 2
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -134,12 +135,9 @@ time = %I:%M
 date-alt = %A, %d %B %Y
 time-alt = %I:%M:%S
 format =   <label>
-;format-background = #161821
-;format-foreground = #d2d4de
 
 label = %date% %time%
 label-font = 3
-;label-foreground = #d2d4de
 
 [module/wired-network]
 type = internal/network
