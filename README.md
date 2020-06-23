@@ -1,3 +1,3 @@
 # My dotfiles
 
-![desktop]($HOME/Pictures/assignments/desktop.png)
+![desktop]($HOME/Pictures/desktop.png)
