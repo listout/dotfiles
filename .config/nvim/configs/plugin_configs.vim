@@ -9,14 +9,11 @@ augroup END
 let g:floaterm_keymap_toggle = '<leader>t'
 
 " lightline
-let g:lightline = {
-            \ 'colorscheme': 'onedark',
-            \ }
 function! CocCurrentFunction()
     return get(b:, 'coc_current_function', '')
 endfunction
 let g:lightline = {
-            \ 'colorscheme': 'wombat',
+            \ 'colorscheme': 'onedark',
             \ 'active': {
             \   'left': [ [ 'mode', 'paste' ],
             \             [ 'cocstatus', 'currentfunction', 'readonly', 'filename', 'modified' ] ]
@@ -26,6 +23,24 @@ let g:lightline = {
             \   'currentfunction': 'CocCurrentFunction'
             \ },
             \ }
+
+" goyo
+" auto open goyo with markdown
+au WinEnter,BufEnter * call lightline#init()
+function! s:auto_goyo()
+    if &ft == 'markdown' || &ft == 'tex'
+        Goyo 80
+    elseif exists('#goyo')
+        let bufnr = bufnr('%')
+        Goyo!
+        execute 'b '.bufnr
+    endif
+endfunction
+augroup goyo_markdown
+    autocmd!
+    autocmd BufEnter * call s:auto_goyo()
+augroup END
+
 
 " easy motion settings
 " <Leader>f{char} to move to {char}

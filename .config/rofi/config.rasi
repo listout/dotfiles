@@ -1,6 +1,6 @@
 configuration   {
     theme:      "onedark";
-    font:       "Roboto 14";
+    font:       "DejaVu Serif 14";
     show-icons: true;
     icon-theme: "Numix Circle";
     modi:       "drun,windowcd,combi";

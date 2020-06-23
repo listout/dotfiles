@@ -23,7 +23,9 @@ set splitbelow splitright
 set nobackup noswapfile nowritebackup
 set nohlsearch
 set mouse=a
-colo substrata
+set background=dark
+set termguicolors
+colo onedark
 
 highlight Comment cterm=italic gui=italic
 
