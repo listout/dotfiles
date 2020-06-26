@@ -24,10 +24,19 @@ set nobackup noswapfile nowritebackup
 set nohlsearch
 set mouse=a
 set background=dark
+set t_Co=256
 set termguicolors
 colo onedark
 
+"syntax enable
 highlight Comment cterm=italic gui=italic
+highlight Normal cterm=bold gui=bold
+highlight Special cterm=bold gui=bold
+highlight NonText cterm=bold gui=bold
+highlight Constant cterm=bold gui=bold
+highlight Cursor cterm=bold gui=bold
+highlight Function cterm=bold gui=bold
+highlight Indentifier cterm=bold gui=bold
 
 autocmd BufNewfile,BufRead *.md setlocal spell spelllang=en_us
 autocmd BufNewfile,BufRead *.tex setlocal spell spelllang=en_us

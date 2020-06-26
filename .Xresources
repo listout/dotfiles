@@ -1,6 +1,9 @@
 URxvt.scrollBar: false
+!URxvt.termName: rxvt-256color
+
 URxvt.font: xft:Dina:pixelsize=13
 URxvt.italicFont: xft:Dina:pixelsize=13
+URxvt.boldFont: xft:Dina:style=Bold:pixelsize=13
 
 URxvt.internalBorder: 05
 
