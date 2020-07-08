@@ -4,8 +4,9 @@ sxhkd &
 nm-applet &
 picom &
 bash $HOME/.config/polybar/launch.sh &
-#hsetroot -solid "#3A3F4B" &
-feh --bg-fill $HOME/Pictures/red-eye-raven_1920x1200.png &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+hsetroot -solid "#3A3F4B" &
+#feh --bg-fill $HOME/Pictures/pattern_1920x1080.png &
 
 bspc monitor -d I II III IV V VI
 
@@ -30,3 +31,4 @@ bspc rule -a zoom state=floating follow=on
 bspc rule -a qt5ct state=floating follow=on
 bspc rule -a nvim-qt state=floating follow=on
 bspc rule -a KeePassXC state=floating follow=on
+bspc rule -a "VirtualBox Manager" state=floating follow=on

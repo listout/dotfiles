@@ -1,9 +1,7 @@
 call plug#begin('~/.config/nvim/plugged')
 
-Plug 'cocopon/iceberg.vim'
 Plug 'nanotech/jellybeans.vim'
 Plug 'joshdick/onedark.vim'
-Plug 'ghifarit53/tokyonight.vim'
 
 Plug 'jiangmiao/auto-pairs'
 Plug 'sheerun/vim-polyglot'
@@ -21,6 +19,8 @@ Plug 'junegunn/fzf.vim'
 Plug 'voldikss/vim-floaterm'
 Plug 'mhinz/vim-startify'
 Plug 'itchyny/lightline.vim'
+
+Plug 'dhruvasagar/vim-table-mode'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 

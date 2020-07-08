@@ -1,63 +1,29 @@
-# Makefile
-#
-# Converts Markdown to other formats (HTML, PDF, DOCX, RTF, ODT, EPUB) using Pandoc
-# <http://johnmacfarlane.net/pandoc/>
-#
-# Run "make" (or "make all") to convert to all other formats
-#
-# Run "make clean" to delete converted files
+# Directory containing source (Markdown) files
+source := .
 
-# Convert all files in this directory that have a .md suffix
-SOURCE_DOCS := $(wildcard *.md)
+# Directory containing pdf files
+output := .
 
-EXPORTED_DOCS=\
- $(SOURCE_DOCS:.md=.html) \
- $(SOURCE_DOCS:.md=.pdf) \
- $(SOURCE_DOCS:.md=.docx) \
- $(SOURCE_DOCS:.md=.rtf) \
- $(SOURCE_DOCS:.md=.odt) \
- $(SOURCE_DOCS:.md=.epub)
+# All markdown files in src/ are considered sources
+sources := $(wildcard $(source)/*.md)
 
-RM=/bin/rm
+# Convert the list of source files (Markdown files in directory src/)
+# into a list of output files (PDFs in directory print/).
+objects := $(patsubst %.md,%.pdf,$(subst $(source),$(output),$(sources)))
 
-PANDOC=/home/gogo/.local/bin/pandoc
+all: $(objects)
 
-PANDOC_OPTIONS=
+# Recipe for converting a Markdown file into PDF using Pandoc
+$(output)/%.pdf: $(source)/%.md
+	pandoc \
+		--variable mainfont="Source Serif Pro" \
+		--variable monofont="Source Code Pro" \
+		--variable fontsize=11pt \
+		--pdf-engine=xelatex \
+		-f markdown  $< \
+		-o $@
 
-PANDOC_HTML_OPTIONS=--to html5 -s
-PANDOC_PDF_OPTIONS=--pdf-engine xelatex -V monofont="Fira Code" --highlight-style="tango" -V fontsize=12pt
-PANDOC_DOCX_OPTIONS=
-PANDOC_RTF_OPTIONS=
-PANDOC_ODT_OPTIONS=
-PANDOC_EPUB_OPTIONS=--to epub3
-
-
-# Pattern-matching Rules
-
-%.html : %.md
-	$(PANDOC) $(PANDOC_OPTIONS) $(PANDOC_HTML_OPTIONS) -o $@ $<
-
-%.pdf : %.md
-	$(PANDOC) $(PANDOC_OPTIONS) $(PANDOC_PDF_OPTIONS) -o $@ $<
-
-%.docx : %.md
-	$(PANDOC) $(PANDOC_OPTIONS) $(PANDOC_DOCX_OPTIONS) -o $@ $<
-
-%.rtf : %.md
-	$(PANDOC) $(PANDOC_OPTIONS) $(PANDOC_RTF_OPTIONS) -o $@ $<
-
-%.odt : %.md
-	$(PANDOC) $(PANDOC_OPTIONS) $(PANDOC_ODT_OPTIONS) -o $@ $<
-
-%.epub : %.md
-	$(PANDOC) $(PANDOC_OPTIONS) $(PANDOC_EPUB_OPTIONS) -o $@ $<
-
-
-# Targets and dependencies
-
-.PHONY: all clean
-
-all : $(EXPORTED_DOCS)
+.PHONY : clean
 
 clean:
-	- $(RM) $(EXPORTED_DOCS)
+	rm -f $(output)/*.pdf

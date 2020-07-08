@@ -11,3 +11,5 @@ source ~/.zsh/history_search.zsh
 source ~/.zsh/paths.zsh
 source ~/.zsh/aliases.zsh
 source ~/.zsh/help_command.zsh
+
+#export CLASSPATH="/usr/share/java/mariadb-jdbc/mariadb-java-client-2.6.0.jar"

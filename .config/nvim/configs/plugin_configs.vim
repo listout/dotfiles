@@ -24,22 +24,41 @@ let g:lightline = {
             \ },
             \ }
 
+" vim table mode
+function! s:isAtStartOfLine(mapping)
+    let text_before_cursor = getline('.')[0 : col('.')-1]
+    let mapping_pattern = '\V' . escape(a:mapping, '\')
+    let comment_pattern = '\V' . escape(substitute(&l:commentstring, '%s.*$', '', ''), '\')
+    return (text_before_cursor =~? '^' . ('\v(' . comment_pattern . '\v)?') . '\s*\v' . mapping_pattern . '\v$')
+endfunction
+
+inoreabbrev <expr> <bar><bar>
+            \ <SID>isAtStartOfLine('\|\|') ?
+            \ '<c-o>:TableModeEnable<cr><bar><space><bar><left><left>' : '<bar><bar>'
+inoreabbrev <expr> __
+            \ <SID>isAtStartOfLine('__') ?
+            \ '<c-o>:silent! TableModeDisable<cr>' : '__'
+"let g:table_mode_corner='|'
+let g:table_mode_corner_corner='+'
+let g:table_mode_header_fillchar='='
+
+
 " goyo
 " auto open goyo with markdown
-au WinEnter,BufEnter * call lightline#init()
-function! s:auto_goyo()
-    if &ft == 'markdown' || &ft == 'tex'
-        Goyo 80
-    elseif exists('#goyo')
-        let bufnr = bufnr('%')
-        Goyo!
-        execute 'b '.bufnr
-    endif
-endfunction
-augroup goyo_markdown
-    autocmd!
-    autocmd BufEnter * call s:auto_goyo()
-augroup END
+"au WinEnter,BufEnter * call lightline#init()
+"function! s:auto_goyo()
+    "if &ft == 'markdown' || &ft == 'tex'
+        "Goyo 80
+    "elseif exists('#goyo')
+        "let bufnr = bufnr('%')
+        "Goyo!
+        "execute 'b '.bufnr
+    "endif
+"endfunction
+"augroup goyo_markdown
+    "autocmd!
+    "autocmd BufEnter * call s:auto_goyo()
+"augroup END
 
 
 " easy motion settings

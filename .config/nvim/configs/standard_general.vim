@@ -24,7 +24,7 @@ set nobackup noswapfile nowritebackup
 set nohlsearch
 set mouse=a
 set background=dark
-set t_Co=256
+"set t_Co=256
 set termguicolors
 colo onedark
 
