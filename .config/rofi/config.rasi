@@ -1,13 +1,10 @@
 configuration   {
-    theme:      "onedark";
-    font:       "DejaVu Serif 14";
+    font:       "Source Code Pro Semibold 12";
     show-icons: true;
     icon-theme: "Numix Circle";
     modi:       "drun,windowcd,combi";
 
-    /*
-     *width:      40;
-     *lines:      10;
-     *padding:    30;
-     */
+    width:      40;
+    lines:      10;
+    padding:    30;
 }

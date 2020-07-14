@@ -16,10 +16,12 @@ all: $(objects)
 # Recipe for converting a Markdown file into PDF using Pandoc
 $(output)/%.pdf: $(source)/%.md
 	pandoc \
-		--variable mainfont="Source Serif Pro" \
-		--variable monofont="Source Code Pro" \
-		--variable fontsize=11pt \
 		--pdf-engine=xelatex \
+		--variable mainfont="DejaVu Sans" \
+		--variable monofont="Source Code Pro" \
+		--variable mathfont="DejaVu Math TeX Gyre" \
+		--variable fontsize=12pt \
+		--highlight-style=tango \
 		-f markdown  $< \
 		-o $@
 

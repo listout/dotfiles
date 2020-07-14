@@ -53,3 +53,5 @@ nnoremap <C-t> :tabnew<cr>
 
 autocmd FileType json syntax match Comment +\/\/.\+$+
 let g:tex_flavor = "latex"
+
+set errorformat^=%-GIn\ file\ included\ %.%#

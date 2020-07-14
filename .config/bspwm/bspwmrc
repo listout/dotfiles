@@ -32,3 +32,4 @@ bspc rule -a qt5ct state=floating follow=on
 bspc rule -a nvim-qt state=floating follow=on
 bspc rule -a KeePassXC state=floating follow=on
 bspc rule -a "VirtualBox Manager" state=floating follow=on
+bspc rule -a Eog  state=floating follow=on
