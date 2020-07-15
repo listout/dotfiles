@@ -113,6 +113,8 @@ let g:UltiSnipsEditSplit="vertical"
 " TextEdit might fail if hidden is not set.
 set hidden
 
+let g:coc_global_extensions = ['coc-texlab', 'coc-python', 'coc-highlight', 'coc-json', 'coc-snippets', 'coc-dictionary', 'coc-word', 'coc-syntax']
+
 " Some servers have issues with backup files, see #649.
 "set nobackup
 "set nowritebackup

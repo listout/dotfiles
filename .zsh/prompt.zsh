@@ -1,5 +1,4 @@
 # prompt
-fpath+=('$PWD/functions')
-fpath+=('/home/gogo/.npm-packages/lib/node_modules/pure-prompt/functions')
+fpath+=$HOME/.zsh/pure
 autoload -U promptinit;promptinit
 prompt pure
