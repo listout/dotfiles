@@ -1,8 +1,11 @@
+# supply directory as directory=/path/to/file
+directory = ""
+
 # Directory containing source (Markdown) files
-source := .
+source := $(directory)
 
 # Directory containing pdf files
-output := .
+output := $(directory)
 
 # All markdown files in src/ are considered sources
 sources := $(wildcard $(source)/*.md)
@@ -17,10 +20,8 @@ all: $(objects)
 $(output)/%.pdf: $(source)/%.md
 	pandoc \
 		--pdf-engine=xelatex \
-		--variable mainfont="DejaVu Sans" \
-		--variable monofont="Source Code Pro" \
-		--variable mathfont="DejaVu Math TeX Gyre" \
-		--variable fontsize=12pt \
+		--variable mainfont="Iosevka Curly Slab" \
+		--variable fontsize=11pt \
 		--highlight-style=tango \
 		-f markdown  $< \
 		-o $@
