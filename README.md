@@ -1,10 +1,16 @@
 # My dotfiles
 
-![desktop](Pictures/desktop.png)
+![Vim + Cmus](Pictures/desktop1.png)
 
 #### Applications
 
 - Terminal: urxvt (truecolor patch)
-- Editor: Neovim + a bunch of plugins
+- Editor: Neovim + LSP(coc.nvim) + a bunch of plugins
+- Music Player: Cmus
+- Font: TamzenForPowerline for terminal and TamzenForPowerline + Nerd Font Symbols for bar
 - Window Manager: bspwm
+- Compositor: Vanilla Picom
 - Bar: Polybar
+- GTK Theme: Materia (for now)
+- Filemanager: Thunar
+- Overall Color Scheme: Onedark
