@@ -2,6 +2,8 @@
 
 ![Vim + Cmus](Pictures/desktop1.png)
 
+![ufetch + htop](Pictures/desktop2.png)
+
 #### Applications
 
 - Terminal: urxvt (truecolor patch)
