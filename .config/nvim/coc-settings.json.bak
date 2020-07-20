@@ -41,6 +41,29 @@
         "javascript"
     ],
     "languageserver": {
+        "ccls": {
+            "command": "ccls",
+            "filetypes": [
+                "c",
+                "cpp",
+                "cuda",
+                "objc",
+                "objcpp"
+            ],
+            "rootPatterns": [
+                ".ccls-root",
+                ".ccls",
+                "compile_commands.json"
+            ],
+            "initializationOptions": {
+                "cache": {
+                    "directory": "/tmp/ccls-cache"
+                },
+                "client": {
+                    "snippetSupport": true
+                }
+            }
+        },
         "bash": {
             "command": "bash-language-server",
             "args": [

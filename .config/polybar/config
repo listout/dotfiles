@@ -3,6 +3,11 @@ background     = #1E2127
 foreground     = #ABB2BF
 foreground-alt = #5C6370
 alert          = #E06C75
+color2 = #98C379
+color3 = #D19A66
+color4 = #61AFEF
+color5 = #C678DD
+color6 = #56B6C2
 
 [bar/mybar]
 
@@ -18,32 +23,32 @@ padding-left = 2
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-font-0 = Dina:size=9.0;2
+font-0 = TamzenForPowerline:pixelsize=13;2
 font-1 = Symbols Nerd Font:size=8;2
-font-2 = FontAwesome:size=8;2
-font-3 = Source Code Pro:size=8;2
+font-2 = FontAwesome:size=9;2
+font-3 = Source Code Pro:size=9;2
 
-modules-left = battery wireless-network wired-network memory
-modules-right = cpu temperature pulseaudio date
+modules-left = battery wireless-network wired-network
+modules-right = memory cpu temperature pulseaudio date
 modules-center = bspwm
 
 tray-position = right
 tray-maxsize = 16
 
-module-margin-left = 2
-module-margin-right = 2
+module-margin-left = 1
+module-margin-right = 1
 
 [module/bspwm]
 type                      = internal/bspwm
-label-focused             = 
+label-focused             = 
 label-focused-padding     = 2
-label-occupied            = 
+label-occupied            = 
 label-occupied-foreground = ${colors.foreground-alt}
 label-occupied-padding    = 2
-label-urgent              = 
+label-urgent              = 
 label-urgent-foreground   = ${colors.alert}
 label-urgent-padding      = 2
-label-empty               = 
+label-empty               = 
 label-empty-foreground    = ${colors.foreground-alt}
 label-empty-padding       = 2
 pin-workspaces = true
@@ -69,10 +74,12 @@ label-urgent-background = #e27878
 [module/pulseaudio]
 type = internal/pulseaudio
 
-format-volume = Vol <label-volume>
+format-volume-foreground = ${colors.color6}
+format-volume = 墳 <label-volume>
+label-volume-foreground = ${colors.foreground}
 
-label-muted = muted
-label-muted-foreground = #66
+label-muted = 婢
+label-muted-foreground = ${colors.alert}
 
 [module/battery]
 type = internal/battery
@@ -94,6 +101,11 @@ format-discharging = <ramp-capacity> <label-discharging>
 format-full = <ramp-capacity> <label-full>
 format-charging = <animation-charging> <label-charging>
 
+ramp-capacity-foreground = ${colors.color4}
+animation-charging-foreground = ${colors.color4}
+;animation-full-foreground = ${colors.color4}
+;format-discharging-foreground = ${colors.color4}
+
 ramp-capacity-0 = 
 ramp-capacity-1 = 
 ramp-capacity-2 = 
@@ -111,14 +123,18 @@ animation-charging-framerate = 750
 [module/cpu]
 type = internal/cpu
 interval = 0.5
-format = <label>
-label = CPU %percentage%%
+format =  <label>
+label = %percentage%%
+format-foreground = ${colors.color2}
+label-foreground = ${colors.foreground}
 
 [module/memory]
 type = internal/memory
 interval = 3
-format = <label>
-label = RAM %gb_used%/%gb_total%
+format =  <label>
+label = %gb_used%
+format-foreground = ${colors.color3}
+label-foreground = ${colors.foreground}
 
 [module/date]
 type = internal/date
@@ -128,25 +144,35 @@ date = %d-%m-%Y
 time = %I:%M
 date-alt = %A, %d %B %Y
 time-alt = %I:%M:%S
-format = <label>
+format =  <label>
+format-foreground = ${colors.color4}
+label-foreground = ${colors.foreground}
 
 [module/wired-network]
 type = internal/network
 interface = enp2s0
 interval = 3.0
-format-connected = <label-connected>
+format-connected =  <label-connected>
 format-disconnected = <label-disconnected>
-label-connected =  %local_ip%
+label-connected =  %local_ip%
+format-connected-foreground = ${colors.color6}
+label-connected-foreground = ${colors.foreground}
+format-disconnected-foreground = ${colors.color6}
+label-disconnected-foreground = ${colors.color6}
 label-disconnected = 
 
 [module/wireless-network]
 type = internal/network
-interface = wlp3s0
+interface = ${env:DEFAULT_NETWORK_INTERFACE}
 interval = 3.0
-format-connected = <label-connected>
+format-connected =  <label-connected>
 format-disconnected = <label-disconnected>
-label-connected =   %essid%
+label-connected =  %essid%
 label-disconnected = 睊
+format-connected-foreground = ${colors.color6}
+label-connected-foreground = ${colors.foreground}
+format-disconnected-foreground = ${colors.color6}
+label-disconnected-foreground = ${colors.color6}
 
 [module/temperature]
 type = internal/temperature
@@ -154,7 +180,9 @@ interval = 0.5
 thermal-zone = 0
 base-temperature = 20
 warn-temperature = 70
-format = <label>
+format =  <label>
 label = %temperature-c%
 label-warn = %temperature-c%
 label-warn-foreground = #f00
+format-foreground = ${colors.color3}
+label-foreground = ${colors.foreground}
