@@ -1,14 +1,14 @@
-" vim-pencil settings
+" vim-pencil settings "
 augroup pencil
     autocmd!
     autocmd FileType markdown,mkd call pencil#init({'wrap':'soft', 'autoformat':1})
     autocmd FileType text         call pencil#init({'wrap':'soft', 'autoformat':1})
 augroup END
 
-" float term
+" float term "
 let g:floaterm_keymap_toggle = '<leader>t'
 
-" lightline
+" lightline "
 function! CocCurrentFunction()
     return get(b:, 'coc_current_function', '')
 endfunction
@@ -24,44 +24,8 @@ let g:lightline = {
             \ },
             \ }
 
-" vim table mode
-function! s:isAtStartOfLine(mapping)
-    let text_before_cursor = getline('.')[0 : col('.')-1]
-    let mapping_pattern = '\V' . escape(a:mapping, '\')
-    let comment_pattern = '\V' . escape(substitute(&l:commentstring, '%s.*$', '', ''), '\')
-    return (text_before_cursor =~? '^' . ('\v(' . comment_pattern . '\v)?') . '\s*\v' . mapping_pattern . '\v$')
-endfunction
 
-inoreabbrev <expr> <bar><bar>
-            \ <SID>isAtStartOfLine('\|\|') ?
-            \ '<c-o>:TableModeEnable<cr><bar><space><bar><left><left>' : '<bar><bar>'
-inoreabbrev <expr> __
-            \ <SID>isAtStartOfLine('__') ?
-            \ '<c-o>:silent! TableModeDisable<cr>' : '__'
-"let g:table_mode_corner='|'
-let g:table_mode_corner_corner='+'
-let g:table_mode_header_fillchar='='
-
-
-" goyo
-" auto open goyo with markdown
-"au WinEnter,BufEnter * call lightline#init()
-"function! s:auto_goyo()
-    "if &ft == 'markdown' || &ft == 'tex'
-        "Goyo 80
-    "elseif exists('#goyo')
-        "let bufnr = bufnr('%')
-        "Goyo!
-        "execute 'b '.bufnr
-    "endif
-"endfunction
-"augroup goyo_markdown
-    "autocmd!
-    "autocmd BufEnter * call s:auto_goyo()
-"augroup END
-
-
-" easy motion settings
+" easy motion settings "
 " <Leader>f{char} to move to {char}
 map  <Leader>f <Plug>(easymotion-bd-f)
 nmap <Leader>f <Plug>(easymotion-overwin-f)
@@ -103,16 +67,12 @@ let g:EasyMotion_smartcase = 1
 " Smartsign (type `3` and match `3`&`#`)
 let g:EasyMotion_use_smartsign_us = 1
 
-
-" ultisnips settings
+" ultisnips settings "
 let g:UltiSnipsExpandTrigger="<C-tab>"
 let g:UltiSnipsEditSplit="vertical"
 
 
-" coc.nvim settins
-" TextEdit might fail if hidden is not set.
-set hidden
-
+" coc.nvim settins "
 let g:coc_global_extensions = ['coc-texlab', 'coc-python', 'coc-highlight', 'coc-json', 'coc-snippets', 'coc-dictionary', 'coc-word', 'coc-syntax']
 
 " Some servers have issues with backup files, see #649.

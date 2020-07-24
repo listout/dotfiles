@@ -19,9 +19,10 @@ all: $(objects)
 # Recipe for converting a Markdown file into PDF using Pandoc
 $(output)/%.pdf: $(source)/%.md
 	pandoc \
+		--resource-path=CS/DBMS/ \
 		--pdf-engine=xelatex \
 		--variable mainfont="Iosevka Curly Slab" \
-		--variable fontsize=11pt \
+		--variable fontsize=10pt \
 		--highlight-style=tango \
 		-f markdown  $< \
 		-o $@

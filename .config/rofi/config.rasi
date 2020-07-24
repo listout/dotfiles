@@ -8,3 +8,5 @@ configuration   {
     lines:      10;
     padding:    30;
 }
+
+// vim: set ft=css:

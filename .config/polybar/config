@@ -53,24 +53,6 @@ label-empty-foreground    = ${colors.foreground-alt}
 label-empty-padding       = 2
 pin-workspaces = true
 
-[module/i3]
-type = internal/i3
-
-label-focused = %index%
-label-focused-padding = 2
-label-focused-foreground = #161821
-label-focused-background = #d2d4de
-
-label-unfocused = %index%
-label-unfocused-padding = 2
-label-unfocused-foreground = #161821
-label-unfocused-background = #6b7089
-
-label-urgent = %index%
-label-urgent-padding = 2
-label-urgent-foreground = #161821
-label-urgent-background = #e27878
-
 [module/pulseaudio]
 type = internal/pulseaudio
 
@@ -145,7 +127,7 @@ time = %I:%M
 date-alt = %A, %d %B %Y
 time-alt = %I:%M:%S
 format =  <label>
-format-foreground = ${colors.color4}
+format-foreground = ${colors.color5}
 label-foreground = ${colors.foreground}
 
 [module/wired-network]
@@ -184,5 +166,7 @@ format =  <label>
 label = %temperature-c%
 label-warn = %temperature-c%
 label-warn-foreground = #f00
-format-foreground = ${colors.color3}
+format-foreground = ${colors.color4}
 label-foreground = ${colors.foreground}
+
+! vim: set ft=dosini:
