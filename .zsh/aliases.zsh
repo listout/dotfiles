@@ -12,4 +12,5 @@ alias cpp='clang++ -g'
 export EDITOR=nvim
 export VISUAL=nvim
 export BROWSER=firefox
+export QT_QPA_PLATFORMTHEME=qt5ct
 export DEFAULT_NETWORK_INTERFACE=$(ip route | grep '^default' | awk '{print $5}' | head -n1)

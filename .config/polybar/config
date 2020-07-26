@@ -145,7 +145,7 @@ label-disconnected = 
 
 [module/wireless-network]
 type = internal/network
-interface = ${env:DEFAULT_NETWORK_INTERFACE}
+interface = ${env:DEFAULT_NETWORK_INTERFACE:wlp3s0}
 interval = 3.0
 format-connected =  <label-connected>
 format-disconnected = <label-disconnected>

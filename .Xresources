@@ -1,12 +1,9 @@
 URxvt.scrollBar: false
 !URxvt.termName: rxvt-256color
 
-URxvt.font: xft:TamzenForPowerline:pixelsize=15 \
-            xft:DejaVu Sans
-URxvt.italicFont: xft:TamzenForPowerline:pixelsize=15 \
-            xft:DejaVu Sans
-URxvt.boldFont: xft:TamzenForPowerline:bold:pixelsize=15 \
-            xft:DejaVu Sans
+URxvt.font: xft:TamzenForPowerline:pixelsize=15
+URxvt.italicFont: xft:TamzenForPowerline:pixelsize=15
+URxvt.boldFont: xft:TamzenForPowerline:bold:pixelsize=15
 
 URxvt.internalBorder: 05
 

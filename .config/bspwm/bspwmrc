@@ -7,6 +7,7 @@ sh ~/.config/polybar/launch.sh &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 #hsetroot -solid "#3A3F4B" &
 feh --bg-fill $HOME/Pictures/rock_grey.png &
+dunst &
 
 bspc monitor -d I II III IV V VI
 
