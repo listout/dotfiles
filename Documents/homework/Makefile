@@ -21,7 +21,8 @@ $(output)/%.pdf: $(source)/%.md
 	pandoc \
 		--resource-path=CS/DBMS/ \
 		--pdf-engine=xelatex \
-		--variable mainfont="Iosevka Curly Slab" \
+		--variable mainfont="Iosevka Etoile" \
+		--variable monofont="Iosevka Curly Slab" \
 		--variable fontsize=10pt \
 		--highlight-style=tango \
 		-f markdown  $< \

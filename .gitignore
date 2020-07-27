@@ -1,4 +1,4 @@
 $HOME/.zsh/zsh_history
-.zsh/zsh_history
-.zsh/cache
-.zsh/pure
+.config/zsh/zsh_history
+.config/zsh/cache
+.config/zsh/pure
