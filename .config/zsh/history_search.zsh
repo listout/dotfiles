@@ -1,5 +1,5 @@
 # history
-HISTFILE=~/.zsh/zsh_history
+HISTFILE=~/.config/zsh/zsh_history
 HISTSIZE=90000
 SAVEHIST=90000
 setopt appendhistory
