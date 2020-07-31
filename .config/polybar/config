@@ -75,7 +75,7 @@ full-at = 99
 
 time-format = %H:%M
 
-label-discharging =  %percentage%%
+label-discharging =  %percentage%% %time%
 label-charging =  %percentage%%
 label-full =  %percentage%%
 
