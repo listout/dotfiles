@@ -20,8 +20,6 @@ Plug 'voldikss/vim-floaterm'
 Plug 'mhinz/vim-startify'
 Plug 'itchyny/lightline.vim'
 
-Plug 'dhruvasagar/vim-table-mode'
-
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
