@@ -1,12 +1,10 @@
 configuration   {
-    font:       "Source Code Pro Semibold 12";
+    font:       "Source Code Pro Semibold 11";
     show-icons: true;
     icon-theme: "Numix Circle";
     modi:       "drun,windowcd,combi";
 
-    width:      40;
-    lines:      10;
-    padding:    30;
 }
 
 // vim: set ft=css:
+@import "./onedark.rasi"

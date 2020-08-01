@@ -2,7 +2,6 @@
 # wm independent hotkeys
 #
 
-
 XF86AudioRaiseVolume
         pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
 XF86AudioLowerVolume
@@ -29,6 +28,9 @@ super + f
 # program launcher
 super + @space
 	rofi -show drun
+
+alt + Tab
+    rofi -show windowcd
 
 # make sxhkd reload its configuration files:
 super + Escape
