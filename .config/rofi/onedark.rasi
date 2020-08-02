@@ -25,14 +25,16 @@
     bg:         #282c34;
 
     spacing: 0;
-    background-color: #282c34;
+    background-color: transparent;
+    /*background-color: transparent;*/
 
     text-color: @text;
 }
 
 window {
+    transparency: "screenshoot";
     location: 0;
-    background-color: #282c34;
+    background-color: #282c34ee;
     width: 40%;
 }
 
