@@ -1,4 +1,4 @@
-# supply directory as directory=/path/to/file
+# Supply directory as directory=/path/to/file
 directory = ""
 
 # Directory containing source (Markdown) files

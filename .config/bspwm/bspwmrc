@@ -41,3 +41,4 @@ bspc rule -a Eog  state=floating follow=on
 bspc rule -a "Kvantum Manager"  state=floating follow=on
 bspc rule -a "Connman-gtk"  state=floating follow=on
 bspc rule -a "XTerm"  state=floating follow=on
+bspc rule -a "Gufw.py"  state=floating follow=on
