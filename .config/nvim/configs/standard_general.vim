@@ -22,15 +22,17 @@ set ruler
 " Set encoding
 set encoding=utf-8
 
-" Whitespace
+" Whitespace and use tabs instead of spaces
 set wrap
 set textwidth=79
 set formatoptions=tcqrn1
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
-set expandtab
 set noshiftround
+set noexpandtab
+set copyindent
+set preserveindent
+set softtabstop=0
+set shiftwidth=4
+set tabstop=4
 
 " Cursor motion
 set scrolloff=3
@@ -65,7 +67,7 @@ nnoremap <esc> :set hlsearch!<return><esc>
 "map <leader>e gqip
 
 " Visual Tabs and newlines
-set listchars=tab:▸\ ,eol:¬
+set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·
 set list
 
 " True color support in terminal
@@ -73,3 +75,12 @@ set t_Co=256
 set background=dark
 set termguicolors
 colorscheme onedark
+
+" spell check based on filetype
+au! BufNewFile,BufRead *.tex,*.md :setlocal spell spelllang=en_us
+
+" set correct buffer filetype for tex
+let g:tex_flavor = "latex"
+
+" auto remove all trailing white spaces
+autocmd BufWritePre * %s/\s\+$//e
