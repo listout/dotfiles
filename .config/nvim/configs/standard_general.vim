@@ -1,49 +1,75 @@
-let mapleader=","
-set rnu nu
+"Don't try to be vi compatible
 set nocompatible
+
+" turn on syntax highlighting
+syntax on
+
+" For plugins to load correctly
 filetype plugin indent on
-syntax enable
-set autoindent smartindent
-set laststatus=2
-set shiftround
-set shiftwidth=4 tabstop=4 smarttab expandtab
-set ignorecase incsearch smartcase
-set encoding=utf-8
-set wrap linebreak
+
+" Set leader key
+let mapleader = ","
+
+" Security
+set modelines=0
+
+" Show line number
+set number relativenumber
+
+" Show file stats
 set ruler
-set path+=*
-set wildmenu
-set wildmode=longest,list,full
+
+" Set encoding
+set encoding=utf-8
+
+" Whitespace
+set wrap
+set textwidth=79
+set formatoptions=tcqrn1
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+set noshiftround
+
+" Cursor motion
+set scrolloff=3
+set backspace=indent,eol,start
+set matchpairs+=<:>
+runtime! macro/matchit.vim
+
+" Allow hidden buffers
 set hidden
-set shell=zsh
-set autoread
-au FocusGained,BufEnter * checktime
+
+" Rendering
 set ttyfast
-set timeout timeoutlen=1000 ttimeoutlen=50
-set ffs=unix,dos,mac
-set splitbelow splitright
-set nobackup noswapfile nowritebackup
-set nohlsearch
-set mouse=a
-set background=dark
+
+" Status bas
+set laststatus=2
+
+" Last line
+set showmode
+set showcmd
+
+" Searching
+nnoremap / /\v
+vnoremap / /\v
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+set showmatch
+nnoremap <esc> :set hlsearch!<return><esc>
+
+" Formatting
+"map <leader>e gqip
+
+" Visual Tabs and newlines
+set listchars=tab:▸\ ,eol:¬
+set list
+
+" True color support in terminal
 set t_Co=256
+set background=dark
 set termguicolors
-colo onedark
-
-autocmd BufNewfile,BufRead *.md setlocal spell spelllang=en_us
-autocmd BufNewfile,BufRead *.tex setlocal spell spelllang=en_us
-
-autocmd BufWritePre * %s/\s\+$//e
-
-nnoremap <left> <nop>
-nnoremap <right> <nop>
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <S-Right> :tabNext<cr>
-nnoremap <S-Left> :tabprevious<cr>
-nnoremap <C-t> :tabnew<cr>
-
-autocmd FileType json syntax match Comment +\/\/.\+$+
-let g:tex_flavor = "latex"
-
-set errorformat^=%-GIn\ file\ included\ %.%#
+colorscheme onedark

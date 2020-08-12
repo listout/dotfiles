@@ -1,3 +1,6 @@
+"Helps force plugins to load correctly when it's turned back on below
+filetype off
+
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'nanotech/jellybeans.vim'
