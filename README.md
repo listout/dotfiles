@@ -1,8 +1,8 @@
 # My dotfiles
 
-![Vim + Cmus](Pictures/desktop1.png)
+![Screenshot 1](Pictures/desktop1.png)
 
-![ufetch + htop](Pictures/desktop2.png)
+![Screenshot 2](Pictures/desktop2.png)
 
 #### Applications
 
