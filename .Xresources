@@ -1,3 +1,5 @@
+! vim: set filetype=xdefaults nomodeline:
+
 URxvt.scrollBar: false
 !URxvt.termName: rxvt-256color
 
@@ -34,7 +36,6 @@ URxvt.urlButton: 1
 *.cursorColor:   #5C6370
 *.highlightColor:#3A3F4B
 
-! Negro y gris
 *.color0:        #1E2127
 *.color8:        #5C6370
 ! Rojos

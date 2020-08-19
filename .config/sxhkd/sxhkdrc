@@ -11,9 +11,9 @@ XF86AudioMute
 XF86AudioMicMute
         pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 XF86MonBrightnessUp
-        xbacklight -inc 5
+        xbacklight -inc 10
 XF86MonBrightnessDown
-        xbacklight -dec 5
+        xbacklight -dec 10
 
 # terminal emulator
 super + Return
