@@ -5,6 +5,8 @@ call plug#begin('~/.config/nvim/plugged')
 
 Plug 'nanotech/jellybeans.vim'
 Plug 'joshdick/onedark.vim'
+Plug 'chriskempson/base16-vim'
+Plug 'mike-hearn/base16-vim-lightline'
 
 Plug 'jiangmiao/auto-pairs'
 Plug 'sheerun/vim-polyglot'

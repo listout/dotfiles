@@ -5,15 +5,15 @@ nm-applet &
 picom &
 sh ~/.config/polybar/launch.sh &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-#hsetroot -solid "#3A3F4B" &
-feh --bg-fill $HOME/Pictures/rock_grey.png &
+hsetroot -solid "#232530" &
+#feh --bg-fill $HOME/Pictures/rock_grey.png &
 dunst &
 
 bspc monitor -d I II III IV V VI
 
-bspc config normal_border_color '#5C6370'
-bspc config active_border_color '#5C6370'
-bspc config focused_border_color '#ABB2BF'
+bspc config normal_border_color '#6f6f70'
+bspc config active_border_color '#6f6f70'
+bspc config focused_border_color '#9da0a2'
 
 bspc config border_width         2
 bspc config window_gap           8

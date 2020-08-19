@@ -1,13 +1,13 @@
 [colors]
-background     = #1E2127
-foreground     = #ABB2BF
-foreground-alt = #5C6370
-alert          = #E06C75
-color2 = #98C379
-color3 = #D19A66
-color4 = #61AFEF
-color5 = #C678DD
-color6 = #56B6C2
+background     = #1c1e26
+foreground     = #e3e6ee
+foreground-alt = #6f6f70
+alert          = #e93c58
+color2 = #e58d7d
+color3 = #efb993
+color4 = #df5273
+color5 = #24a8b4
+color6 = #b072d1
 
 [bar/mybar]
 
@@ -173,4 +173,4 @@ label-warn-foreground = #f00
 format-foreground = ${colors.color4}
 label-foreground = ${colors.foreground}
 
-! vim: set ft=dosini:
+; vim: set ft=dosini nomodeline:
