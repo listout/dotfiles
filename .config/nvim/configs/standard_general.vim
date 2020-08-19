@@ -53,6 +53,12 @@ set laststatus=2
 set showmode
 set showcmd
 
+" enable mouse scroll
+set mouse=a
+
+" split the right way
+set splitright splitbelow
+
 " Searching
 nnoremap / /\v
 vnoremap / /\v
@@ -67,7 +73,7 @@ nnoremap <esc> :set hlsearch!<return><esc>
 "map <leader>e gqip
 
 " Visual Tabs and newlines
-set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·
+set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:‡,trail:·,eol:¬
 set list
 
 " True color support in terminal
