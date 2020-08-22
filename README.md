@@ -14,8 +14,8 @@
 - Compositor: Vanilla Picom
 - Bar: Polybar
 - GTK Theme: Materia (for now)
-- Filemanager: Thunar
-- Overall Color Scheme: Onedark
+- Filemanager: Thunar and Ranger
+- Overall Color Scheme: Base16 Horizon-Dark
 
 #### Notes and links for me in case of a new install
 
