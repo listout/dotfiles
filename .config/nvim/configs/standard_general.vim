@@ -73,8 +73,8 @@ nnoremap <esc> :set hlsearch!<return><esc>
 "map <leader>e gqip
 
 " Visual Tabs and newlines
-set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:‡,trail:·,eol:¬
-set list
+"set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:‡,trail:·,eol:¬
+"set list
 
 " True color support in terminal
 set t_Co=256
