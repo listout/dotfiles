@@ -9,6 +9,8 @@ hsetroot -solid "#232530" &
 #feh --bg-fill $HOME/Pictures/rock_grey.png &
 dunst &
 
+wmname LG3D
+
 bspc monitor -d I II III IV V VI
 
 bspc config normal_border_color '#6f6f70'
