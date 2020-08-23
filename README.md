@@ -9,13 +9,13 @@
 - Terminal: urxvt (truecolor patch)
 - Editor: Neovim + LSP(coc.nvim) + a bunch of plugins
 - Music Player: Cmus
-- Font: TamzenForPowerline for terminal and TamzenForPowerline + Nerd Font Symbols for bar
+- Font: Fira Code for terminal and TamzenForPowerline + Nerd Font Symbols for bar
 - Window Manager: bspwm
 - Compositor: Vanilla Picom
 - Bar: Polybar
 - GTK Theme: Materia (for now)
 - Filemanager: Thunar and Ranger
-- Overall Color Scheme: Base16 Horizon-Dark
+- Overall Color Scheme: Onehalf
 
 #### Notes and links for me in case of a new install
 
