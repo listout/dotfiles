@@ -77,11 +77,11 @@ nnoremap <esc> :set hlsearch!<return><esc>
 "set list
 
 " True color support in terminal
-set t_Co=256
-set background=dark
+" set t_Co=256
+" set background=dark
 set termguicolors
-let base16colorspace=256  " Access colors present in 256 colorspace
-colorscheme base16-horizon-dark
+" let base16colorspace=256  " Access colors present in 256 colorspace
+colorscheme onehalflight
 
 " spell check based on filetype
 au! BufNewFile,BufRead *.tex,*.md :setlocal spell spelllang=en_us
