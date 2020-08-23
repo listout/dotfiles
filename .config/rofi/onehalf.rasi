@@ -6,34 +6,34 @@
 
 * {
 	/*Light Varient*/
-	black:      #000000;
-	red:        #e45649;
-	green:      #50a14f;
-	yellow:     #c18401;
-	blue:       #0184bc;
-	magenta:    #a626a4;
-	cyan:       #0997b3;
-	emphasis:   #dcdfe4;
-	text:       #383a42;
-	text-alt:   #383a42;
-	fg:         #383a42;
-	bg:         #fafafa;
-
-	 /*Dark Varient*/
 	/*
 	 *black:      #000000;
-	 *red:        #e06c75;
-	 *green:      #98c379;
-	 *yellow:     #e5c07b;
-	 *blue:       #56b6c2;
-	 *magenta:    #c678dd;
-	 *cyan:       #61afef;
-	 *emphasis:   #282c34;
-	 *text:       #fafafa;
-	 *text-alt:   #f0f0f0;
-	 *fg:         #dcdfe4;
-	 *bg:         #282c34;
+	 *red:        #e45649;
+	 *green:      #50a14f;
+	 *yellow:     #c18401;
+	 *blue:       #0184bc;
+	 *magenta:    #a626a4;
+	 *cyan:       #0997b3;
+	 *emphasis:   #dcdfe4;
+	 *text:       #383a42;
+	 *text-alt:   #383a42;
+	 *fg:         #383a42;
+	 *bg:         #fafafa;
 	 */
+
+	 /*Dark Varient*/
+	black:      #000000;
+	red:        #e06c75;
+	green:      #98c379;
+	yellow:     #e5c07b;
+	blue:       #56b6c2;
+	magenta:    #c678dd;
+	cyan:       #61afef;
+	emphasis:   #282c34;
+	text:       #fafafa;
+	text-alt:   #f0f0f0;
+	fg:         #dcdfe4;
+	bg:         #383a42;
 
     spacing: 0;
     background-color: transparent;
@@ -114,4 +114,4 @@ button selected {
     background-color: @emphasis;
 }
 
-/* vim:ft=css
+/* vim:ft=css */
