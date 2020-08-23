@@ -45,5 +45,8 @@
 	"python.formatting.autopep8Args": [
 		"--aggressive",
 		"--aggressive"
+	],
+	"python.linting.pylintArgs": [
+		"--unsafe-load-any-extension=y"
 	]
 }
