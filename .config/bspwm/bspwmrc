@@ -6,6 +6,7 @@ picom &
 sh ~/.config/polybar/launch.sh &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 hsetroot -solid "#f0f0f0" &
+#hsetroot -solid "#282c34" &
 #feh --bg-fill $HOME/Pictures/rock_grey.png &
 dunst &
 
@@ -13,6 +14,7 @@ wmname LG3D
 
 bspc monitor -d I II III IV V VI
 
+# for light varient
 bspc config normal_border_color '#f0f0f0'
 bspc config active_border_color '#f0f0f0'
 bspc config focused_border_color '#383a42'
