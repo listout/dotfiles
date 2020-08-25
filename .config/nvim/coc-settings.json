@@ -48,5 +48,15 @@
 	],
 	"python.linting.pylintArgs": [
 		"--unsafe-load-any-extension=y"
-	]
+	],
+	"java.format.enabled": true,
+	"java.completion.importOrder": [
+		"java",
+		"javax",
+		"com",
+		"org"
+	],
+	"java.format.onType.enabled": true,
+	"java.format.comments.enabled": false,
+	"java.signatureHelp.enabled": true
 }
