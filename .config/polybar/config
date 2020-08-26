@@ -1,14 +1,14 @@
 [colors]
 
 ; light scheme
-background     = #fafafa
-foreground     = #383a42
-foreground-alt = #dcdfe4
+;background     = #fafafa
+;foreground     = #383a42
+;foreground-alt = #dcdfe4
 
 ; dark scheme
-;background     = #282c34
-;foreground     = #fafafa
-;foreground-alt = #5c6370
+background     = #282c34
+foreground     = #fafafa
+foreground-alt = #5c6370
 
 alert          = #e45649
 color2 = #50a14f
