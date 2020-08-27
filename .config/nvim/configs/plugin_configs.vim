@@ -5,13 +5,17 @@ augroup pencil
     autocmd FileType text         call pencil#init({'wrap':'soft', 'autoformat':1})
 augroup END
 
+"" fzf.vim
+let $FZF_DEFAULT_COMMAND =  "find * -path '*/\.*' -prune -o -path 'node_modules/**' -prune -o -path 'target/**' -prune -o -path 'dist/**' -prune -o  -type f -print -o -type l -print 2> /dev/null"
+
 " float term "
 let g:floaterm_keymap_toggle = '<leader>t'
 
-" lightline "
+" lightline
 function! CocCurrentFunction()
     return get(b:, 'coc_current_function', '')
 endfunction
+
 let g:lightline = {
             \ 'colorscheme': 'one',
             \ 'active': {
@@ -23,7 +27,6 @@ let g:lightline = {
             \   'currentfunction': 'CocCurrentFunction'
             \ },
             \ }
-
 
 " easy motion settings "
 " <Leader>f{char} to move to {char}

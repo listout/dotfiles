@@ -4,7 +4,6 @@ filetype off
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'nanotech/jellybeans.vim'
-Plug 'joshdick/onedark.vim'
 Plug 'rakr/vim-one'
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
 
@@ -24,7 +23,6 @@ Plug 'junegunn/fzf.vim'
 Plug 'voldikss/vim-floaterm'
 Plug 'mhinz/vim-startify'
 Plug 'itchyny/lightline.vim'
-
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
