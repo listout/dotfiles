@@ -15,7 +15,7 @@
 - Bar: Polybar
 - GTK Theme: Materia (for now)
 - Filemanager: Thunar and Ranger
-- Overall Color Scheme: Onehalf
+- Overall Color Scheme: One
 
 #### Notes and links for me in case of a new install
 
