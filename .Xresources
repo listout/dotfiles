@@ -3,13 +3,13 @@
 URxvt.scrollBar: false
 !URxvt.termName: rxvt-256color
 
-URxvt.font: xft:TamzenForPowerline:pixelsize=15
-URxvt.italicFont: xft:TamzenForPowerline:pixelsize=15
-URxvt.boldFont: xft:TamzenForPowerline:bold:pixelsize=15
+!URxvt.font: xft:TamzenForPowerline:pixelsize=15
+!URxvt.italicFont: xft:TamzenForPowerline:pixelsize=15
+!URxvt.boldFont: xft:TamzenForPowerline:bold:pixelsize=15
 
-!URxvt.font: xft:Fira Code:SemiBold:size=09
-!URxvt.italicFont: xft:Fira Code:SemiBold:size=09
-!URxvt.boldFont: xft:Fira Code:Bold:size=09
+URxvt.font: xft:JetBrains Mono Medium:size=10
+URxvt.italicFont: xft:JetBrains Mono Medium:Italic:size=10
+URxvt.boldFont: xft:JetBrains Mono Extra Bold:size=10
 
 URxvt.internalBorder: 05
 
@@ -38,48 +38,49 @@ URxvt.urlButton: 1
 XTerm.vt100.faceName: TamzenForPowerline:pixelsize=15
 XTerm.vt100.boldFont: TamzenForPowerline:bold:pixelsize=15
 
-! one-half color scheme
+! one color scheme
 
 ! dark
-*.background: #282c34
-*.foreground: #dcdfe4
-*.cursor: #313640
 
-*.color0: #282c34
-*.color1: #e06c75
-*.color2: #98c379
-*.color3: #e5c07b
-*.color4: #61afef
-*.color5: #c678dd
-*.color6: #56b6c2
-*.color7: #dcdfe4
-*.color8: #282c34
-*.color9: #e06c75
-*.color10: #98c379
-*.color11: #e5c07b
-*.color12: #61afef
-*.color13: #c678dd
-*.color14: #56b6c2
-*.color15: #dcdfe4
+*.foreground:   #abb2bf
+*.background:   #282c34
+*.cursorcolor:  #abb2bf
+*.color0:       #5c6370
+*.color8:       #4b5263
+*.color1:       #e06c75
+*.color9:       #be5046
+*.color2:       #98c379
+*.color10:      #98c379
+*.color3:       #e5c07b
+*.color11:      #d19a66
+*.color4:       #61afef
+*.color12:      #61afef
+*.color5:       #c678dd
+*.color13:      #c678dd
+*.color6:       #56b6c2
+*.color14:      #56b6c2
+*.color7:       #abb2bf
+*.color15:      #3e4452
 
 ! Light
-!*.background: #fafafa
-!*.foreground: #383a42
-!*.cursor: #f0f0f0
 
-!*.color0: #383a42
-!*.color1: #e45649
-!*.color2: #50a14f
-!*.color3: #c18401
-!*.color4: #0184bc
-!*.color5: #a626a4
-!*.color6: #0997b3
-!*.color7: #fafafa
-!*.color8: #383a42
-!*.color9: #e45649
-!*.color10: #50a14f
-!*.color11: #c18401
-!*.color12: #0184bc
-!*.color13: #a626a4
-!*.color14: #0997b3
-!*.color15: #fafafa
+!*.foreground:    #383a42
+!*.background:    #f9f9f9
+!*.cursorcolor:   #383a42
+!*.highlightcolor:#3a3f4b
+!*.color0:        #000000
+!*.color8:        #383a42
+!*.color1:        #e45649
+!*.color9:        #e45649
+!*.color2:        #50a14f
+!*.color10:       #50a14f
+!*.color3:        #986801
+!*.color11:       #986801
+!*.color4:        #4078f2
+!*.color12:       #4078f2
+!*.color5:        #a626a4
+!*.color13:       #a626a4
+!*.color6:        #0184bc
+!*.color14:       #0184bc
+!*.color7:        #a0a1a7
+!*.color15:       #ffffff

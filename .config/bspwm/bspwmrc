@@ -15,14 +15,14 @@ wmname LG3D
 bspc monitor -d I II III IV V VI
 
 # for light varient
-#bspc config normal_border_color '#f0f0f0'
-#bspc config active_border_color '#f0f0f0'
+#bspc config normal_border_color '#f9f9f9'
+#bspc config active_border_color '#f9f9f9'
 #bspc config focused_border_color '#383a42'
 
 # for dark varient
-bspc config normal_border_color '#dcdfe4'
-bspc config active_border_color '#dcdfe4'
-bspc config focused_border_color '#61afef'
+bspc config normal_border_color '#4b5263'
+bspc config active_border_color '#4b5263'
+bspc config focused_border_color '#abb2bf'
 
 bspc config border_width         2
 bspc config window_gap           8
