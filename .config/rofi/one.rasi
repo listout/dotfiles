@@ -1,39 +1,31 @@
-/*
- * ROFI Onehalf
- * Based on Onehalf
- */
-
-
 * {
-	/*Light Varient*/
-	/*
-	 *black:      #000000;
-	 *red:        #e45649;
-	 *green:      #50a14f;
-	 *yellow:     #c18401;
-	 *blue:       #0184bc;
-	 *magenta:    #a626a4;
-	 *cyan:       #0997b3;
-	 *emphasis:   #dcdfe4;
-	 *text:       #383a42;
-	 *text-alt:   #383a42;
-	 *fg:         #383a42;
-	 *bg:         #fafafa;
-	 */
-
-	 /*Dark Varient*/
-	black:      #000000;
+	black:      #282c34;
 	red:        #e06c75;
 	green:      #98c379;
 	yellow:     #e5c07b;
-	blue:       #56b6c2;
+	blue:       #61afef;
 	magenta:    #c678dd;
-	cyan:       #61afef;
-	emphasis:   #282c34;
-	text:       #fafafa;
-	text-alt:   #f0f0f0;
-	fg:         #dcdfe4;
-	bg:         #383a42;
+	cyan:       #56b6c2;
+	emphasis:   #4b5263;
+	text:       #abb2bf;
+	text-alt:   #abb2bf;
+	fg:         #abb2bf;
+	bg:         #282c34;
+
+	/*
+     *black:      #000000;
+     *red:        #e45649;
+     *green:      #50a14f;
+     *yellow:     #986801;
+     *blue:       #4078f2;
+     *magenta:    #a626a4;
+     *cyan:       #0184bc;
+     *emphasis:   #a0a1a7;
+     *text:       #000000;
+     *text-alt:   #383a42;
+     *fg:         #383a42;
+     *bg:         #f9f9f9;
+	 */
 
     spacing: 0;
     background-color: transparent;
@@ -45,7 +37,8 @@
 window {
     transparency: "screenshoot";
     location: 0;
-    background-color: @bg;
+    /*background-color: #f9f9f9ee;*/
+	background-color: #282c34ee;
     width: 40%;
 }
 
@@ -114,4 +107,4 @@ button selected {
     background-color: @emphasis;
 }
 
-/* vim:ft=css */
+/* vim:ft=css
