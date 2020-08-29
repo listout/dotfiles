@@ -42,7 +42,7 @@ XTerm.vt100.boldFont: TamzenForPowerline:bold:pixelsize=15
 
 ! dark
 
-*.foreground:   #abb2bf
+*.foreground:   #f9f9f9
 *.background:   #282c34
 *.cursorcolor:  #abb2bf
 *.color0:       #5c6370
