@@ -7,7 +7,7 @@
 	magenta:    #c678dd;
 	cyan:       #56b6c2;
 	emphasis:   #4b5263;
-	text:       #abb2bf;
+	text:       #f9f9f9;
 	text-alt:   #abb2bf;
 	fg:         #abb2bf;
 	bg:         #282c34;
