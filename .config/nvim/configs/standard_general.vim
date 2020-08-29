@@ -113,10 +113,11 @@ set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:‡,trail:·
 set list
 
 " True color support in terminal
-" set t_Co=256
+"set t_Co=256
 set background=dark
 set termguicolors
-" let base16colorspace=256  " Access colors present in 256 colorspace
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 colorscheme one
 
 " spell check based on filetype

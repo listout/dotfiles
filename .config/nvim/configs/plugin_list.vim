@@ -3,9 +3,7 @@ filetype off
 
 call plug#begin('~/.config/nvim/plugged')
 
-Plug 'nanotech/jellybeans.vim'
 Plug 'rakr/vim-one'
-Plug 'sonph/onehalf', {'rtp': 'vim/'}
 
 Plug 'jiangmiao/auto-pairs'
 Plug 'sheerun/vim-polyglot'
