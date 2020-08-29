@@ -3,13 +3,13 @@
 URxvt.scrollBar: false
 !URxvt.termName: rxvt-256color
 
-!URxvt.font: xft:TamzenForPowerline:pixelsize=15
-!URxvt.italicFont: xft:TamzenForPowerline:pixelsize=15
-!URxvt.boldFont: xft:TamzenForPowerline:bold:pixelsize=15
+URxvt.font: xft:TamzenForPowerline:pixelsize=15
+URxvt.italicFont: xft:TamzenForPowerline:pixelsize=15
+URxvt.boldFont: xft:TamzenForPowerline:bold:pixelsize=15
 
-URxvt.font: xft:JetBrains Mono Medium:size=10
-URxvt.italicFont: xft:JetBrains Mono Medium:Italic:size=10
-URxvt.boldFont: xft:JetBrains Mono Extra Bold:size=10
+!URxvt.font: xft:JetBrains Mono Medium:size=10
+!URxvt.italicFont: xft:JetBrains Mono Medium:italic:size=10
+!URxvt.boldFont: xft:JetBrains Mono Extra Bold:size=10
 
 URxvt.internalBorder: 05
 
