@@ -4,6 +4,7 @@ filetype off
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'rakr/vim-one'
+Plug 'morhetz/gruvbox'
 
 Plug 'jiangmiao/auto-pairs'
 Plug 'sheerun/vim-polyglot'
