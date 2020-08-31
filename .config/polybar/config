@@ -1,28 +1,15 @@
 [colors]
 
-; light scheme
-;background     = #f9f9f9
-;foreground     = #000000
-;foreground-alt = #a0a1a7
+background     = #181818
+foreground     = #e8e8e8
+foreground-alt = #585858
 
-;alert  = #e45649
-;color2 = #383a42
-;color3 = #986801
-;color4 = #4078f2
-;color5 = #a626a4
-;color6 = #0184bc
-
-; dark scheme
-background     = #282c34
-foreground     = #abb2bf
-foreground-alt = #4b5263
-
-alert  = #be5046
-color2 = #98c379
-color3 = #e5c07b
-color4 = #61afef
-color5 = #c678dd
-color6 = #56b6c2
+alert  = #ab4642
+color2 = #dc9656
+color3 = #f7ca88
+color4 = #a1b56c
+color5 = #86c1b9
+color6 = #ba8baf
 
 [bar/mybar]
 

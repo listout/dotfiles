@@ -7,4 +7,4 @@ configuration   {
 }
 
 // vim: set ft=css:
-@import "./one.rasi"
+@import "./base16-default-dark.rasi"

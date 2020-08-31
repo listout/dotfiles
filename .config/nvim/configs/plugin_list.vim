@@ -3,8 +3,8 @@ filetype off
 
 call plug#begin('~/.config/nvim/plugged')
 
-Plug 'rakr/vim-one'
-Plug 'morhetz/gruvbox'
+Plug 'chriskempson/base16-vim'
+Plug 'mike-hearn/base16-vim-lightline'
 
 Plug 'jiangmiao/auto-pairs'
 Plug 'sheerun/vim-polyglot'

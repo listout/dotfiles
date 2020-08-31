@@ -1,8 +1,8 @@
 " vim-pencil settings "
 augroup pencil
-    autocmd!
-    autocmd FileType markdown,mkd call pencil#init({'wrap':'soft', 'autoformat':1})
-    autocmd FileType text         call pencil#init({'wrap':'soft', 'autoformat':1})
+	autocmd!
+	autocmd FileType markdown,mkd call pencil#init({'wrap':'soft', 'autoformat':1})
+	autocmd FileType text         call pencil#init({'wrap':'soft', 'autoformat':1})
 augroup END
 
 "" fzf.vim
@@ -13,20 +13,20 @@ let g:floaterm_keymap_toggle = '<leader>t'
 
 " lightline
 function! CocCurrentFunction()
-    return get(b:, 'coc_current_function', '')
+	return get(b:, 'coc_current_function', '')
 endfunction
 
 let g:lightline = {
-            \ 'colorscheme': 'one',
-            \ 'active': {
-            \   'left': [ [ 'mode', 'paste' ],
-            \             [ 'cocstatus', 'currentfunction', 'readonly', 'filename', 'modified' ] ]
-            \ },
-            \ 'component_function': {
-            \   'cocstatus': 'coc#status',
-            \   'currentfunction': 'CocCurrentFunction'
-            \ },
-            \ }
+			\ 'colorscheme': 'base16_default_dark',
+			\ 'active': {
+			\   'left': [ [ 'mode', 'paste' ],
+			\             [ 'cocstatus', 'currentfunction', 'readonly', 'filename', 'modified' ] ]
+			\ },
+			\ 'component_function': {
+			\   'cocstatus': 'coc#status',
+			\   'currentfunction': 'CocCurrentFunction'
+			\ },
+			\ }
 
 " easy motion settings "
 " <Leader>f{char} to move to {char}
@@ -100,14 +100,14 @@ set signcolumn=yes
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
 " other plugin before putting this into your config.
 inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
+			\ pumvisible() ? "\<C-n>" :
+			\ <SID>check_back_space() ? "\<TAB>" :
+			\ coc#refresh()
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
 function! s:check_back_space() abort
-    let col = col('.') - 1
-    return !col || getline('.')[col - 1]  =~# '\s'
+	let col = col('.') - 1
+	return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
 " Use <c-space> to trigger completion.
@@ -117,9 +117,9 @@ inoremap <silent><expr> <c-space> coc#refresh()
 " position. Coc only does snippet and additional edit on confirm.
 if has('patch8.1.1068')
 " Use `complete_info` if your (Neo)Vim version supports it.
-    inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
+	inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
 else
-    imap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+	imap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 endif
 
 " Use `[g` and `]g` to navigate diagnostics
@@ -136,11 +136,11 @@ nmap <silent> gr <Plug>(coc-references)
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 
 function! s:show_documentation()
-    if (index(['vim','help'], &filetype) >= 0)
-        execute 'h '.expand('<cword>')
-    else
-        call CocAction('doHover')
-    endif
+	if (index(['vim','help'], &filetype) >= 0)
+		execute 'h '.expand('<cword>')
+	else
+		call CocAction('doHover')
+	endif
 endfunction
 
 " Highlight the symbol and its references when holding the cursor.
@@ -154,11 +154,11 @@ xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
 
 augroup mygroup
-    autocmd!
-    " Setup formatexpr specified filetype(s).
-    autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
-    " Update signature help on jump placeholder.
-    autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
+	autocmd!
+	" Setup formatexpr specified filetype(s).
+	autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
+	" Update signature help on jump placeholder.
+	autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
 augroup end
 
 " Applying codeAction to the selected region.
@@ -200,14 +200,14 @@ set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
 " use <tab> for trigger completion and navigate to the next complete item
 function! s:check_back_space() abort
-    let col = col('.') - 1
-    return !col || getline('.')[col - 1]  =~ '\s'
+	let col = col('.') - 1
+	return !col || getline('.')[col - 1]  =~ '\s'
 endfunction
 
 inoremap <silent><expr> <Tab>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<Tab>" :
-      \ coc#refresh()
+			\ pumvisible() ? "\<C-n>" :
+			\ <SID>check_back_space() ? "\<Tab>" :
+			\ coc#refresh()
 
 " use <c-space>for trigger completion
 inoremap <silent><expr> <c-space> coc#refresh()
