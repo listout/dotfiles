@@ -17,7 +17,7 @@ XF86MonBrightnessDown
 
 # terminal emulator
 super + Return
-	urxvt
+	termite
 
 super + w
 	firefox

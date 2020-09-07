@@ -10,6 +10,7 @@ color3 = #f7ca88
 color4 = #a1b56c
 color5 = #86c1b9
 color6 = #ba8baf
+color7 = #a16946
 
 [bar/mybar]
 
@@ -31,7 +32,7 @@ font-2 = FontAwesome:size=9;2
 font-3 = Source Code Pro:size=9;2
 
 modules-left = battery wireless-network wired-network
-modules-right = memory cpu temperature pulseaudio date
+modules-right = memory cpu temperature backlight pulseaudio date
 modules-center = bspwm
 
 tray-position = right
@@ -55,8 +56,18 @@ label-empty-foreground    = ${colors.foreground-alt}
 label-empty-padding       = 2
 pin-workspaces = true
 
+[module/backlight]
+type = internal/backlight
+card = intel_backlight
+format =  <label>
+format-foreground = ${colors.color7}
+label = %percentage%%
+label-foreground = ${colors.foreground}
+
 [module/pulseaudio]
 type = internal/pulseaudio
+
+sink = alsa_output.pci-0000_00_1b.0.analog-stereo
 
 format-volume-foreground = ${colors.color6}
 format-volume = 墳 <label-volume>

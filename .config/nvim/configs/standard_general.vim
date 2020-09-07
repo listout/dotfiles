@@ -93,6 +93,8 @@ cnoreabbrev Wq wq
 cnoreabbrev Wa wa
 cnoreabbrev wQ wq
 cnoreabbrev WQ wq
+cnoreabbrev WQa wqa
+cnoreabbrev Wqa wqa
 cnoreabbrev W w
 cnoreabbrev Q q
 cnoreabbrev Qall qall
@@ -119,6 +121,11 @@ set termguicolors
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 colorscheme base16-default-dark
+
+" make comments italic
+set t_ZH=^[[3m
+set t_ZR=^[[23m
+highlight comments cterm=italic gui=italic
 
 " spell check based on filetype
 au! BufNewFile,BufRead *.tex,*.md :setlocal spell spelllang=en_us
