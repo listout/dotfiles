@@ -23,6 +23,7 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 bspc rule -a Termite state=floating follow=on
+bspc rule -a URxvt state=floating follow=on
 bspc rule -a Thunar state=floating follow=on
 bspc rule -a SplashScreen state=floating follow=on
 bspc rule -a Gnome-calculator state=floating follow=on
