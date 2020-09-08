@@ -67,13 +67,17 @@
 			}
 		}
 	},
+	"python.jediEnabled": false,
+	"python.analysis.diagnosticEnabled": false,
 	"python.autoComplete.addBrackets": true,
 	"python.formatting.autopep8Args": [
 		"--aggressive",
 		"--aggressive"
 	],
 	"python.linting.pylintArgs": [
-		"--unsafe-load-any-extension=y"
+		"--unsafe-load-any-extension=y",
+		"--disable=C0114",
+		"--disable=C0103"
 	],
 	"java.format.enabled": true,
 	"java.completion.importOrder": [

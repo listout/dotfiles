@@ -133,22 +133,5 @@ au! BufNewFile,BufRead *.tex,*.md :setlocal spell spelllang=en_us
 " set correct buffer filetype for tex
 let g:tex_flavor = "latex"
 
-" set correct indentation for c
-autocmd FileType c setlocal tabstop=4 shiftwidth=4 noexpandtab
-autocmd FileType cpp setlocal tabstop=4 shiftwidth=4 noexpandtab
-
-" html
-" for html files, 2 spaces
-autocmd Filetype html setlocal ts=2 sw=2 expandtab
-
-" python
-" vim-python
-augroup vimrc-python
-	autocmd!
-	autocmd FileType python setlocal noexpandtab shiftwidth=4 tabstop=8 colorcolumn=79
-    			\ formatoptions+=croq softtabstop=4
-    			\ cinwords=if,elif,else,for,while,try,except,finally,def,class,with
-augroup END
-
 " auto remove all trailing white spaces
 autocmd BufWritePre * %s/\s\+$//e

@@ -31,7 +31,7 @@ font-1 = Symbols Nerd Font:size=8;2
 font-2 = FontAwesome:size=9;2
 font-3 = Source Code Pro:size=9;2
 
-modules-left = battery wireless-network wired-network
+modules-left = battery network
 modules-right = memory cpu temperature backlight pulseaudio date
 modules-center = bspwm
 
@@ -147,20 +147,7 @@ format =  <label>
 format-foreground = ${colors.color5}
 label-foreground = ${colors.foreground}
 
-[module/wired-network]
-type = internal/network
-interface = enp2s0
-interval = 3.0
-format-connected =  <label-connected>
-format-disconnected = <label-disconnected>
-label-connected =  %local_ip%
-format-connected-foreground = ${colors.color6}
-label-connected-foreground = ${colors.foreground}
-format-disconnected-foreground = ${colors.color6}
-label-disconnected-foreground = ${colors.color6}
-label-disconnected = 
-
-[module/wireless-network]
+[module/network]
 type = internal/network
 interface = ${env:DEFAULT_NETWORK_INTERFACE:wlp3s0}
 interval = 3.0

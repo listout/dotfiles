@@ -4,7 +4,7 @@ sxhkd &
 picom --experimental-backends &
 sh ~/.config/polybar/launch.sh &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-feh --bg-fill $HOME/Pictures/lunar-deer-ai-upscaled-from-720p-1366×768.jpg&
+feh --bg-fill $HOME/Pictures/wallhaven-473kdo_1920x1080.png &
 dunst &
 
 wmname LG3D
