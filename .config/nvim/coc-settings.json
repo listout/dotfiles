@@ -54,5 +54,6 @@
 				}
 			}
 		}
-	}
+	},
+	"java.signatureHelp.enabled": true
 }

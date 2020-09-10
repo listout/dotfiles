@@ -1,6 +1,7 @@
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'tpope/vim-vividchalk'
+Plug 'sainnhe/sonokai'
 
 Plug 'jiangmiao/auto-pairs'
 Plug 'preservim/nerdcommenter'
@@ -20,6 +21,8 @@ Plug 'honza/vim-snippets'
 Plug 'SirVer/ultisnips'
 
 Plug 'sheerun/vim-polyglot'
+
+Plug 'itchyny/lightline.vim'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'jackguo380/vim-lsp-cxx-highlight'

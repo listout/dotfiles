@@ -7,7 +7,6 @@ let g:markdown_fenced_languages = ['html', 'css', 'scss', 'sql', 'javascript', '
 source $HOME/.config/nvim/configs/plugins.vim
 source $HOME/.config/nvim/configs/basic.vim
 source $HOME/.config/nvim/configs/appearance.vim
-source $HOME/.config/nvim/configs/statusline.vim
 source $HOME/.config/nvim/configs/snippets.vim
 source $HOME/.config/nvim/configs/coc.vim
 source $HOME/.config/nvim/configs/fzf_config.vim
