@@ -1,0 +1,58 @@
+{
+	"suggest.autoTrigger": "always",
+	"diagnostic.refreshOnInsertMode": true,
+	"suggest.noselect": false,
+	"suggest.snippetIndicator": "►",
+	"suggest.floatEnable": false,
+	"diagnostic.messageTarget": "float",
+	"signature.target": "echo",
+	"coc.preferences.hoverTarget": "float",
+	"suggest.acceptSuggestionOnCommitCharacter": true,
+	"snippets.extends": {
+		"cpp": [
+			"c"
+		]
+	},
+	"coc.source.word.filetypes": [
+		"makrdown",
+		"tex"
+	],
+	"coc.source.dictionary.filetypes": [
+		"makrdown",
+		"tex"
+	],
+	"coc.preferences.formatOnSaveFiletypes": [
+		"c",
+		"cpp",
+		"json",
+		"python",
+		"java"
+	],
+	"languageserver": {
+		"ccls": {
+			"command": "ccls",
+			"filetypes": [
+				"c",
+				"cpp",
+				"cc",
+				"c++",
+				"objc",
+				"objcpp"
+			],
+			"rootPatterns": [
+				".ccls",
+				"compile_commands.json",
+				".git/",
+				".hg"
+			],
+			"initializationOptions": {
+				"cache": {
+					"directory": "/tmp/ccls"
+				},
+				"highlight": {
+					"lsRanges": true
+				}
+			}
+		}
+	}
+}

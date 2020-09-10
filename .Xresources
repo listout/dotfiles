@@ -2,14 +2,16 @@
 
 URxvt.scrollBar: false
 
-!URxvt.font: xft:TamzenForPowerline:pixelsize=15
-!URxvt.italicFont: xft:TamzenForPowerline:pixelsize=15
-!URxvt.boldFont: xft:TamzenForPowerline:bold:pixelsize=15
+URxvt.font: xft:TamzenForPowerline:pixelsize=15
+URxvt.italicFont: xft:TamzenForPowerline:pixelsize=15
+URxvt.boldFont: xft:TamzenForPowerline:bold:pixelsize=15
 
-URxvt.font: xft:Source Code Pro Semibold:size=10, \
-	xft:DejaVu Sans Mono:size=10
-URxvt.italicFont: xft:Source Code Pro Semibold:italic:size=10
-URxvt.boldFont: xft:Source Code Pro Black:size=10
+!URxvt.font: xft:Source Code Pro Semibold:size=11, \
+!	xft:DejaVu Sans Mono:size=12
+!URxvt.italicFont: xft:Source Code Pro Semibold:italic:size=11, \
+!	xft:DejaVu Sans Mono:size=12
+!URxvt.boldFont: xft:Source Code Pro Black:size=11, \
+!	xft:DejaVu Sans Mono:size=12
 
 URxvt.internalBorder: 05
 
