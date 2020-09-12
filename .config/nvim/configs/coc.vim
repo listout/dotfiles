@@ -4,7 +4,9 @@ let g:coc_global_extensions = [
 			\ 'coc-highlight',
 			\ 'coc-json',
 			\ 'coc-dictionary',
-			\ 'coc-word'
+			\ 'coc-word',
+			\ 'coc-syntax',
+			\ 'coc-ultisnips'
 			\]
 
 set updatetime=300
@@ -24,6 +26,7 @@ function! s:check_back_space() abort
 endfunction
 
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+inoremap <silent><expr> <c-space> coc#refresh()
 
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
@@ -60,9 +63,9 @@ nmap <leader>qf  <Plug>(coc-fix-current)
 
 command! -nargs=0 Format :call CocAction('format')
 command! -nargs=? Fold :call     CocAction('fold', <f-args>)
-command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
+command! -nargs=1 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
 
-set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+"set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
 nmap <silent> <C-c> <Plug>(coc-cursors-position)
 nmap <silent> <C-d> <Plug>(coc-cursors-word)

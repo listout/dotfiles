@@ -13,12 +13,16 @@
 			"c"
 		]
 	},
+	"coc.source.word.enable": true,
 	"coc.source.word.filetypes": [
-		"makrdown",
+		"markdown",
+		"latex",
 		"tex"
 	],
+	"coc.source.dictionary.enable": true,
 	"coc.source.dictionary.filetypes": [
-		"makrdown",
+		"markdown",
+		"latex",
 		"tex"
 	],
 	"coc.preferences.formatOnSaveFiletypes": [

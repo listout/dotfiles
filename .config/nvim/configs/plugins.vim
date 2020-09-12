@@ -22,7 +22,7 @@ Plug 'SirVer/ultisnips'
 
 Plug 'sheerun/vim-polyglot'
 
-Plug 'itchyny/lightline.vim'
+"Plug 'itchyny/lightline.vim'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'jackguo380/vim-lsp-cxx-highlight'

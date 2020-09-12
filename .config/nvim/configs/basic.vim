@@ -58,3 +58,5 @@ set noexpandtab
 set smarttab
 set tabstop=4
 set shiftwidth=4
+
+au! BufNewFile,BufRead *.tex,*.md :setlocal spell spelllang=en_us
