@@ -13,7 +13,7 @@ URxvt.boldFont: xft:TamzenForPowerline:bold:pixelsize=15
 !URxvt.boldFont: xft:Source Code Pro Black:size=11, \
 !	xft:DejaVu Sans Mono:size=12
 
-URxvt.internalBorder: 05
+URxvt.internalBorder: 10
 
 URxvt.keysym.Shift-Up: command:\033]720;1\007
 URxvt.keysym.Shift-Down: command:\033]721;1\007
@@ -35,57 +35,40 @@ URxvt.urlLauncher: firefox
 URxvt.underlineURLs: true
 URxvt.urlButton: 1
 
-! Base16 Default Dark
-! Scheme: Chris Kempson (http://chriskempson.com)
+! special
+*.foreground:	#F2F2F4
+!*.background:	#2F3842
+*.background:	#22272C
+*.cursorColor:	#F2F2F4
 
-#define base00 #181818
-#define base01 #282828
-#define base02 #383838
-#define base03 #585858
-#define base04 #b8b8b8
-#define base05 #d8d8d8
-#define base06 #e8e8e8
-#define base07 #f8f8f8
-#define base08 #ab4642
-#define base09 #dc9656
-#define base0A #f7ca88
-#define base0B #a1b56c
-#define base0C #86c1b9
-#define base0D #7cafc2
-#define base0E #ba8baf
-#define base0F #a16946
+! black
+*.color0:       #445158
+*.color8:       #5E6B72
 
-*foreground:   base05
-#ifdef background_opacity
-*background:   [background_opacity]base00
-#else
-*background:   base00
-#endif
-*cursorColor:  base05
+! red
+*.color1:       #FF6565
+*.color9:       #FF7272
 
-*color0:       base00
-*color1:       base08
-*color2:       base0B
-*color3:       base0A
-*color4:       base0D
-*color5:       base0E
-*color6:       base0C
-*color7:       base05
+! green
+*.color2:       #2CC46E
+*.color10:      #46DE88
 
-*color8:       base03
-*color9:       base08
-*color10:      base0B
-*color11:      base0A
-*color12:      base0D
-*color13:      base0E
-*color14:      base0C
-*color15:      base07
+! yellow
+*.color3:       #ECC46F
+*.color11:      #FFDE89
 
-! Note: colors beyond 15 might not be loaded (e.g., xterm, urxvt),
-! use 'shell' template to set these if necessary
-*color16:      base09
-*color17:      base0F
-*color18:      base01
-*color19:      base02
-*color20:      base04
-*color21:      base06
+! blue
+*.color4:       #6F97EC
+*.color12:      #89B1FF
+
+! magenta
+*.color5:       #FA5477
+*.color13:      #FF6E91
+
+! cyan
+*.color6:       #64B9F2
+*.color14:      #71C6FF
+
+! white
+*.color7:       #D2D2D4
+*.color15:      #F1F1F3
