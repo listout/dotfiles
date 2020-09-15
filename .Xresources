@@ -6,14 +6,14 @@ URxvt.font: xft:TamzenForPowerline:pixelsize=15
 URxvt.italicFont: xft:TamzenForPowerline:pixelsize=15
 URxvt.boldFont: xft:TamzenForPowerline:bold:pixelsize=15
 
-!URxvt.font: xft:Source Code Pro Semibold:size=11, \
-!	xft:DejaVu Sans Mono:size=12
-!URxvt.italicFont: xft:Source Code Pro Semibold:italic:size=11, \
-!	xft:DejaVu Sans Mono:size=12
-!URxvt.boldFont: xft:Source Code Pro Black:size=11, \
-!	xft:DejaVu Sans Mono:size=12
+!URxvt.font: xft:Fira Code Semibold:size=10, \
+	!xft:DejaVu Sans Mono:size=12
+!URxvt.italicFont: xft:Fira Code Semibold:italic:size=10, \
+	!xft:DejaVu Sans Mono:size=12
+!URxvt.boldFont: xft:Fira Code:bold:size=10, \
+	!xft:DejaVu Sans Mono:size=12
 
-URxvt.internalBorder: 10
+!URxvt.internalBorder: 10
 
 URxvt.keysym.Shift-Up: command:\033]720;1\007
 URxvt.keysym.Shift-Down: command:\033]721;1\007
@@ -35,40 +35,31 @@ URxvt.urlLauncher: firefox
 URxvt.underlineURLs: true
 URxvt.urlButton: 1
 
-! special
 *.foreground:	#F2F2F4
-!*.background:	#2F3842
 *.background:	#22272C
 *.cursorColor:	#F2F2F4
-
-! black
 *.color0:       #445158
-*.color8:       #5E6B72
-
-! red
+*.color8:       #5E6B73
 *.color1:       #FF6565
 *.color9:       #FF7272
-
-! green
 *.color2:       #2CC46E
 *.color10:      #46DE88
-
-! yellow
 *.color3:       #ECC46F
 *.color11:      #FFDE89
-
-! blue
 *.color4:       #6F97EC
 *.color12:      #89B1FF
-
-! magenta
 *.color5:       #FA5477
 *.color13:      #FF6E91
-
-! cyan
 *.color6:       #64B9F2
 *.color14:      #71C6FF
-
-! white
 *.color7:       #D2D2D4
 *.color15:      #F1F1F3
+
+rofi.width: 40
+rofi.lines: 8
+rofi.columns: 2
+rofi.hide-scrollbar: true
+rofi.separator-style: solid
+! State:           'bg',     'fg',     'bgalt',  'hlbg',   'hlfg'
+rofi.color-normal: #22272C,  #F2F2F4,  #22272C,  #6F97EC,  #22272C
+rofi.color-window: #22272C,  #46DE88

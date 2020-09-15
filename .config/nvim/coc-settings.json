@@ -59,5 +59,6 @@
 			}
 		}
 	},
-	"java.signatureHelp.enabled": true
+	"java.signatureHelp.enabled": true,
+	"java.format.comments.enabled": false
 }

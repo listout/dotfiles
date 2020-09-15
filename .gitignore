@@ -1,5 +1,5 @@
-~/.config/zsh/zsh_history
-~/.config/zsh/cache
-~/.config/zsh/pure
+.config/zsh/zsh_history
+.config/zsh/cache
+.config/zsh/pure
 .config/nvim/plugged/*
 .config/nvim/plugged

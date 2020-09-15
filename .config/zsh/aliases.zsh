@@ -8,6 +8,7 @@ alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias weather='curl wttr.in'
 alias cc='clang -g'
 alias cpp='clang++ -g'
+alias scrot='scrot -q 100 -s'
 
 export EDITOR=nvim
 export VISUAL=nvim

@@ -5,6 +5,3 @@ configuration   {
     modi:       "drun,windowcd,combi";
 
 }
-
-// vim: set ft=css:
-@import "./base16-default-dark.rasi"

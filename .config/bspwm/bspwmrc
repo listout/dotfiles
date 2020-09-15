@@ -1,19 +1,20 @@
 #! /bin/sh
 
 sxhkd &
-picom --experimental-backends &
+picom &
 sh ~/.config/polybar/launch.sh &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-feh --bg-fill $HOME/Pictures/wallhaven-473kdo_1920x1080.png &
+#feh --bg-fill $HOME/Pictures/wallhaven-473kdo_1920x1080.png &
+hsetroot -solid '#22272C' &
 dunst &
 
 wmname LG3D
 
 bspc monitor -d I II III IV V VI
 
-bspc config normal_border_color '#b8b8b8'
-bspc config active_border_color '#b8b8b8'
-bspc config focused_border_color '#f8f8f8'
+bspc config normal_border_color '#5E6B73'
+bspc config active_border_color '#5E6B73'
+bspc config focused_border_color '#D2D2D4'
 
 bspc config border_width         2
 bspc config window_gap           0

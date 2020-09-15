@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/home/gogo/Documents/Programs'
+let g:netrw_dirhist_4='/home/gogo/Documents/Programs/Python'
+let g:netrw_dirhist_3='/home/gogo/Documents/Programs'
+let g:netrw_dirhist_2='/home/gogo/Documents'
+let g:netrw_dirhist_1='/home/gogo/.config/bspwm'
