@@ -1,3 +1,4 @@
+" For correct colors when using inside tmux
 if $TERM != 'rxvt-unicode-256color'
 	let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 	" set Vim-specific sequences for RGB colors (fixes color bug)
@@ -11,6 +12,8 @@ if $TERM != 'rxvt-unicode-256color'
 	colorscheme one
 endif
 
+" More space for showing messages, also helpful for coc.nvim
 set cmdheight=2
 
+" Split the right way
 set splitright splitbelow

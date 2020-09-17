@@ -17,6 +17,7 @@ hi User7 ctermfg=235 ctermbg=236
 hi User8 ctermfg=235 ctermbg=145
 hi User9 ctermfg=none ctermbg=none
 
+" Show current mode
 let g:currentmode={
 			\ 'n'  : 'NORMAL ',
 			\ 'v'  : 'VISUAL ',
@@ -31,6 +32,7 @@ let g:currentmode={
 			\}
 
 
+" Highlight the mode
 exe 'hi! StatusLine ctermfg=235 ctermbg=114 cterm=bold'
 function! ChangeStatuslineColor()
 	if (mode() =~# '\v(n|no)')
@@ -48,6 +50,7 @@ function! ChangeStatuslineColor()
 endfunction
 exe 'hi! StatusLine ctermfg=235 ctermbg=114 cterm=bold'
 
+" Coc status integration
 function! StatusDiagnostic() abort
 	let info = get(b:, 'coc_diagnostic_info', {})
 	if empty(info) | return '' | endif
