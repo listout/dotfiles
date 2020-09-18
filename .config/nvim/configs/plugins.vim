@@ -3,6 +3,7 @@ call plug#begin('~/.config/nvim/plugged')
 " color schemes
 Plug 'tpope/vim-vividchalk'
 Plug 'rakr/vim-one'
+Plug 'ParamagicDev/vim-medic_chalk'
 
 " For making coding pleasureable
 Plug 'jiangmiao/auto-pairs'
@@ -29,6 +30,9 @@ Plug 'SirVer/ultisnips'
 
 " Support for multiple languages
 Plug 'sheerun/vim-polyglot'
+
+" Status line
+Plug 'itchyny/lightline.vim'
 
 " Language server
 Plug 'neoclide/coc.nvim', {'branch': 'release'}

@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =5
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/gogo/.config/nvim'
 let g:netrw_dirhist_5='/home/gogo/Documents/Programs'
 let g:netrw_dirhist_4='/home/gogo/Documents/Programs/Python'
 let g:netrw_dirhist_3='/home/gogo/Documents/Programs'

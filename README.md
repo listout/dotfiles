@@ -1,5 +1,7 @@
 # My dotfiles
 
+## This is the experimental brach, here things change frequently
+
 #### Applications
 
 - Terminal: urxvt (truecolor patch)
@@ -11,7 +13,6 @@
 - Bar: Polybar
 - GTK Theme: Materia (for now)
 - Filemanager: Thunar and Ranger
-- Overall Color Scheme: `base16-default-dark`
 
 #### Notes and links for me in case of a new install
 

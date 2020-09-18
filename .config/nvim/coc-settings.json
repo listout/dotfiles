@@ -60,5 +60,14 @@
 		}
 	},
 	"java.signatureHelp.enabled": true,
-	"java.format.comments.enabled": false
+	"java.format.comments.enabled": false,
+	"python.jediEnabled": false,
+	"python.autoComplete.addBrackets": true,
+	"python.formatting.autopep8Args": [
+		"--aggressive",
+		"--aggressive"
+	],
+	"python.linting.pylintArgs": [
+		"--unsafe-load-any-extension=y"
+	]
 }

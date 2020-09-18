@@ -35,25 +35,24 @@ URxvt.urlLauncher: firefox
 URxvt.underlineURLs: true
 URxvt.urlButton: 1
 
-*.foreground:	#F2F2F4
-*.background:	#22272C
-*.cursorColor:	#F2F2F4
-*.color0:       #445158
-*.color8:       #5E6B73
-*.color1:       #FF6565
-*.color9:       #FF7272
-*.color2:       #2CC46E
-*.color10:      #46DE88
-*.color3:       #ECC46F
-*.color11:      #FFDE89
-*.color4:       #6F97EC
-*.color12:      #89B1FF
-*.color5:       #FA5477
-*.color13:      #FF6E91
-*.color6:       #64B9F2
-*.color14:      #71C6FF
-*.color7:       #D2D2D4
-*.color15:      #F1F1F3
+*.foreground: #FFFFFF
+*.background: #000000
+*.color0:     #000000
+*.color8:     #111111
+*.color1:     #FFA500
+*.color9:     #FF6600
+*.color2:     #66FF00
+*.color10:    #99CC99
+*.color3:     #FFCC00
+*.color11:    #FFEE98
+*.color4:     #5F87AF
+*.color12:    #33C9C9
+*.color5:     #9933CC
+*.color13:    #AA1BF2
+*.color6:     #88B5C3
+*.color14:    #AABBEE
+*.color7:     #FFFFFF
+*.color15:    #808080
 
 rofi.width: 40
 rofi.lines: 8
@@ -61,5 +60,5 @@ rofi.columns: 2
 rofi.hide-scrollbar: true
 rofi.separator-style: solid
 ! State:           'bg',     'fg',     'bgalt',  'hlbg',   'hlfg'
-rofi.color-normal: #22272C,  #F2F2F4,  #22272C,  #6F97EC,  #22272C
-rofi.color-window: #22272C,  #46DE88
+rofi.color-normal: #111111,  #FFFFFF,  #111111,  #5F87AF,  #111111
+rofi.color-window: #111111,  #AABBEE

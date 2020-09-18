@@ -1,16 +1,16 @@
 [colors]
 
-background     = #22272C
-foreground     = #F3F2F4
-foreground-alt = #6E6B72
+background     = #000000
+foreground     = #FFFFFF
+foreground-alt = #808080
 
-alert  = #FF6565
-color2 = #2CC46E
-color3 = #ECC46F
-color4 = #6F97EC
-color5 = #FA5477
-color6 = #46DE88
-color7 = #71C6FF
+alert  = #FFA500
+color2 = #FF6600
+color3 = #66FF00
+color4 = #99CC99
+color5 = #5F87AF
+color6 = #33C9C9
+color7 = #99CC99
 
 [bar/mybar]
 

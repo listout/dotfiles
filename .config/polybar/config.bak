@@ -1,3 +1,17 @@
+[colors]
+
+background     = #22272C
+foreground     = #F3F2F4
+foreground-alt = #6E6B72
+
+alert  = #FF6565
+color2 = #2CC46E
+color3 = #ECC46F
+color4 = #6F97EC
+color5 = #FA5477
+color6 = #46DE88
+color7 = #71C6FF
+
 [bar/mybar]
 
 bottom = false
@@ -7,54 +21,60 @@ fixed-center = true
 height = 22
 width = 100%
 padding-right = 2
+padding-left = 2
 
-background = #161821
-foreground = #d2d4de
+background = ${colors.background}
+foreground = ${colors.foreground}
 
-font-0 = Dina:size=9.0;2
-font-1 = Symbols Nerd Font:size=10;2
-font-2 = FontAwesome:size=10;2
-font-3 = Source Code Pro:size=10;2
+font-0 = TamzenForPowerline:pixelsize=13;2
+font-1 = Symbols Nerd Font:size=8;2
+font-2 = FontAwesome:size=9;2
+font-3 = Source Code Pro:size=9;2
 
-modules-left = i3
-modules-right = cpu temperature volume wireless-network wired-network battery date
-modules-center =
+modules-left = battery network
+modules-right = memory cpu temperature backlight pulseaudio date
+modules-center = bspwm
 
 tray-position = right
 tray-maxsize = 16
 
-module-margin-left = 2
-module-margin-right = 2
+module-margin-left = 1
+module-margin-right = 1
 
-[module/i3]
-type = internal/i3
+[module/bspwm]
+type                      = internal/bspwm
+label-focused             = 
+label-focused-padding     = 2
+label-occupied            = 
+label-occupied-foreground = ${colors.foreground-alt}
+label-occupied-padding    = 2
+label-urgent              = 
+label-urgent-foreground   = ${colors.alert}
+label-urgent-padding      = 2
+label-empty               = 
+label-empty-foreground    = ${colors.foreground-alt}
+label-empty-padding       = 2
+pin-workspaces = true
 
-label-focused = %index%
-label-focused-padding = 2
-label-focused-foreground = #161821
-label-focused-background = #d2d4de
+[module/backlight]
+type = internal/backlight
+card = intel_backlight
+format =  <label>
+format-foreground = ${colors.color7}
+label = %percentage%%
+label-foreground = ${colors.foreground}
 
-label-unfocused = %index%
-label-unfocused-padding = 2
-label-unfocused-foreground = #161821
-label-unfocused-background = #6b7089
+[module/pulseaudio]
+type = internal/pulseaudio
 
-label-urgent = %index%
-label-urgent-padding = 2
-label-urgent-foreground = #161821
-label-urgent-background = #e27878
+sink = alsa_output.pci-0000_00_1b.0.analog-stereo
 
-[module/volume]
-type = internal/alsa
+format-volume-foreground = ${colors.color6}
+format-volume = 墳 <label-volume>
+label-volume-foreground = ${colors.foreground}
 
-format-volume = <ramp-volume> <label-volume>
-
-label-muted = ﱝ muted
-label-muted-foreground = #66
-
-ramp-volume-0 = 
-ramp-volume-1 = 
-ramp-volume-2 = 
+label-muted = 婢
+label-muted-foreground = ${colors.alert}
 
 [module/battery]
 type = internal/battery
@@ -64,79 +84,81 @@ adapter = ADP0
 
 poll-interval = 5
 
-full-at = 100
+full-at = 99
 
 time-format = %H:%M
 
-label-discharging = %percentage%%
-label-charging = %percentage%%
-label-full = %percentage%%
+label-discharging =  %percentage%% %time%
+label-charging =  %percentage%%
+label-full =  %percentage%%
 
-format-discharging = <ramp-capacity> <label-discharging>
-format-full = <ramp-capacity> <label-full>
-format-charging = <animation-charging> <label-charging>
+;format-discharging = <ramp-capacity> <label-discharging>
+;format-full = <ramp-capacity> <label-full>
+;format-charging = <animation-charging> <label-charging>
 
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
-ramp-capacity-3 = 
-ramp-capacity-4 = 
+format-discharging = <label-discharging>
+format-full = <label-full>
+format-charging = <label-charging>
 
-animation-charging-0 = 
-animation-charging-1 = 
-animation-charging-2 = 
-animation-charging-3 = 
-animation-charging-4 = 
+;ramp-capacity-foreground = ${colors.color4}
+;animation-charging-foreground = ${colors.color4}
+;animation-full-foreground = ${colors.color4}
+;format-discharging-foreground = ${colors.color4}
+
+;ramp-capacity-0 = 
+;ramp-capacity-1 = 
+;ramp-capacity-2 = 
+;ramp-capacity-3 = 
+;ramp-capacity-4 = 
+
+;animation-charging-0 = 
+;animation-charging-1 = 
+;animation-charging-2 = 
+;animation-charging-3 = 
+;animation-charging-4 = 
 ; Framerate in milliseconds
-animation-charging-framerate = 750
+;animation-charging-framerate = 750
 
 [module/cpu]
 type = internal/cpu
 interval = 0.5
-format = <label> <ramp-coreload>
-label = CPU %percentage%%
-ramp-coreload-spacing = 1
-ramp-coreload-0 = ▁
-ramp-coreload-1 = ▂
-ramp-coreload-2 = ▃
-ramp-coreload-3 = ▄
-ramp-coreload-4 = ▅
-ramp-coreload-5 = ▆
-ramp-coreload-6 = ▇
-ramp-coreload-7 = █
+format =  <label>
+label = %percentage%%
+format-foreground = ${colors.color2}
+label-foreground = ${colors.foreground}
+
+[module/memory]
+type = internal/memory
+interval = 3
+format =  <label>
+label = %gb_used%
+format-foreground = ${colors.color3}
+label-foreground = ${colors.foreground}
 
 [module/date]
 type = internal/date
+label = %date% %time%
 interval = 1.0
 date = %d-%m-%Y
 time = %I:%M
 date-alt = %A, %d %B %Y
 time-alt = %I:%M:%S
-format =   <label>
-;format-background = #161821
-;format-foreground = #d2d4de
+format =  <label>
+format-foreground = ${colors.color5}
+label-foreground = ${colors.foreground}
 
-label = %date% %time%
-label-font = 3
-;label-foreground = #d2d4de
-
-[module/wired-network]
+[module/network]
 type = internal/network
-interface = enp2s0
+interface = ${env:DEFAULT_NETWORK_INTERFACE:wlp3s0}
 interval = 3.0
-format-connected = <label-connected>
+format-connected =  <label-connected>
 format-disconnected = <label-disconnected>
-label-connected =  %local_ip%
-label-disconnected = 
-
-[module/wireless-network]
-type = internal/network
-interface = wlp3s0
-interval = 3.0
-format-connected = <label-connected>
-format-disconnected = <label-disconnected>
-label-connected =   %essid%
+label-connected =  %essid%
 label-disconnected = 睊
+format-connected-foreground = ${colors.color6}
+label-connected-foreground = ${colors.foreground}
+format-disconnected-foreground = ${colors.color6}
+label-disconnected-foreground = ${colors.color6}
 
 [module/temperature]
 type = internal/temperature
@@ -144,7 +166,11 @@ interval = 0.5
 thermal-zone = 0
 base-temperature = 20
 warn-temperature = 70
-format = <label>
-label =   %temperature-c%
-label-warn =   %temperature-c%
+format =  <label>
+label = %temperature-c%
+label-warn = %temperature-c%
 label-warn-foreground = #f00
+format-foreground = ${colors.color4}
+label-foreground = ${colors.foreground}
+
+; vim: set ft=dosini nomodeline:

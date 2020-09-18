@@ -1,4 +1,4 @@
-let s:term_red = 204
+let s:term_red = 205
 let s:term_green = 114
 let s:term_yellow = 180
 let s:term_blue = 39
@@ -16,6 +16,17 @@ hi User6 ctermfg=235 ctermbg=170
 hi User7 ctermfg=235 ctermbg=236
 hi User8 ctermfg=235 ctermbg=145
 hi User9 ctermfg=none ctermbg=none
+
+
+hi User1 guifg=180 guibg=none
+hi User2 guifg=235 guibg=204
+hi User3 guifg=235 guibg=114
+hi User4 guifg=235 guibg=180
+hi User5 guifg=235 guibg=39
+hi User6 guifg=235 guibg=170
+hi User7 guifg=235 guibg=236
+hi User8 guifg=235 guibg=145
+hi User9 guifg=none guibg=none
 
 " Show current mode
 let g:currentmode={

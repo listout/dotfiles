@@ -10,6 +10,9 @@ if $TERM != 'rxvt-unicode-256color'
 	set termguicolors
 	let g:one_allow_italics = 1
 	colorscheme one
+else
+	set termguicolors
+	colorscheme medic_chalk
 endif
 
 " More space for showing messages, also helpful for coc.nvim
