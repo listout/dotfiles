@@ -8,8 +8,8 @@ if $TERM != 'rxvt-unicode-256color'
 	set t_Co=256
 	set t_ut=
 	set termguicolors
-	let g:one_allow_italics = 1
-	colorscheme one
+	let g:molokai_original = 1
+	colorscheme molokai
 else
 	set termguicolors
 	colorscheme medic_chalk

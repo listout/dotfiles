@@ -29,7 +29,8 @@ URxvt.keysym.Control-Meta-v: builtin-string:
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
 URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
 
-!URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select
+URxvt.perl-lib: /usr/lib/urxvt/perl/
+URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select
 
 URxvt.urlLauncher: firefox
 URxvt.underlineURLs: true
@@ -55,10 +56,9 @@ URxvt.urlButton: 1
 *.color15:    #808080
 
 rofi.width: 40
-rofi.lines: 8
-rofi.columns: 2
+rofi.lines: 10
 rofi.hide-scrollbar: true
-rofi.separator-style: solid
+!rofi.separator-style: solid
 ! State:           'bg',     'fg',     'bgalt',  'hlbg',   'hlfg'
 rofi.color-normal: #111111,  #FFFFFF,  #111111,  #5F87AF,  #111111
 rofi.color-window: #111111,  #AABBEE

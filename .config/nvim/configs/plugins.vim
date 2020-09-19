@@ -4,6 +4,7 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'tpope/vim-vividchalk'
 Plug 'rakr/vim-one'
 Plug 'ParamagicDev/vim-medic_chalk'
+Plug 'tomasr/molokai'
 
 " For making coding pleasureable
 Plug 'jiangmiao/auto-pairs'
@@ -30,6 +31,7 @@ Plug 'SirVer/ultisnips'
 
 " Support for multiple languages
 Plug 'sheerun/vim-polyglot'
+Plug 'uiiaoo/java-syntax.vim'
 
 " Status line
 Plug 'itchyny/lightline.vim'
