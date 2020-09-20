@@ -1,8 +1,8 @@
 [colors]
 
 background     = #080808
-foreground     = #b2b2b2
-foreground-alt = #d183e8
+foreground     = #ffffff
+foreground-alt = #b2b2b2
 
 alert  = #ff5454
 color2 = #8cc85f
