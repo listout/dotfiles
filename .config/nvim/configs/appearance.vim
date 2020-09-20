@@ -12,7 +12,9 @@ if $TERM != 'rxvt-unicode-256color'
 	colorscheme molokai
 else
 	set termguicolors
-	colorscheme medic_chalk
+	let g:moonflyCursorColor = 1
+	let g:moonflyUnderlineMatchParen = 1
+	colorscheme moonfly
 endif
 
 " More space for showing messages, also helpful for coc.nvim

@@ -12,9 +12,9 @@ wmname LG3D
 
 bspc monitor -d I II III IV V VI
 
-bspc config normal_border_color '#AABBEE'
-bspc config active_border_color '#AABBEE'
-bspc config focused_border_color '#FFFFFF'
+bspc config normal_border_color '#373c40'
+bspc config active_border_color '#b2b2b2'
+bspc config focused_border_color '#b2b2b2'
 
 bspc config border_width         2
 bspc config window_gap           0
@@ -44,3 +44,5 @@ bspc rule -a "Kvantum Manager"  state=floating follow=on
 bspc rule -a "Connman-gtk"  state=floating follow=on
 bspc rule -a "XTerm"  state=floating follow=on
 bspc rule -a "Gufw.py"  state=floating follow=on
+bspc rule -a "Tor Browser"  state=floating follow=on
+bspc rule -a "torbrowser-launcher"  state=floating follow=on
