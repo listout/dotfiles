@@ -57,11 +57,3 @@ URxvt.urlButton: 1
 *.color15: #e2637f
 *.selection_background: #b2ceee
 *.selection_foreground: #080808
-
-rofi.width: 40
-rofi.lines: 10
-rofi.hide-scrollbar: true
-! State:           'bg',     'fg',     'bgalt',  'hlbg',   'hlfg'
-rofi.color-normal: #080808,  #b2b2b2,  #080808,  #80a0ff,  #080808
-rofi.color-window: #080808,  #85dc85,  #080808,  #80a0ff,  #080808
-
