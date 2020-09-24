@@ -16,6 +16,7 @@ Plug 'psliwka/vim-smoothie'
 
 " Better document writing
 Plug 'reedes/vim-pencil'
+Plug 'reedes/vim-lexical'
 
 " Floating scratch terminal
 Plug 'voldikss/vim-floaterm'
