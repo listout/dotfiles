@@ -61,6 +61,7 @@
 	},
 	"java.signatureHelp.enabled": true,
 	"java.format.comments.enabled": false,
+	"java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
 	"python.jediEnabled": false,
 	"python.autoComplete.addBrackets": true,
 	"python.formatting.autopep8Args": [
