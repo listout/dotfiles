@@ -46,3 +46,4 @@ bspc rule -a "XTerm"  state=floating follow=on
 bspc rule -a "Gufw.py"  state=floating follow=on
 bspc rule -a "Tor Browser"  state=floating follow=on
 bspc rule -a "torbrowser-launcher"  state=floating follow=on
+bspc rule -a "kitty"  state=floating follow=on
