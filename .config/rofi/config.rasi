@@ -1,10 +1,53 @@
-configuration   {
-    font:       "Source Code Pro Semibold 11";
-    show-icons: true;
-    icon-theme: "Numix Circle";
-    modi:       "drun,windowcd,combi";
-
+configuration {
+	modi: "drun,windowcd,window";
+	width: 30;
+	lines: 10;
+	show-icons: true;
+	font: "Source Code Pro Semibold 12";
+	terminal: "alacritty";
+	disable-history: false;
+	sidebar-mode: true;
+	tokenize: true;
+	m: "-5";
+	line-margin: 2;
+	line-padding: 1;
+	separator-style: "none";
+	hide-scrollbar: true;
+	window-format: "{w} {c}";
 }
 
-// vim: set ft=css:
-@import "./one.rasi"
+* {
+	bg: #080808;
+	fg: #b2b2b2;
+	accent: #373c40;
+
+	background-color: @bg;
+	text-color: @fg;
+}
+
+window {
+	padding: 30px;
+	border-radius: 5px;
+}
+
+prompt, entry {
+	text-color: @fg;
+	padding: 3px;
+}
+
+element {
+	border-radius: 2px;
+	padding: 4px;
+}
+
+element selected {
+	background-color: @fg;
+	text-color: @bg;
+}
+
+button selected {
+	background-color: @fg;
+	text-color: @bg;
+	border-radius: 2px;
+	padding: 3px;
+}

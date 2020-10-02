@@ -3,9 +3,9 @@
 #
 
 XF86AudioRaiseVolume
-        pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
+        pactl set-sink-volume @DEFAULT_SINK@ +05% && $refresh_i3status
 XF86AudioLowerVolume
-        pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
+        pactl set-sink-volume @DEFAULT_SINK@ -05% && $refresh_i3status
 XF86AudioMute
         pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 XF86AudioMicMute

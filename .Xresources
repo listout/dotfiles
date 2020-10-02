@@ -1,17 +1,19 @@
 ! vim: set filetype=xdefaults nomodeline:
 
 URxvt.scrollBar: false
-!URxvt.termName: rxvt-256color
 
-!URxvt.font: xft:TamzenForPowerline:pixelsize=15
-!URxvt.italicFont: xft:TamzenForPowerline:pixelsize=15
-!URxvt.boldFont: xft:TamzenForPowerline:bold:pixelsize=15
+URxvt.font: xft:TamzenForPowerline:pixelsize=15
+URxvt.italicFont: xft:TamzenForPowerline:pixelsize=15
+URxvt.boldFont: xft:TamzenForPowerline:bold:pixelsize=15
 
-URxvt.font: xft:JetBrains Mono Medium:size=10
-URxvt.italicFont: xft:JetBrains Mono Medium:Italic:size=10
-URxvt.boldFont: xft:JetBrains Mono Extra Bold:size=10
+!URxvt.font: xft:Fira Code Semibold:size=10, \
+	!xft:DejaVu Sans Mono:size=12
+!URxvt.italicFont: xft:Fira Code Semibold:italic:size=10, \
+	!xft:DejaVu Sans Mono:size=12
+!URxvt.boldFont: xft:Fira Code:bold:size=10, \
+	!xft:DejaVu Sans Mono:size=12
 
-URxvt.internalBorder: 05
+!URxvt.internalBorder: 10
 
 URxvt.keysym.Shift-Up: command:\033]720;1\007
 URxvt.keysym.Shift-Down: command:\033]721;1\007
@@ -27,60 +29,31 @@ URxvt.keysym.Control-Meta-v: builtin-string:
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
 URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
 
-!URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select
+URxvt.perl-lib: /usr/lib/urxvt/perl/
+URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select
 
 URxvt.urlLauncher: firefox
 URxvt.underlineURLs: true
 URxvt.urlButton: 1
 
-! xterm config
-
-XTerm.vt100.faceName: TamzenForPowerline:pixelsize=15
-XTerm.vt100.boldFont: TamzenForPowerline:bold:pixelsize=15
-
-! one color scheme
-
-! dark
-
-*.foreground:   #abb2bf
-*.background:   #282c34
-*.cursorcolor:  #abb2bf
-*.color0:       #5c6370
-*.color8:       #4b5263
-*.color1:       #e06c75
-*.color9:       #be5046
-*.color2:       #98c379
-*.color10:      #98c379
-*.color3:       #e5c07b
-*.color11:      #d19a66
-*.color4:       #61afef
-*.color12:      #61afef
-*.color5:       #c678dd
-*.color13:      #c678dd
-*.color6:       #56b6c2
-*.color14:      #56b6c2
-*.color7:       #abb2bf
-*.color15:      #3e4452
-
-! Light
-
-!*.foreground:    #383a42
-!*.background:    #f9f9f9
-!*.cursorcolor:   #383a42
-!*.highlightcolor:#3a3f4b
-!*.color0:        #000000
-!*.color8:        #383a42
-!*.color1:        #e45649
-!*.color9:        #e45649
-!*.color2:        #50a14f
-!*.color10:       #50a14f
-!*.color3:        #986801
-!*.color11:       #986801
-!*.color4:        #4078f2
-!*.color12:       #4078f2
-!*.color5:        #a626a4
-!*.color13:       #a626a4
-!*.color6:        #0184bc
-!*.color14:       #0184bc
-!*.color7:        #a0a1a7
-!*.color15:       #ffffff
+*.background: #080808
+*.foreground: #ffffff
+*.cursor: #9e9e9e
+*.color0: #373c40
+*.color1: #ff5454
+*.color2: #8cc85f
+*.color3: #e3c78a
+*.color4: #80a0ff
+*.color5: #d183e8
+*.color6: #79dac8
+*.color7: #a1aab8
+*.color8: #7c8f8f
+*.color9: #ff5189
+*.color10: #42cf89
+*.color11: #bfbf97
+*.color12: #78c2ff
+*.color13: #ae81ff
+*.color14: #85dc85
+*.color15: #e2637f
+*.selection_background: #b2ceee
+*.selection_foreground: #080808

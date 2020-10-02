@@ -1,28 +1,16 @@
 [colors]
 
-; light scheme
-;background     = #f9f9f9
-;foreground     = #000000
-;foreground-alt = #a0a1a7
+background     = #080808
+foreground     = #ffffff
+foreground-alt = #b2b2b2
 
-;alert  = #e45649
-;color2 = #383a42
-;color3 = #986801
-;color4 = #4078f2
-;color5 = #a626a4
-;color6 = #0184bc
-
-; dark scheme
-background     = #282c34
-foreground     = #abb2bf
-foreground-alt = #4b5263
-
-alert  = #be5046
-color2 = #98c379
-color3 = #e5c07b
-color4 = #61afef
-color5 = #c678dd
-color6 = #56b6c2
+alert  = #80a0ff
+color2 = #8cc85f
+color3 = #e3c78a
+color4 = #80a0ff
+color5 = #d183e8
+color6 = #79dac8
+color7 = #42cf89
 
 [bar/mybar]
 
@@ -43,8 +31,8 @@ font-1 = Symbols Nerd Font:size=8;2
 font-2 = FontAwesome:size=9;2
 font-3 = Source Code Pro:size=9;2
 
-modules-left = battery wireless-network wired-network
-modules-right = memory cpu temperature pulseaudio date
+modules-left = battery network
+modules-right = memory cpu temperature backlight pulseaudio date
 modules-center = bspwm
 
 tray-position = right
@@ -57,10 +45,11 @@ module-margin-right = 1
 type                      = internal/bspwm
 label-focused             = 
 label-focused-padding     = 2
-label-occupied            = 
-label-occupied-foreground = ${colors.foreground-alt}
+label-focused-foreground = ${colors.alert}
+label-occupied            = 
+label-occupied-foreground = ${colors.alert}
 label-occupied-padding    = 2
-label-urgent              = 
+label-urgent              = 
 label-urgent-foreground   = ${colors.alert}
 label-urgent-padding      = 2
 label-empty               = 
@@ -68,8 +57,18 @@ label-empty-foreground    = ${colors.foreground-alt}
 label-empty-padding       = 2
 pin-workspaces = true
 
+[module/backlight]
+type = internal/backlight
+card = intel_backlight
+format =  <label>
+format-foreground = ${colors.color7}
+label = %percentage%%
+label-foreground = ${colors.foreground}
+
 [module/pulseaudio]
 type = internal/pulseaudio
+
+sink = alsa_output.pci-0000_00_1b.0.analog-stereo
 
 format-volume-foreground = ${colors.color6}
 format-volume = 墳 <label-volume>
@@ -149,20 +148,7 @@ format =  <label>
 format-foreground = ${colors.color5}
 label-foreground = ${colors.foreground}
 
-[module/wired-network]
-type = internal/network
-interface = enp2s0
-interval = 3.0
-format-connected =  <label-connected>
-format-disconnected = <label-disconnected>
-label-connected =  %local_ip%
-format-connected-foreground = ${colors.color6}
-label-connected-foreground = ${colors.foreground}
-format-disconnected-foreground = ${colors.color6}
-label-disconnected-foreground = ${colors.color6}
-label-disconnected = 
-
-[module/wireless-network]
+[module/network]
 type = internal/network
 interface = ${env:DEFAULT_NETWORK_INTERFACE:wlp3s0}
 interval = 3.0

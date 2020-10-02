@@ -6,47 +6,39 @@
 	"suggest.floatEnable": false,
 	"diagnostic.messageTarget": "float",
 	"signature.target": "echo",
-	"suggest.timeout": 5000,
 	"coc.preferences.hoverTarget": "float",
 	"suggest.acceptSuggestionOnCommitCharacter": true,
 	"snippets.extends": {
 		"cpp": [
 			"c"
-		],
-		"javascriptreact": [
-			"javascript"
-		],
-		"typescript": [
-			"javascript"
 		]
 	},
-	"coc.preferences.previewAutoClose": true,
+	"coc.source.word.enable": true,
 	"coc.source.word.filetypes": [
 		"markdown",
+		"latex",
 		"tex"
 	],
+	"coc.source.dictionary.enable": true,
 	"coc.source.dictionary.filetypes": [
 		"markdown",
+		"latex",
 		"tex"
 	],
 	"coc.preferences.formatOnSaveFiletypes": [
 		"c",
 		"cpp",
-		"html",
 		"json",
 		"python",
-		"php",
-		"tex",
-		"java",
-		"javascript"
+		"java"
 	],
 	"languageserver": {
 		"ccls": {
 			"command": "ccls",
 			"filetypes": [
 				"c",
-				"cc",
 				"cpp",
+				"cc",
 				"c++",
 				"objc",
 				"objcpp"
@@ -55,15 +47,22 @@
 				".ccls",
 				"compile_commands.json",
 				".git/",
-				".hg/"
+				".hg"
 			],
 			"initializationOptions": {
 				"cache": {
 					"directory": "/tmp/ccls"
+				},
+				"highlight": {
+					"lsRanges": true
 				}
 			}
 		}
 	},
+	"java.signatureHelp.enabled": true,
+	"java.format.comments.enabled": false,
+	"java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+	"python.jediEnabled": false,
 	"python.autoComplete.addBrackets": true,
 	"python.formatting.autopep8Args": [
 		"--aggressive",
@@ -71,15 +70,5 @@
 	],
 	"python.linting.pylintArgs": [
 		"--unsafe-load-any-extension=y"
-	],
-	"java.format.enabled": true,
-	"java.completion.importOrder": [
-		"java",
-		"javax",
-		"com",
-		"org"
-	],
-	"java.format.onType.enabled": true,
-	"java.format.comments.enabled": false,
-	"java.signatureHelp.enabled": true
+	]
 }

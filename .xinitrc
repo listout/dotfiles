@@ -1,3 +1,3 @@
 xsetroot -cursor_name left_ptr
-xrdb -merge ~/.Xresources &&
-bspwm
+xrdb ~/.Xresources &&
+dbus-launch bspwm
