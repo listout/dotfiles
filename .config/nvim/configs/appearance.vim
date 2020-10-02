@@ -8,7 +8,6 @@ if $TERM != 'rxvt-unicode-256color'
 	set t_Co=256
 	set t_ut=
 	set termguicolors
-	"let g:molokai_original = 1
 	let g:moonflyCursorColor = 1
 	let g:moonflyUnderlineMatchParen = 1
 	colorscheme moonfly
@@ -24,3 +23,6 @@ set cmdheight=2
 
 " Split the right way
 set splitright splitbelow
+
+" Visualize Tabs and spaces
+set list listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·,eol:¬

@@ -8,6 +8,7 @@ Plug 'bluz71/vim-moonfly-colors'
 " For making coding pleasureable
 Plug 'jiangmiao/auto-pairs'
 Plug 'preservim/nerdcommenter'
+Plug 'dhruvasagar/vim-table-mode'
 
 " Better motions
 Plug 'tpope/vim-surround'
@@ -17,6 +18,9 @@ Plug 'psliwka/vim-smoothie'
 " Better document writing
 Plug 'reedes/vim-pencil'
 Plug 'reedes/vim-lexical'
+
+" Distraction free writing
+Plug 'junegunn/goyo.vim'
 
 " Floating scratch terminal
 Plug 'voldikss/vim-floaterm'
