@@ -26,7 +26,7 @@ padding-left = 2
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-font-0 = TamzenForPowerline:pixelsize=13;2
+font-0 = xos4 Terminus:pixelsize=12;2
 font-1 = Symbols Nerd Font:size=8;2
 font-2 = FontAwesome:size=9;2
 font-3 = Source Code Pro:size=9;2
