@@ -1,7 +1,14 @@
+" markdown code block syntax highlighting
+let g:markdown_fenced_languages = ['html', 'python', 'bash=sh', 'java', 'c' ,'c++=cpp', 'css']
+
+" disable syntax conceal for markdown
+let g:markdown_syntax_conceal = 0
+
+" syntax highlighing synchronization
+let g:markdown_minlines = 20
+
 " set tex flavour
 let g:tex_flavor = 'latex'
-
-source $HOME/.config/nvim/configs/markdown.vim
 
 source $HOME/.config/nvim/configs/plugins.vim
 source $HOME/.config/nvim/configs/basic.vim

@@ -38,7 +38,7 @@ Plug 'honza/vim-snippets'
 Plug 'SirVer/ultisnips'
 
 " Support for multiple languages
-Plug 'sheerun/vim-polyglot'
+"Plug 'sheerun/vim-polyglot'
 Plug 'uiiaoo/java-syntax.vim'
 
 " Status line
