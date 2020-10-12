@@ -29,6 +29,10 @@ Plug 'voldikss/vim-floaterm'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
+" Markdown Editing
+"Plug 'plasticboy/vim-markdown'
+Plug 'tpope/vim-markdown'
+
 " Snippets
 Plug 'honza/vim-snippets'
 Plug 'SirVer/ultisnips'
