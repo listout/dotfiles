@@ -30,15 +30,14 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
 " Markdown Editing
-Plug 'tpope/vim-markdown'
-Plug 'dkarter/bullets.vim'
+"Plug 'tpope/vim-markdown'
 
 " Snippets
 Plug 'honza/vim-snippets'
 Plug 'SirVer/ultisnips'
 
 " Support for multiple languages
-"Plug 'sheerun/vim-polyglot'
+Plug 'sheerun/vim-polyglot'
 Plug 'uiiaoo/java-syntax.vim'
 
 " Status line
