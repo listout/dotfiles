@@ -31,3 +31,4 @@
         https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
     ```
 * Install `dnscypt`: [dnscypt-proxy](https://wiki.archlinux.org/index.php/Dnscrypt-proxy) and [for atrix](https://wiki.artixlinux.org/Main/Dnscrypt-proxy)
+* Update 2020-10-13: Moved to [fnm](https://github.com/Schniz/fnm) from system node version.

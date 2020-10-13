@@ -99,3 +99,7 @@ nmap <leader>x  <Plug>(coc-cursors-operator)
 
 nmap <silent> <C-d> <Plug>(coc-cursors-word)*
 xmap <silent> <C-d> y/\V<C-r>=escape(@",'/\')<CR><CR>gN<Plug>(coc-cursors-range)gn
+
+" use <cr> to select the completion item
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() :
+			\"\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"

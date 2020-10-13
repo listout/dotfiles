@@ -101,6 +101,9 @@ set shiftwidth=4
 " No history files
 let g:netrw_dirhistmax = 0
 
+" Auto remove unwanted whitespaces
+autocmd BufWritePre * %s/\s\+$//e
+
 " Easy buffer shwitch
 nnoremap <Leader>1 :1b<CR>
 nnoremap <Leader>2 :2b<CR>
