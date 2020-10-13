@@ -30,8 +30,8 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
 " Markdown Editing
-"Plug 'plasticboy/vim-markdown'
-Plug 'tpope/vim-markdown'
+Plug 'plasticboy/vim-markdown'
+"Plug 'tpope/vim-markdown'
 
 " Snippets
 Plug 'honza/vim-snippets'
