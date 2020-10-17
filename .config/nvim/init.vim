@@ -13,6 +13,11 @@ let g:tex_flavor = 'latex'
 " sync syntax highlighting
 autocmd BufEnter * :syntax sync fromstart
 
+" pandoc syntax standalone
+augroup pandoc_syntax
+	au! BufNewFile,BufFilePre,BufRead *.md set filetype=markdown.pandoc
+augroup END
+
 source $HOME/.config/nvim/configs/plugins.vim
 source $HOME/.config/nvim/configs/basic.vim
 source $HOME/.config/nvim/configs/appearance.vim

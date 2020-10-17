@@ -1,9 +1,8 @@
 call plug#begin('~/.config/nvim/plugged')
 
 " color schemes
-Plug 'ParamagicDev/vim-medic_chalk'
-Plug 'tomasr/molokai'
 Plug 'bluz71/vim-moonfly-colors'
+Plug 'cocopon/iceberg.vim'
 
 " For making coding pleasureable
 Plug 'jiangmiao/auto-pairs'
@@ -29,9 +28,6 @@ Plug 'voldikss/vim-floaterm'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
-" Markdown Editing
-"Plug 'tpope/vim-markdown'
-
 " Snippets
 Plug 'honza/vim-snippets'
 Plug 'SirVer/ultisnips'
@@ -39,6 +35,7 @@ Plug 'SirVer/ultisnips'
 " Support for multiple languages
 Plug 'sheerun/vim-polyglot'
 Plug 'uiiaoo/java-syntax.vim'
+Plug 'vim-pandoc/vim-pandoc-syntax'
 
 " Status line
 Plug 'itchyny/lightline.vim'

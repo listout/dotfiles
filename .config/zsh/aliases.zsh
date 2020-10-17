@@ -15,8 +15,3 @@ export VISUAL=nvim
 export BROWSER=firefox
 export QT_QPA_PLATFORMTHEME=qt5ct
 export DEFAULT_NETWORK_INTERFACE=$(ip route | grep '^default' | awk '{print $5}' | head -n1)
-
-# npm without sudo
-NPM_PACKAGES="${HOME}/.npm-packages"
-export PATH="$PATH:$NPM_PACKAGES/bin"
-export MANPATH="${MANPATH-$(manpath)}:$NPM_PACKAGES/share/man"

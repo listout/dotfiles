@@ -1,11 +1,11 @@
 configuration {
 	modi: "drun,windowcd,window";
 	width: 30;
-	lines: 10;
+	lines: 12;
 	show-icons: true;
 	font: "Source Code Pro Semibold 12";
-	terminal: "alacritty";
-	disable-history: false;
+	terminal: "kitty";
+	disable-history: true;
 	sidebar-mode: true;
 	tokenize: true;
 	m: "-5";
@@ -27,7 +27,7 @@ configuration {
 
 window {
 	padding: 30px;
-	border-radius: 5px;
+	border-radius: 0px;
 }
 
 prompt, entry {
@@ -36,7 +36,7 @@ prompt, entry {
 }
 
 element {
-	border-radius: 2px;
+	border-radius: 0px;
 	padding: 4px;
 }
 
@@ -48,6 +48,8 @@ element selected {
 button selected {
 	background-color: @fg;
 	text-color: @bg;
-	border-radius: 2px;
-	padding: 3px;
+	border-radius: 0px;
+	padding: 0px;
 }
+
+element-icon { size: 2.0ch ; }
