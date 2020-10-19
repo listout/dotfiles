@@ -28,5 +28,4 @@ source $HOME/.config/nvim/configs/easy_motion_config.vim
 source $HOME/.config/nvim/configs/float_term_config.vim
 source $HOME/.config/nvim/configs/pencil_config.vim
 source $HOME/.config/nvim/configs/lexical_config.vim
-source $HOME/.config/nvim/configs/lightline_config.vim
 "source $HOME/.config/nvim/configs/goyo_config.vim
