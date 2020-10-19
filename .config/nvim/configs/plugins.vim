@@ -3,6 +3,7 @@ call plug#begin('~/.config/nvim/plugged')
 " color schemes
 Plug 'bluz71/vim-moonfly-colors'
 Plug 'cocopon/iceberg.vim'
+Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 
 " For making coding pleasureable
 Plug 'jiangmiao/auto-pairs'
