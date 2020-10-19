@@ -1,5 +1,6 @@
 " markdown code block syntax highlighting
 let g:markdown_fenced_languages = ['html', 'python', 'bash=sh', 'java', 'c']
+let g:pandoc#syntax#codeblocks#embeds#langs = ["ruby", "literatehaskell=lhaskell", "bash=sh", "java", "c", "cpp"]
 
 " disable syntax conceal for markdown
 let g:markdown_syntax_conceal = 1
