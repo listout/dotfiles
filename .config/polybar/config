@@ -1,16 +1,8 @@
 [colors]
 
-background     = #aa080808
-foreground     = #aaffffff
-foreground-alt = #aab2b2b2
-
-alert  = #80a0ff
-color2 = #8cc85f
-color3 = #e3c78a
-color4 = #80a0ff
-color5 = #d183e8
-color6 = #79dac8
-color7 = #42cf89
+background     = #00000000
+foreground     = #ABB2BF
+foreground-alt = #ABB2BF
 
 [bar/mybar]
 
@@ -26,12 +18,14 @@ padding-left = 2
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-font-0 = TamzenForPowerline:pixelsize=12
+font-0 = TamzenForPowerline:pixelsize=14
 font-1 = Symbols Nerd Font:size=10;2
-font-2 = Source Code Pro:size=10;2
-modules-left = battery network
+font-2 = Source Code Pro:semibold:size=09;2
+modules-left = battery wired-network wireless-network
 modules-right = memory cpu temperature backlight pulseaudio date
 modules-center = bspwm
+
+separator = |
 
 tray-position = right
 tray-maxsize = 16
@@ -54,22 +48,16 @@ pin-workspaces = true
 [module/backlight]
 type = internal/backlight
 card = intel_backlight
-format =  <label>
-format-foreground = ${colors.color7}
+format = <label>
 label = %percentage%%
-label-foreground = ${colors.foreground}
 
 [module/pulseaudio]
 type = internal/pulseaudio
 
 sink = alsa_output.pci-0000_00_1b.0.analog-stereo
 
-format-volume-foreground = ${colors.color6}
-format-volume = 墳 <label-volume>
-label-volume-foreground = ${colors.foreground}
-
+format-volume = <label-volume>
 label-muted = 婢
-label-muted-foreground = ${colors.alert}
 
 [module/battery]
 type = internal/battery
@@ -83,52 +71,25 @@ full-at = 99
 
 time-format = %H:%M
 
-label-discharging =  %percentage%% %time%
-label-charging =  %percentage%%
-label-full =  %percentage%%
-
-;format-discharging = <ramp-capacity> <label-discharging>
-;format-full = <ramp-capacity> <label-full>
-;format-charging = <animation-charging> <label-charging>
+label-discharging = %percentage%% %time%
+label-charging = %percentage%%
+label-full = %percentage%%
 
 format-discharging = <label-discharging>
 format-full = <label-full>
 format-charging = <label-charging>
 
-;ramp-capacity-foreground = ${colors.color4}
-;animation-charging-foreground = ${colors.color4}
-;animation-full-foreground = ${colors.color4}
-;format-discharging-foreground = ${colors.color4}
-
-;ramp-capacity-0 = 
-;ramp-capacity-1 = 
-;ramp-capacity-2 = 
-;ramp-capacity-3 = 
-;ramp-capacity-4 = 
-
-;animation-charging-0 = 
-;animation-charging-1 = 
-;animation-charging-2 = 
-;animation-charging-3 = 
-;animation-charging-4 = 
-; Framerate in milliseconds
-;animation-charging-framerate = 750
-
 [module/cpu]
 type = internal/cpu
 interval = 0.5
-format =  <label>
+format = <label>
 label = %percentage%%
-format-foreground = ${colors.color2}
-label-foreground = ${colors.foreground}
 
 [module/memory]
 type = internal/memory
 interval = 3
-format =  <label>
+format = <label>
 label = %gb_used%
-format-foreground = ${colors.color3}
-label-foreground = ${colors.foreground}
 
 [module/date]
 type = internal/date
@@ -138,22 +99,15 @@ date = %d-%m-%Y
 time = %I:%M
 date-alt = %A, %d %B %Y
 time-alt = %I:%M:%S
-format =  <label>
-format-foreground = ${colors.color5}
-label-foreground = ${colors.foreground}
+format = <label>
 
-[module/network]
+[module/wired-network]
 type = internal/network
-interface = ${env:DEFAULT_NETWORK_INTERFACE:wlp3s0}
-interval = 3.0
-format-connected =  <label-connected>
-format-disconnected = <label-disconnected>
-label-connected =  %essid%
-label-disconnected = 睊
-format-connected-foreground = ${colors.color6}
-label-connected-foreground = ${colors.foreground}
-format-disconnected-foreground = ${colors.color6}
-label-disconnected-foreground = ${colors.color6}
+interface = enp2s0
+
+[module/wireless-network]
+type = internal/network
+interface = wlp3s0
 
 [module/temperature]
 type = internal/temperature
@@ -161,11 +115,9 @@ interval = 0.5
 thermal-zone = 0
 base-temperature = 20
 warn-temperature = 70
-format =  <label>
+format = <label>
 label = %temperature-c%
 label-warn = %temperature-c%
 label-warn-foreground = #f00
-format-foreground = ${colors.color4}
-label-foreground = ${colors.foreground}
 
 ; vim: set ft=dosini nomodeline:
