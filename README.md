@@ -4,7 +4,7 @@
 
 # Preview
 
-![screenshoot 1](.config/screenshoot/scr_shoot1.png)
+![screenshoot 1](.config/screenshoots/scr_shoot1.png)
 
 #### Applications
 
