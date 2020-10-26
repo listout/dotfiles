@@ -1,16 +1,16 @@
 [colors]
 
-background     = #22272C
-foreground     = #F3F2F4
-foreground-alt = #6E6B72
+background     = #080808
+foreground     = #ffffff
+foreground-alt = #b2b2b2
 
-alert  = #FF6565
-color2 = #2CC46E
-color3 = #ECC46F
-color4 = #6F97EC
-color5 = #FA5477
-color6 = #46DE88
-color7 = #71C6FF
+alert  = #80a0ff
+color2 = #8cc85f
+color3 = #e3c78a
+color4 = #80a0ff
+color5 = #d183e8
+color6 = #79dac8
+color7 = #42cf89
 
 [bar/mybar]
 
@@ -26,7 +26,7 @@ padding-left = 2
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-font-0 = TamzenForPowerline:pixelsize=13;2
+font-0 = TamzenForPowerline:pixelsize=12;2
 font-1 = Symbols Nerd Font:size=8;2
 font-2 = FontAwesome:size=9;2
 font-3 = Source Code Pro:size=9;2
@@ -45,10 +45,11 @@ module-margin-right = 1
 type                      = internal/bspwm
 label-focused             = 
 label-focused-padding     = 2
-label-occupied            = 
-label-occupied-foreground = ${colors.foreground-alt}
+label-focused-foreground = ${colors.alert}
+label-occupied            = 
+label-occupied-foreground = ${colors.alert}
 label-occupied-padding    = 2
-label-urgent              = 
+label-urgent              = 
 label-urgent-foreground   = ${colors.alert}
 label-urgent-padding      = 2
 label-empty               = 

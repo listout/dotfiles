@@ -1,8 +1,8 @@
 [colors]
 
-background     = #080808
-foreground     = #ffffff
-foreground-alt = #b2b2b2
+background     = #aa080808
+foreground     = #aaffffff
+foreground-alt = #aab2b2b2
 
 alert  = #80a0ff
 color2 = #8cc85f
@@ -18,7 +18,7 @@ bottom = false
 
 fixed-center = true
 
-height = 22
+height = 25
 width = 100%
 padding-right = 2
 padding-left = 2
@@ -26,11 +26,9 @@ padding-left = 2
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-font-0 = TamzenForPowerline:pixelsize=12;2
-font-1 = Symbols Nerd Font:size=8;2
-font-2 = FontAwesome:size=9;2
-font-3 = Source Code Pro:size=9;2
-
+font-0 = TamzenForPowerline:pixelsize=12
+font-1 = Symbols Nerd Font:size=10;2
+font-2 = Source Code Pro:size=10;2
 modules-left = battery network
 modules-right = memory cpu temperature backlight pulseaudio date
 modules-center = bspwm
@@ -43,17 +41,13 @@ module-margin-right = 1
 
 [module/bspwm]
 type                      = internal/bspwm
-label-focused             = 
+label-focused             = 
 label-focused-padding     = 2
-label-focused-foreground = ${colors.alert}
-label-occupied            = 
-label-occupied-foreground = ${colors.alert}
+label-occupied            = 
 label-occupied-padding    = 2
-label-urgent              = 
-label-urgent-foreground   = ${colors.alert}
+label-urgent              = 
 label-urgent-padding      = 2
-label-empty               = 
-label-empty-foreground    = ${colors.foreground-alt}
+label-empty               = 
 label-empty-padding       = 2
 pin-workspaces = true
 
