@@ -8,7 +8,7 @@
 
 
 +------------------------------------------------------+------------------------------------------------------+
-| ![screenshoot 2](.config/screenshoot/scr_shoot2.png) | ![screenshoot 2](.config/screenshoot/scr_shoot3.png) |
+| ![screenshoot 2](.config/screenshoots/scr_shoot2.png) | ![screenshoot 2](.config/screenshoots/scr_shoot3.png) |
 +======================================================+======================================================+
 
 #### Applications
