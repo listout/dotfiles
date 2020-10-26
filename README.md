@@ -1,8 +1,8 @@
 # My dotfiles
 
-## This is the experimental brach, here things change frequently
+#### This is the experimental brach, here things change frequently
 
-# Preview
+## Preview
 
 ![screenshoot 1](.config/screenshoots/scr_shoot1.png)
 
