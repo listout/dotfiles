@@ -8,6 +8,7 @@ if $TERM != 'rxvt-unicode-256color'
 	set t_ut=
 	set termguicolors
 	let g:one_allow_italics = 1
+	set background=light
 	colorscheme one
 
 	" lightline config
@@ -37,6 +38,7 @@ if $TERM != 'rxvt-unicode-256color'
 else
 	set termguicolors
 	let g:one_allow_italics = 1
+	set background=dark
 	colorscheme one
 
 	" lightline config
