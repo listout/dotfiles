@@ -17,9 +17,9 @@ configuration {
 }
 
 * {
-	bg: #282C34;
-	fg: #ABB2BF;
-	accent: #4B5263;
+	bg: #282C34ab;
+	fg: #ABB2BFab;
+	accent: #4B5263ab;
 
 	background-color: @bg;
 	text-color: @fg;
