@@ -1,4 +1,5 @@
 call plug#begin('~/.config/nvim/plugged')
+
 " Install vim-plug if not found
 if empty(glob('~/.vim/autoload/plug.vim'))
 	silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -12,9 +13,7 @@ endif
 
 " color schemes
 Plug 'bluz71/vim-moonfly-colors'
-Plug 'cocopon/iceberg.vim'
-Plug 'kaicataldo/material.vim', { 'branch': 'main' }
-Plug 'sainnhe/sonokai'
+Plug 'ParamagicDev/vim-medic_chalk'
 
 " For making coding pleasureable
 Plug 'jiangmiao/auto-pairs'

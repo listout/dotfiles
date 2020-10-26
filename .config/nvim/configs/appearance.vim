@@ -8,10 +8,9 @@ if $TERM != 'rxvt-unicode-256color'
 	set t_ut=
 	set termguicolors
 	"set background=dark
-	let g:sonokai_style = 'andromeda'
-	let g:sonokai_enable_italic = 1
-	let g:sonokai_disable_italic_comment = 0
-	colorscheme sonokai
+	let g:moonflyCursorColor = 1
+	let g:moonflyUnderlineMatchParen = 1
+	colorscheme moonfly
 
 	" lightline config
 	set laststatus=2
@@ -27,7 +26,7 @@ if $TERM != 'rxvt-unicode-256color'
 		return get(b:, 'coc_current_function', '')
 	endfunction
 	let g:lightline = {
-				\ 'colorscheme': 'sonokai',
+				\ 'colorscheme': 'moonfly',
 				\ 'active': {
 				\   'left': [ [ 'mode', 'paste' ],
 				\             [ 'cocstatus', 'currentfunction', 'readonly', 'filename', 'modified' ] ]
