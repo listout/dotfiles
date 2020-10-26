@@ -1,9 +1,19 @@
 call plug#begin('~/.config/nvim/plugged')
 
+" Install vim-plug if not found
+if empty(glob('~/.vim/autoload/plug.vim'))
+	silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+				\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+endif
+
+" Run PlugInstall if there are missing plugins
+if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+	autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 " color schemes
-Plug 'ParamagicDev/vim-medic_chalk'
-Plug 'tomasr/molokai'
 Plug 'bluz71/vim-moonfly-colors'
+Plug 'ParamagicDev/vim-medic_chalk'
 
 " For making coding pleasureable
 Plug 'jiangmiao/auto-pairs'
@@ -29,17 +39,14 @@ Plug 'voldikss/vim-floaterm'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
-" Markdown Editing
-Plug 'tpope/vim-markdown'
-Plug 'dkarter/bullets.vim'
-
 " Snippets
 Plug 'honza/vim-snippets'
 Plug 'SirVer/ultisnips'
 
 " Support for multiple languages
-"Plug 'sheerun/vim-polyglot'
-Plug 'uiiaoo/java-syntax.vim'
+Plug 'sheerun/vim-polyglot'
+"Plug 'uiiaoo/java-syntax.vim'
+Plug 'vim-pandoc/vim-pandoc-syntax'
 
 " Status line
 Plug 'itchyny/lightline.vim'

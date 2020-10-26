@@ -1,6 +1,3 @@
-# Created by newuser for 5.8
-
-
 # vim mode
 bindkey -v
 

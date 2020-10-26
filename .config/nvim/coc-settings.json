@@ -11,26 +11,36 @@
 	"snippets.extends": {
 		"cpp": [
 			"c"
+		],
+		"html": [
+			"php"
+		],
+		"php": [
+			"html"
 		]
 	},
 	"coc.source.word.enable": true,
 	"coc.source.word.filetypes": [
 		"markdown",
 		"latex",
-		"tex"
+		"tex",
+		"markdown.pandoc"
 	],
 	"coc.source.dictionary.enable": true,
 	"coc.source.dictionary.filetypes": [
 		"markdown",
 		"latex",
-		"tex"
+		"tex",
+		"markdown.pandoc"
 	],
 	"coc.preferences.formatOnSaveFiletypes": [
 		"c",
 		"cpp",
 		"json",
 		"python",
-		"java"
+		"java",
+		"html",
+		"php"
 	],
 	"languageserver": {
 		"ccls": {
