@@ -18,8 +18,8 @@ configuration {
 
 * {
 	bg: #282C34ab;
-	fg: #ABB2BF;
-	accent: #4B5263;
+	fg: #dcdfe4;
+	accent: #dcdfe4;
 
 	background-color: @bg;
 	text-color: @fg;
