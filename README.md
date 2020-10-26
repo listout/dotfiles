@@ -2,6 +2,10 @@
 
 ## This is the experimental brach, here things change frequently
 
+# Preview
+
+![screenshoot 1](.config/screenshoot/scr_shoot1.png)
+
 #### Applications
 
 - Terminal: urxvt (truecolor patch)
