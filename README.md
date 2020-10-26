@@ -6,6 +6,11 @@
 
 ![screenshoot 1](.config/screenshoots/scr_shoot1.png)
 
+
++------------------------------------------------------+------------------------------------------------------+
+| ![screenshoot 2](.config/screenshoot/scr_shoot2.png) | ![screenshoot 2](.config/screenshoot/scr_shoot3.png) |
++======================================================+======================================================+
+
 #### Applications
 
 - Terminal: urxvt (truecolor patch)
