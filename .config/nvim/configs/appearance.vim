@@ -7,10 +7,8 @@ if $TERM != 'rxvt-unicode-256color'
 	set t_Co=256
 	set t_ut=
 	set termguicolors
-	"set background=dark
-	let g:moonflyCursorColor = 1
-	let g:moonflyUnderlineMatchParen = 1
-	colorscheme moonfly
+	let g:one_allow_italics = 1
+	colorscheme one
 
 	" lightline config
 	set laststatus=2
@@ -26,7 +24,7 @@ if $TERM != 'rxvt-unicode-256color'
 		return get(b:, 'coc_current_function', '')
 	endfunction
 	let g:lightline = {
-				\ 'colorscheme': 'moonfly',
+				\ 'colorscheme': 'one',
 				\ 'active': {
 				\   'left': [ [ 'mode', 'paste' ],
 				\             [ 'cocstatus', 'currentfunction', 'readonly', 'filename', 'modified' ] ]
@@ -38,9 +36,8 @@ if $TERM != 'rxvt-unicode-256color'
 				\ }
 else
 	set termguicolors
-	let g:moonflyCursorColor = 1
-	let g:moonflyUnderlineMatchParen = 1
-	colorscheme moonfly
+	let g:one_allow_italics = 1
+	colorscheme one
 
 	" lightline config
 	set laststatus=2
@@ -56,7 +53,7 @@ else
 		return get(b:, 'coc_current_function', '')
 	endfunction
 	let g:lightline = {
-				\ 'colorscheme': 'moonfly',
+				\ 'colorscheme': 'one',
 				\ 'active': {
 				\   'left': [ [ 'mode', 'paste' ],
 				\             [ 'cocstatus', 'currentfunction', 'readonly', 'filename', 'modified' ] ]
