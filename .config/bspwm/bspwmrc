@@ -4,17 +4,17 @@ sxhkd &
 picom &
 sh ~/.config/polybar/launch.sh &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-#feh --bg-fill $HOME/Pictures/wallhaven-473kdo_1920x1080.png &
-hsetroot -solid '#111111' &
+feh --bg-fill ~/.config/wallpapers/chemistry_drugs.png
+#hsetroot -solid '#111111' &
 dunst &
 
 wmname LG3D
 
 bspc monitor -d I II III IV V VI
 
-bspc config normal_border_color '#373c40'
-bspc config active_border_color '#b2b2b2'
-bspc config focused_border_color '#b2b2b2'
+bspc config normal_border_color '#4B5263'
+bspc config active_border_color '#ABB2BF'
+bspc config focused_border_color '#ABB2BF'
 
 bspc config border_width         2
 bspc config window_gap           0
