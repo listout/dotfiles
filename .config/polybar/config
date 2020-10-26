@@ -19,7 +19,7 @@ background = ${colors.background}
 foreground = ${colors.foreground}
 
 font-0 = TamzenForPowerline:pixelsize=14
-font-1 = Symbols Nerd Font:size=10;2
+font-1 = Symbols Nerd Font:size=9;2
 font-2 = Source Code Pro:semibold:size=09;2
 modules-left = battery wired-network wireless-network
 modules-right = memory cpu temperature backlight pulseaudio date
