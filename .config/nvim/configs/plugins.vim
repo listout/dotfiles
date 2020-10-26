@@ -14,6 +14,7 @@ endif
 " color schemes
 Plug 'bluz71/vim-moonfly-colors'
 Plug 'ParamagicDev/vim-medic_chalk'
+Plug 'rakr/vim-one'
 
 " For making coding pleasureable
 Plug 'jiangmiao/auto-pairs'
@@ -30,7 +31,7 @@ Plug 'reedes/vim-pencil'
 Plug 'reedes/vim-lexical'
 
 " Distraction free writing
-Plug 'junegunn/goyo.vim'
+Plug 'junegunn/goyo.vim', { 'for': 'markdown.pandoc' }
 
 " Floating scratch terminal
 Plug 'voldikss/vim-floaterm'

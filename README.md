@@ -1,6 +1,14 @@
 # My dotfiles
 
-## This is the experimental brach, here things change frequently
+#### This is the experimental brach, here things change frequently
+
+## Preview
+
+![screenshoot 1](.config/screenshoots/scr_shoot1.png)
+
+
+| ![screenshoot 2](.config/screenshoots/scr_shoot2.png)   | ![screenshoot 2](.config/screenshoots/scr_shoot3.png)   |
+| ------------------------------------------------------- | ------------------------------------------------------- |
 
 #### Applications
 
