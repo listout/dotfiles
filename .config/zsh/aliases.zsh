@@ -9,9 +9,11 @@ alias weather='curl wttr.in'
 alias cc='clang -g'
 alias cpp='clang++ -g'
 alias scrot='scrot -q 100 -s'
+alias mv='mv -iv'
+alias cp='cp -riv'
+alias mkdir='mkdir -vp'
 
-export EDITOR=nvim
-export VISUAL=nvim
-export BROWSER=firefox
+export EDITOR=/usr/bin/nvim
+export VISUAL=/usr/bin/nvim
+export BROWSER=/usr/bin/firefox
 export QT_QPA_PLATFORMTHEME=qt5ct
-export DEFAULT_NETWORK_INTERFACE=$(ip route | grep '^default' | awk '{print $5}' | head -n1)
