@@ -80,5 +80,8 @@
 	],
 	"python.linting.pylintArgs": [
 		"--unsafe-load-any-extension=y"
-	]
+	],
+	"emmet.includeLanguages": {
+		"markdown.pandoc": "html"
+	}
 }
