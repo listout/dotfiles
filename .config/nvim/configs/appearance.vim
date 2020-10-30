@@ -1,5 +1,5 @@
 " For correct colors when using inside tmux
-if $TERM != 'rxvt-unicode-256color'
+if $TERM != 'rxvt-unicode-256color' && $TERM != 'tmux-256color'
 	let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 	" set Vim-specific sequences for RGB colors (fixes color bug)
 	let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
