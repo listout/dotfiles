@@ -36,4 +36,4 @@ URxvt.urlLauncher: firefox
 URxvt.underlineURLs: true
 URxvt.urlButton: 1
 
-#include ".config/onedark.xresources"
+#include ".config/xresource_colorschemes/onehalf_dark"

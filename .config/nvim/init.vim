@@ -1,6 +1,6 @@
 " markdown code block syntax highlighting
 let g:markdown_fenced_languages = ['html', 'python', 'bash=sh', 'java', 'c']
-let g:pandoc#syntax#codeblocks#embeds#langs = ["ruby", "literatehaskell=lhaskell", "bash=sh", "java", "c", "cpp"]
+let g:pandoc#syntax#codeblocks#embeds#langs = ["php", "html", "bash=sh", "java", "c", "cpp", "python"]
 
 " disable syntax conceal for markdown
 let g:markdown_syntax_conceal = 1
@@ -25,8 +25,6 @@ source $HOME/.config/nvim/configs/appearance.vim
 source $HOME/.config/nvim/configs/snippets.vim
 source $HOME/.config/nvim/configs/coc.vim
 source $HOME/.config/nvim/configs/fzf_config.vim
-source $HOME/.config/nvim/configs/easy_motion_config.vim
 source $HOME/.config/nvim/configs/float_term_config.vim
 source $HOME/.config/nvim/configs/pencil_config.vim
 source $HOME/.config/nvim/configs/lexical_config.vim
-"source $HOME/.config/nvim/configs/goyo_config.vim

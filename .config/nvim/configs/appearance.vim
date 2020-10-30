@@ -1,5 +1,5 @@
 " For correct colors when using inside tmux
-if $TERM != 'rxvt-unicode-256color'
+if $TERM != 'rxvt-unicode-256color' && $TERM != 'tmux-256color'
 	let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 	" set Vim-specific sequences for RGB colors (fixes color bug)
 	let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
@@ -8,6 +8,7 @@ if $TERM != 'rxvt-unicode-256color'
 	set t_ut=
 	set termguicolors
 	let g:one_allow_italics = 1
+	set background=light
 	colorscheme one
 
 	" lightline config
@@ -37,6 +38,7 @@ if $TERM != 'rxvt-unicode-256color'
 else
 	set termguicolors
 	let g:one_allow_italics = 1
+	set background=dark
 	colorscheme one
 
 	" lightline config

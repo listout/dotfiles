@@ -20,7 +20,7 @@ au FocusGained,BufEnter * checktime
 " Remap leader key to ,
 let mapleader = ","
 
-" Turn on wild menu 
+" Turn on wild menu
 set wildmenu
 
 " Ignore compiled files
@@ -115,3 +115,9 @@ nnoremap <Leader>7 :7b<CR>
 nnoremap <Leader>8 :8b<CR>
 nnoremap <Leader>9 :9b<CR>
 nnoremap <Leader>0 :10b<CR>
+
+" Disable arrow keys
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>

@@ -1,8 +1,7 @@
 [colors]
 
 background     = #00000000
-foreground     = #ABB2BF
-foreground-alt = #ABB2BF
+foreground     = #fafafa
 
 [bar/mybar]
 
