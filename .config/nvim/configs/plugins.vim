@@ -23,7 +23,6 @@ Plug 'dhruvasagar/vim-table-mode'
 
 " Better motions
 Plug 'tpope/vim-surround'
-Plug 'easymotion/vim-easymotion'
 Plug 'psliwka/vim-smoothie'
 
 " Better document writing
