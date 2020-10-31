@@ -17,9 +17,9 @@ configuration {
 }
 
 * {
-	bg: #282C34dd;
-	fg: #dcdfe4;
-	accent: #dcdfe4;
+	bg: #6b7089;
+	fg: #161821;
+	accent: #161821;
 
 	background-color: @bg;
 	text-color: @fg;
@@ -27,7 +27,7 @@ configuration {
 
 window {
 	padding: 30px;
-	border-radius: 0px;
+	border-radius: 10px;
 }
 
 prompt, entry {
@@ -36,7 +36,7 @@ prompt, entry {
 }
 
 element {
-	border-radius: 0px;
+	border-radius: 10px;
 	padding: 4px;
 }
 
@@ -48,7 +48,7 @@ element selected {
 button selected {
 	background-color: @fg;
 	text-color: @bg;
-	border-radius: 0px;
+	border-radius: 10px;
 	padding: 0px;
 }
 
