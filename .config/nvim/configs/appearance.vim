@@ -1,12 +1,12 @@
 " For correct colors when using inside tmux
 if $TERM != 'rxvt-unicode-256color' && $TERM != 'tmux-256color'
 	set termguicolors
-	colorscheme dogrun
+	colorscheme iceberg
 else
 	set termguicolors
 	"let g:one_allow_italics = 1
 	set background=dark
-	colorscheme dogrun
+	colorscheme iceberg
 endif
 
 " lightline config
@@ -23,7 +23,7 @@ function! CocCurrentFunction()
 	return get(b:, 'coc_current_function', '')
 endfunction
 let g:lightline = {
-			\ 'colorscheme': 'dogrun',
+			\ 'colorscheme': 'iceberg',
 			\ 'active': {
 			\   'left': [ [ 'mode', 'paste' ],
 			\             [ 'cocstatus', 'currentfunction', 'readonly', 'filename', 'modified' ] ]
