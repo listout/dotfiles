@@ -20,8 +20,8 @@ configuration {
 
 * {
 	bg: #232530;
-	fg: #27d796;
-	accent: #27d796;
+	fg: #fac29a;
+	accent: #fac29a;
 
 	background-color: @bg;
 	text-color: @fg;
