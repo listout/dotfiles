@@ -48,7 +48,6 @@ Plug 'SirVer/ultisnips'
 
 " Support for multiple languages
 Plug 'sheerun/vim-polyglot'
-"Plug 'uiiaoo/java-syntax.vim'
 Plug 'vim-pandoc/vim-pandoc-syntax'
 
 " Status line
