@@ -6,6 +6,13 @@ let g:pandoc#syntax#codeblocks#embeds#langs = ["php", "html", "bash=sh", "java",
 let g:markdown_syntax_conceal = 1
 
 " syntax highlighing synchronization
+" Install vim-plug if not found
+if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
+	silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
+				\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+	autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 let g:markdown_minlines = 100
 
 " set tex flavour
