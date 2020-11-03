@@ -2,11 +2,13 @@
 if $TERM != 'rxvt-unicode-256color' && $TERM != 'tmux-256color'
 	set termguicolors
 	colorscheme iceberg
+	highlight Comment cterm=italic gui=italic
 else
 	set termguicolors
 	"let g:one_allow_italics = 1
 	set background=dark
 	colorscheme iceberg
+	highlight Comment cterm=italic gui=italic
 endif
 
 " lightline config
