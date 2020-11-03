@@ -19,7 +19,7 @@ let g:markdown_minlines = 100
 let g:tex_flavor = 'latex'
 
 " sync syntax highlighting
-autocmd BufEnter * :syntax sync fromstart
+autocmd BufEnter,BufNewFile,BufFilePre,BufRead *.md :syntax sync fromstart
 
 " pandoc syntax standalone
 augroup pandoc_syntax
