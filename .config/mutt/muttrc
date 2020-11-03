@@ -31,6 +31,10 @@ alternative_order text/plain text/html
 set sort=threads
 set sort_aux=last-date-received
 
+# use markdown in email
+macro compose \e5 "F pandoc -s -f markdown -t html \ny^T^Utext/html; charset=utf-8\n"
+set wait_key=no
+
 ## ACCOUNT1
 source "~/.config/mutt/gmail_main"
 folder-hook $folder 'source ~/.config/mutt/gmail_main'
