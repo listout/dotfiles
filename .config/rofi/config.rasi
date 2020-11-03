@@ -14,21 +14,22 @@ configuration {
 	separator-style: "none";
 	hide-scrollbar: true;
 	window-format: "{w} {c}";
-	fullscreen: true;
-	columns: 2;
+	/*fullscreen: true;*/
+	columns: 1;
 }
 
 * {
-	bg: #6b7089;
-	fg: #161821;
-	accent: #161821;
+	bg: #232530;
+	fg: #27d796;
+	accent: #27d796;
 
 	background-color: @bg;
 	text-color: @fg;
 }
 
 window {
-	padding: 100px 300px 100px 300px; // top, right, bottom, left
+	/*padding: 100px 300px 100px 300px; // top, right, bottom, left*/
+	padding:50px;
 	border-radius: 0px;
 }
 
@@ -54,4 +55,4 @@ button selected {
 	padding: 0px;
 }
 
-element-icon { size: 2.0ch ; }
+element-icon { size: 2.3ch ; }

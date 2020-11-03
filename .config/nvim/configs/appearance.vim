@@ -1,13 +1,13 @@
 " For correct colors when using inside tmux
 if $TERM != 'rxvt-unicode-256color' && $TERM != 'tmux-256color'
 	set termguicolors
-	colorscheme iceberg
+	colorscheme horizon
 	highlight Comment cterm=italic gui=italic
 else
 	set termguicolors
 	"let g:one_allow_italics = 1
 	set background=dark
-	colorscheme iceberg
+	colorscheme horizon
 	highlight Comment cterm=italic gui=italic
 endif
 
@@ -25,7 +25,7 @@ function! CocCurrentFunction()
 	return get(b:, 'coc_current_function', '')
 endfunction
 let g:lightline = {
-			\ 'colorscheme': 'iceberg',
+			\ 'colorscheme': 'horizon',
 			\ 'active': {
 			\   'left': [ [ 'mode', 'paste' ],
 			\             [ 'cocstatus', 'currentfunction', 'readonly', 'filename', 'modified' ] ]
