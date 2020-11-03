@@ -1,0 +1,36 @@
+## General options
+set header_cache = "~/.cache/mutt"
+set imap_check_subscribed
+set imap_keepalive = 300
+unset imap_passive
+set mail_check = 60
+set mbox_type=Maildir
+set editor=`echo \$EDITOR`
+
+bind generic,alias,attach,browser,editor,index,compose,pager,pgp,postpone ':' noop
+
+source "~/.config/mutt/vombatidae.neomuttrc"
+
+bind pager j next-line
+bind pager k previous-line
+bind attach,index,pager \CD next-page
+bind attach,index,pager \CU previous-page
+bind pager g top
+bind pager G bottom
+bind attach,index g first-entry
+bind attach,index G last-entry
+#bind index,pager ^? previous-line
+
+bind index,pager B sidebar-toggle-visible
+
+set send_charset="utf-8"
+
+set mailcap_path=~/.mutt/mailcap
+auto_view text/html
+alternative_order text/plain text/html
+set sort=threads
+set sort_aux=last-date-received
+
+## ACCOUNT1
+source "~/.config/mutt/gmail_main"
+folder-hook $folder 'source ~/.config/mutt/gmail_main'
