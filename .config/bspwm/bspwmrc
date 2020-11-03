@@ -1,7 +1,8 @@
 #! /bin/sh
 
 sxhkd &
-picom --experimental-backends &
+#picom --experimental-backends &
+picom &
 sh ~/.config/polybar/launch.sh &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 #feh --bg-fill ~/.config/wallpapers/chemistry_drugs.png
