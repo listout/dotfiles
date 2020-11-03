@@ -14,6 +14,8 @@ configuration {
 	separator-style: "none";
 	hide-scrollbar: true;
 	window-format: "{w} {c}";
+	fullscreen: true;
+	columns: 2;
 }
 
 * {
@@ -26,8 +28,8 @@ configuration {
 }
 
 window {
-	padding: 30px;
-	border-radius: 10px;
+	padding: 100px 300px 100px 300px; // top, right, bottom, left
+	border-radius: 0px;
 }
 
 prompt, entry {
@@ -36,8 +38,8 @@ prompt, entry {
 }
 
 element {
-	border-radius: 10px;
-	padding: 4px;
+	border-radius: 0px;
+	padding: 3px;
 }
 
 element selected {
@@ -48,7 +50,7 @@ element selected {
 button selected {
 	background-color: @fg;
 	text-color: @bg;
-	border-radius: 10px;
+	border-radius: 0px;
 	padding: 0px;
 }
 
