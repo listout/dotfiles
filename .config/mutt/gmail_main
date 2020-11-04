@@ -1,21 +1,17 @@
 source "gpg -dq $HOME/ownCloud/keepass_database/mutt_pass.gpg |"
 
 ## Receive options.
-set imap_user=brahmajit2123@gmail.com
+set imap_user=$my_userName@gmail.com
 set imap_pass=$my_pass
-set folder = imaps://brahmajit2123@imap.gmail.com:993
+set folder = imaps://$my_userName@imap.gmail.com:993
 set spoolfile = +INBOX
-# set postponed = +Drafts
-# set record = +[Gmail]/Sent\ Mail
 
 ## Send options.
-set smtp_url=smtps://brahmajit2123@gmail.com@smtp.gmail.com
+set smtp_url=smtps://$my_userName@gmail.com@smtp.gmail.com
 set smtp_pass=$my_pass
-set realname='Brahmajit'
-set from=brahmajit2123@gmail.com
-# set hostname="gmail.com"
-# set signature="John Doe"
-# Connection options
+set from=$my_userName@gmail.com
+
+## Connection options
 set ssl_force_tls = yes
 unset ssl_starttls
 
@@ -28,4 +24,4 @@ set sendmail = "/usr/bin/msmtp"
 set edit_headers = yes
 
 ## Hook -- IMPORTANT!
-account-hook $folder "set imap_user=brahmajit2123@gmail.com imap_pass=$my_pass"
+account-hook $folder "set imap_user=$my_userName@gmail.com imap_pass=$my_pass"
