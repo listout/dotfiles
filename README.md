@@ -2,7 +2,9 @@
 
 #### This is the experimental brach, things are still under construction here
 
-![under_construction](.config/wallpapers/under_construction.gif)
+<p align="center">
+  <img width="460" height="300" src=".config/wallpapers/under_construction.gif">
+</p>
 
 ## Preview
 
