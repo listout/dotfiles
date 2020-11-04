@@ -1,10 +1,7 @@
 # My dotfiles
 
 #### This is the experimental brach, things are still under construction here
-
-<p align="center">
-  <img width="200" height="200" src=".config/wallpapers/under_construction.gif">
-</p>
+<img align="right" width="200" height="200" src=".config/wallpapers/under_construction.gif">
 
 ## Preview
 
