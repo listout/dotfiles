@@ -22,8 +22,8 @@ foreground = ${colors.foreground}
 font-0 = TamzenForPowerline:pixelsize=14;2
 font-1 = Symbols Nerd Font:size=10;2
 font-2 = Source Code Pro:semibold:size=09;2
-modules-left = battery wired-network wireless-network
-modules-right = memory cpu temperature backlight pulseaudio date
+modules-left = battery pulseaudio wired-network wireless-network
+modules-right = memory cpu temperature backlight date
 modules-center = bspwm
 
 tray-position = right
@@ -64,8 +64,8 @@ sink = alsa_output.pci-0000_00_1b.0.analog-stereo
 format-volume = <label-volume>
 label-muted = 婢
 label-volume = 墳 %percentage%%
-label-volume-background = #e95678
-label-muted-background = #e95678
+label-volume-background = #21bfc2
+label-muted-background = #21bfc2
 label-muted-padding = 1
 label-volume-padding = 1
 

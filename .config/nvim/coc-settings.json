@@ -1,5 +1,7 @@
 {
 	"suggest.autoTrigger": "always",
+	"session.directory": "~/.config/nvim/sessions",
+	"session.saveOnVimLeave": false,
 	"diagnostic.refreshOnInsertMode": true,
 	"suggest.noselect": false,
 	"suggest.snippetIndicator": "►",

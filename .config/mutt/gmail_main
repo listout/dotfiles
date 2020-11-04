@@ -1,0 +1,29 @@
+source "gpg -dq $HOME/ownCloud/keepass_database/mutt_pass.gpg |"
+
+## Receive options.
+set imap_user=$my_userName@gmail.com
+set imap_pass=$my_pass
+set folder = imaps://$my_userName@imap.gmail.com:993
+set spoolfile = +INBOX
+set record="+[Gmail]/Sent Mail"
+set postponed="+[Gmail]/Drafts"
+
+## Send options.
+set smtp_url=smtps://$my_userName@gmail.com@smtp.gmail.com
+set smtp_pass=$my_pass
+set from=$my_userName@gmail.com
+
+## Connection options
+set ssl_force_tls = yes
+unset ssl_starttls
+
+set header_cache = "~/.config/mutt/cache/headers"
+set message_cachedir = "~/.config/mutt/cache/bodies"
+set certificate_file = "~/.config/mutt/certificates"
+set move = no
+
+set sendmail = "/usr/bin/msmtp"
+set edit_headers = yes
+
+## Hook -- IMPORTANT!
+account-hook $folder "set imap_user=$my_userName@gmail.com imap_pass=$my_pass"

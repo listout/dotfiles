@@ -3,3 +3,4 @@
 .config/zsh/pure
 .config/nvim/plugged/*
 .config/nvim/plugged
+.config/mutt/cache
