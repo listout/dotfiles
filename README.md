@@ -1,6 +1,8 @@
 # My dotfiles
 
-#### This is the experimental brach, here things change frequently
+#### This is the experimental brach, things are still under construction here
+
+![under_construction](.config/wallpapers/under_construction.gif)
 
 ## Preview
 
