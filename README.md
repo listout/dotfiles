@@ -3,7 +3,7 @@
 #### This is the experimental brach, things are still under construction here
 
 <p align="center">
-  <img width="460" height="300" src=".config/wallpapers/under_construction.gif">
+  <img width="200" height="200" src=".config/wallpapers/under_construction.gif">
 </p>
 
 ## Preview
