@@ -7,7 +7,7 @@
 
 ## Preview
 
-![screenshoot 1](.config/screenshoots/scr_shoot1.png)
+![screenshoot 1](.config/screenshoots/scr_shoot7.png)
 
 
 | ![screenshot 2](.config/screenshoots/scr_shoot2.png)    | ![screenshot 3](.config/screenshoots/scr_shoot3.png)    |
