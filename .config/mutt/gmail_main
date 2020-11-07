@@ -27,3 +27,5 @@ set edit_headers = yes
 
 ## Hook -- IMPORTANT!
 account-hook $folder "set imap_user=$my_userName@gmail.com imap_pass=$my_pass"
+
+# vim:ft=config

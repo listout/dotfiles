@@ -37,4 +37,4 @@ set wait_key=no
 
 ## ACCOUNT1
 source "~/.config/mutt/gmail_main"
-#folder-hook $folder 'source ~/.config/mutt/gmail_main'
+folder-hook $folder 'source ~/.config/mutt/gmail_main'
