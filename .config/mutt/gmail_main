@@ -5,7 +5,7 @@ set imap_user=$my_userName@gmail.com
 set imap_pass=$my_pass
 set folder = imaps://$my_userName@imap.gmail.com:993
 set spoolfile = +INBOX
-set record="+[Gmail]/Sent Mail"
+unset record
 set postponed="+[Gmail]/Drafts"
 
 ## Send options.
@@ -27,3 +27,5 @@ set edit_headers = yes
 
 ## Hook -- IMPORTANT!
 account-hook $folder "set imap_user=$my_userName@gmail.com imap_pass=$my_pass"
+
+# vim:ft=config
