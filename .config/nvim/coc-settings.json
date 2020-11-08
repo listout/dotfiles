@@ -8,6 +8,7 @@
 	"suggest.floatEnable": false,
 	"diagnostic.messageTarget": "float",
 	"signature.target": "echo",
+	"suggest.echodocSupport": true,
 	"coc.preferences.hoverTarget": "float",
 	"suggest.acceptSuggestionOnCommitCharacter": true,
 	"snippets.extends": {
@@ -77,12 +78,12 @@
 	"python.jediEnabled": false,
 	"python.autoComplete.addBrackets": true,
 	"python.formatting.autopep8Args": [
-		"--aggressive",
 		"--aggressive"
 	],
 	"python.linting.pylintArgs": [
 		"--unsafe-load-any-extension=y"
 	],
+	"python.sortImports.path": "isort",
 	"emmet.includeLanguages": {
 		"markdown.pandoc": "html"
 	}
