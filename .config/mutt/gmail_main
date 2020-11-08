@@ -25,7 +25,11 @@ set move = no
 set sendmail = "/usr/bin/msmtp"
 set edit_headers = yes
 
+# Folder in which to put deleted emails
+set trash='+Trash'
+set trash='/home/gogo/.config/mutt/Trash'
+
 ## Hook -- IMPORTANT!
 account-hook $folder "set imap_user=$my_userName@gmail.com imap_pass=$my_pass"
 
-# vim:ft=config
+# vim:ft=muttrc
