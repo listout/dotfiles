@@ -9,32 +9,36 @@ set editor=`echo \$EDITOR`
 
 bind generic,alias,attach,browser,editor,index,compose,pager,pgp,postpone ':' noop
 
-source "~/.config/mutt/vombatidae.neomuttrc"
+## Colorscheme
+source "~/.config/mutt/dracula.muttrc"
 
-bind pager j next-line
-bind pager k previous-line
-bind attach,index,pager \CD next-page
-bind attach,index,pager \CU previous-page
-bind pager g top
-bind pager G bottom
-bind attach,index g first-entry
-bind attach,index G last-entry
-#bind index,pager ^? previous-line
-
-bind index,pager B sidebar-toggle-visible
+## Mappings
+source "~/.config/mutt/mappings"
 
 set send_charset="utf-8"
 
 set mailcap_path=~/.mutt/mailcap
 auto_view text/html
-alternative_order text/plain text/html
+alternative_order text/enriched text/plain text/html text
 set sort=threads
 set sort_aux=last-date-received
 
-# use markdown in email
-macro compose \e5 "F pandoc -s -f markdown -t html \ny^T^Utext/html; charset=utf-8\n"
-set wait_key=no
+# status bar, date format, finding stuff etc.
+set status_chars = " *%A"
+set status_format = "[ Folder: %f ] [%r%m messages%?n? (%n new)?%?d? (%d to delete)?%?t? (%t tagged)? ]%>─%?p?( %p postponed )?"
+set date_format = "%d.%m.%Y %H:%M"
+set sort = threads
+set sort_aux = reverse-last-date-received
+set uncollapse_jump
+set sort_re
+set reply_regexp = "^(([Rr][Ee]?(\[[0-9]+\])?: *)?(\[[^]]+\] *)?)*"
+set quote_regexp = "^( {0,4}[>|:#%]| {0,4}[a-z0-9]+[>|]+)+"
+set send_charset = "utf-8:iso-8859-1:us-ascii"
+set charset = "utf-8"
+set arrow_cursor = "no" # Change `color indicator` depending
 
 ## ACCOUNT1
 source "~/.config/mutt/gmail_main"
 folder-hook $folder 'source ~/.config/mutt/gmail_main'
+
+# vim: ft=muttrc
