@@ -4,3 +4,5 @@
 .config/nvim/plugged/*
 .config/nvim/plugged
 .config/mutt/cache
+.config/mutt/Trash
+.config/mutt/trash
