@@ -77,7 +77,10 @@
 	"java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
 	"python.jediEnabled": false,
 	"python.autoComplete.addBrackets": true,
+	"python.autoComplete.showAdvancedMembers": true,
+	"python.linting.enabled": true,
 	"python.formatting.autopep8Args": [
+		"--aggressive",
 		"--aggressive"
 	],
 	"python.linting.pylintArgs": [
