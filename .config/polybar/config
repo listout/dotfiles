@@ -9,7 +9,7 @@ bottom = false
 
 fixed-center = true
 
-height = 20
+height = 18
 width = 100%
 padding-right = 1
 padding-left = 1
@@ -20,8 +20,11 @@ background = ${colors.background}
 foreground = ${colors.foreground}
 
 font-0 = TamzenForPowerline:pixelsize=14;2
-font-1 = Symbols Nerd Font:size=10;2
-font-2 = Source Code Pro:semibold:size=09;2
+;font-1 = Symbols Nerd Font:size=10;2
+font-1 = Siji:pixelsize=16;2
+font-2 = Symbols Nerd Font:size=10;2
+;font-2 = Source Code Pro:semibold:size=09;2
+
 modules-left = battery pulseaudio wired-network wireless-network
 modules-right = memory cpu temperature backlight date
 modules-center = bspwm
@@ -34,16 +37,16 @@ module-margin-right = 1
 
 [module/bspwm]
 type                      = internal/bspwm
-label-focused             = 
+label-focused             = 
 label-focused-padding     = 2
 label-focused-foreground  = #b877db
-label-occupied            = 
+label-occupied            = 
 label-occupied-padding    = 2
 label-occupied-foreground = #21bfc2
-label-urgent              = 
+label-urgent              = 
 label-urgent-padding      = 2
 label-urgent-foreground   = #f43e5c
-label-empty               = 
+label-empty               = 
 label-empty-padding       = 2
 label-empty-foreground    = #6c6f93
 pin-workspaces = true
@@ -52,7 +55,7 @@ pin-workspaces = true
 type = internal/backlight
 card = intel_backlight
 format = <label>
-label =  %percentage%%
+label =  %percentage%%
 label-background = #25b0bc
 label-padding = 1
 
@@ -62,8 +65,8 @@ type = internal/pulseaudio
 sink = alsa_output.pci-0000_00_1b.0.analog-stereo
 
 format-volume = <label-volume>
-label-muted = 婢
-label-volume = 墳 %percentage%%
+label-muted = 
+label-volume =  %percentage%%
 label-volume-background = #21bfc2
 label-muted-background = #21bfc2
 label-muted-padding = 1
@@ -81,8 +84,8 @@ full-at = 99
 
 time-format = %H:%M
 
-label-discharging =  %percentage%% %time%
-label-charging =  %percentage%%
+label-discharging =  %percentage%% %time%
+label-charging =  %percentage%%
 label-full = %percentage%%
 label-charging-foreground = #1c1e26
 label-charging-background = #fab795
@@ -102,7 +105,7 @@ format-charging = <label-charging>
 type = internal/cpu
 interval = 0.5
 format = <label>
-label =  %percentage%%
+label =  %percentage%%
 label-background = #09f7a0
 label-padding = 1
 
@@ -110,13 +113,13 @@ label-padding = 1
 type = internal/memory
 interval = 3
 format = <label>
-label =  %gb_used%
+label =  %gb_used%
 label-background = #b877db
 label-padding = 1
 
 [module/date]
 type = internal/date
-label =  %date% %time%
+label =  %date% %time%
 interval = 1.0
 date = %d-%m-%Y
 time = %I:%M
@@ -129,20 +132,20 @@ label-padding = 1
 [module/wired-network]
 type = internal/network
 interface = enp2s0
-label-connected =  %essid%
+label-connected =  %essid%
 label-connected-background = #e95678
 label-connected-padding = 1
-label-disconnected = 
+label-disconnected = 
 label-disconnected-background = #e95678
 label-disconnected-padding = 1
 
 [module/wireless-network]
 type = internal/network
 interface = wlp3s0
-label-connected =  %essid%
+label-connected =  %essid%
 label-connected-background = #e95678
 label-connected-padding = 1
-label-disconnected = 睊
+label-disconnected = 
 label-disconnected-background = #e95678
 label-disconnected-padding = 1
 
@@ -153,7 +156,7 @@ thermal-zone = 0
 base-temperature = 20
 warn-temperature = 70
 format = <label>
-label =  %temperature-c%
+label =  %temperature-c%
 label-background = #25b0bc
 label-warn-background = #25b0bc
 label-padding = 1
