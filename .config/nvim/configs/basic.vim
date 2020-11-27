@@ -20,8 +20,10 @@ au FocusGained,BufEnter * checktime
 " Remap leader key to ,
 let mapleader = ","
 
-" Turn on wild menu
+" Turn on wild menu when typing in command mode
+set path+=**
 set wildmenu
+set showcmd
 
 " Ignore compiled files
 set wildignore=*.o,*~,*.pyc
@@ -69,6 +71,9 @@ syntax enable
 
 " Set encoding
 set encoding=utf8
+if &encoding != 'utf-8'
+	set encoding=utf-8              "Necessary to show Unicode glyphs
+endif
 
 " Use unix as standard file format
 set ffs=unix,dos,mac
@@ -121,3 +126,11 @@ noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
+
+" indent via Tab
+nnoremap <Tab> >>_
+nnoremap <S-Tab> <<_
+vnoremap <Tab> >>_
+vnoremap <S-Tab> <<_
+
+autocmd! Filetype markdown.pandoc let b:AutoPairs = extend({'$': '$'}, g:AutoPairs, 'keep')

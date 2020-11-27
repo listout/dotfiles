@@ -20,6 +20,9 @@
 		],
 		"php": [
 			"html"
+		],
+		"markdown.pandoc": [
+			"tex"
 		]
 	},
 	"coc.source.word.enable": true,
