@@ -4,4 +4,7 @@ path=("$HOME/.local/bin" "$path[@]")
 export PATH
 
 export PATH=/home/gogo/.fnm:$PATH
-eval "`fnm env --multi`"
+eval "$(fnm env)"
+
+fpath+=$HOME/.config/zsh/zfunc
+#compinit

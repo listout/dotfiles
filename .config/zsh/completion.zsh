@@ -64,3 +64,6 @@ autoload -Uz compinit; compinit
 
 # cd without cd
 setopt auto_cd
+
+# rehash automatically
+zstyle ':completion:*' rehash true
