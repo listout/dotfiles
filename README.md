@@ -21,7 +21,7 @@
 - Terminal: urxvt (truecolor patch)
 - Editor: Neovim + LSP(coc.nvim) + a bunch of plugins
 - Music Player: Cmus
-- Font: TamzenForPowerline and TamzenForPowerline + Nerd Font Symbols for bar
+- Font: TamzenForPowerline and TamzenForPowerline + Siji for bar
 - Window Manager: bspwm
 - Compositor: Vanilla Picom
 - Bar: Polybar
