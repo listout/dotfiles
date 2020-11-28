@@ -3,7 +3,7 @@ configuration {
 	width: 30;
 	lines: 12;
 	show-icons: true;
-	font: "Source Code Pro Semibold 12";
+	font: "Fira Code Semibold 11";
 	terminal: "kitty";
 	disable-history: true;
 	sidebar-mode: true;
@@ -20,8 +20,8 @@ configuration {
 
 * {
 	bg: #232530;
-	fg: #fac29a;
-	accent: #fac29a;
+	fg: #95c4ce;
+	accent: #b877db;
 
 	background-color: @bg;
 	text-color: @fg;
@@ -56,3 +56,5 @@ button selected {
 }
 
 element-icon { size: 2.3ch ; }
+
+// vim: set ft=css :
