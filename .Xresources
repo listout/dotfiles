@@ -2,9 +2,9 @@
 
 URxvt.scrollBar: false
 
-URxvt.font: xft:Gohu GohuFont:pixelsize=16
-URxvt.italicFont: xft:Gohu GohuFont:pixelsize=16
-URxvt.boldFont: xft:Gohu GohuFont:bold:pixelsize=16
+URxvt.font: xft:TamzenForPowerline:pixelsize=15
+URxvt.italicFont: xft:TamzenForPowerline:pixelsize=15
+URxvt.boldFont: xft:TamzenForPowerline:bold:pixelsize=15
 
 !URxvt.font: xft:Fira Code Semibold:size=10, \
 	!xft:DejaVu Sans Mono:size=12
