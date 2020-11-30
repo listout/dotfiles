@@ -37,7 +37,7 @@ my_hdr X-Operating-System: `uname -s`, kernel `uname -r`
 
 # Folder in which to put deleted emails
 set trash='+Trash'
-set trash='/home/gogo/.config/mutt/Trash'
+set trash='~/.config/mutt/Trash'
 
 ## Hook -- IMPORTANT!
 account-hook $folder "set imap_user=$my_userName@gmail.com imap_pass=$my_pass"

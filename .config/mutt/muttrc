@@ -17,7 +17,7 @@ source "~/.config/mutt/mappings"
 
 set send_charset="utf-8"
 
-set mailcap_path=~/.mutt/mailcap
+set mailcap_path=~/.config/mutt/mailcap
 auto_view text/html
 alternative_order text/enriched text/plain text/html text
 set sort=threads

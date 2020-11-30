@@ -51,8 +51,8 @@ bind editor ^T complete
 
 # Press A to add contact to Khard address book
 macro index,pager A \
-    "<pipe-message>khard add-email<return>" \
-    "add the sender email address to khard"
+		  "<pipe-message>khard add-email<return>" \
+		  "add the sender email address to khard"
 
 # use markdown in email
 macro compose \e5 "F pandoc -s -f markdown -t html \ny^T^Utext/html; charset=utf-8\n"
