@@ -33,9 +33,6 @@ else
 	set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
 endif
 
-" Make buffer hidden when abandoned
-set hid
-
 " Make backspace work as it should
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
@@ -103,6 +100,12 @@ set smarttab
 set tabstop=4
 set shiftwidth=4
 
+" Stop newline continuation of comments
+set formatoptions-=cro
+
+" Copy paste between vim and everything
+set clipboard=unnamedplus
+
 " No history files
 let g:netrw_dirhistmax = 0
 
@@ -132,5 +135,15 @@ nnoremap <Tab> >>_
 nnoremap <S-Tab> <<_
 vnoremap <Tab> >>_
 vnoremap <S-Tab> <<_
+
+" Better nav for omnicomplete
+inoremap <expr> <c-j> ("\<C-n>")
+inoremap <expr> <c-k> ("\<C-p>")
+
+" Use alt + hjkl to resize windows
+nnoremap <M-j>    :resize -2<CR>
+nnoremap <M-k>    :resize +2<CR>
+nnoremap <M-h>    :vertical resize -2<CR>
+nnoremap <M-l>    :vertical resize +2<CR>
 
 autocmd! Filetype markdown.pandoc let b:AutoPairs = extend({'$': '$'}, g:AutoPairs, 'keep')
