@@ -12,6 +12,7 @@ alias scrot='scrot -q 100 -s'
 alias py='python3'
 alias mv='mv -iv'
 alias cp='cp -riv'
+alias rm='rm -ir'
 alias mkdir='mkdir -vp'
 alias mutt='neomutt'
 
