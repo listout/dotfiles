@@ -1,6 +1,18 @@
-include /usr/share/doc/newsboat/contrib/colorschemes/inkpot
+include /usr/share/doc/newsboat/contrib/colorschemes/schleichfahrt
 
+# feeds
 auto-reload yes
+reload-time 120
+reload-threads 4
+download-retries 4
+download-timeout 10
+prepopulate-query-feeds yes
+
+# display
+
+show-read-feeds no
+feed-sort-order unreadarticlecount-asc
+text-width 80
 
 bind-key j down
 bind-key k up
@@ -17,3 +29,7 @@ bind-key N prev-unread
 bind-key U show-urls
 
 browser "w3m %u"
+
+confirm-exit no
+
+html-renderer "w3m -dump -T text/HTML -cols 100"
