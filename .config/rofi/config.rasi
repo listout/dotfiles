@@ -4,7 +4,7 @@ configuration {
 	lines: 12;
 	show-icons: true;
 	font: "Fira Code Semibold 11";
-	terminal: "kitty";
+	terminal: "urxvt";
 	disable-history: true;
 	sidebar-mode: true;
 	tokenize: true;
@@ -16,6 +16,7 @@ configuration {
 	window-format: "{w} {c}";
 	/*fullscreen: true;*/
 	columns: 1;
+	display-drun: "Apps:";
 }
 
 * {
