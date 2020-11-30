@@ -1,3 +1,9 @@
+"		▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+"		██▄██░▄▄▀█▄░▄██▄█████▀███▀██▄██░▄▀▄░
+"		██░▄█░██░██░███░▄█▀▀██░▀░███░▄█░█▄█░
+"		█▄▄▄█▄██▄██▄██▄▄▄█▄▄███▄███▄▄▄█▄███▄
+"		▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+
 " markdown code block syntax highlighting
 let g:markdown_fenced_languages = ['html', 'python', 'bash=sh', 'java', 'c', 'cpp', 'php', 'sql']
 let g:pandoc#syntax#codeblocks#embeds#langs = ["php", "html", "bash=sh", "java", "c", "cpp", "python", "sql"]
@@ -5,7 +11,6 @@ let g:pandoc#syntax#codeblocks#embeds#langs = ["php", "html", "bash=sh", "java",
 " disable syntax conceal for markdown
 let g:markdown_syntax_conceal = 1
 
-" syntax highlighing synchronization
 " Install vim-plug if not found
 if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
 	silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
