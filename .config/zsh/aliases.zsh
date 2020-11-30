@@ -13,6 +13,7 @@ alias py='python3'
 alias mv='mv -iv'
 alias cp='cp -riv'
 alias mkdir='mkdir -vp'
+alias mutt='neomutt'
 
 export EDITOR=/usr/bin/nvim
 export VISUAL=/usr/bin/nvim
