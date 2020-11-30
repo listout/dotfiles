@@ -19,6 +19,10 @@ XF86MonBrightnessDown
 super + Return
 	urxvt
 
+# other terminal emulator
+super + k
+	kitty
+
 super + w
 	firefox
 
