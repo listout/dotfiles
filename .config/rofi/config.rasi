@@ -16,7 +16,7 @@ configuration {
 	window-format: "{w} {c}";
 	/*fullscreen: true;*/
 	columns: 1;
-	display-drun: "Apps:";
+	display-drun: "";
 }
 
 * {
