@@ -94,8 +94,6 @@
 		"-pdf",
 		"-interaction=nonstopmode",
 		"-synctex=1",
-		"-xelatex",
-		"-output-directory=/home/gogo/ownCloud/homework/Outputs/"
-	],
-	"latex.build.outputDirectory": "/home/gogo/ownCloud/homework/Outputs/"
+		"-xelatex"
+	]
 }
