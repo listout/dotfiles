@@ -112,6 +112,9 @@ let g:netrw_dirhistmax = 0
 " Auto remove unwanted whitespaces
 autocmd BufWritePre * %s/\s\+$//e
 
+" Shell
+set shell=zsh
+
 " Easy buffer shwitch
 nnoremap <Leader>1 :1b<CR>
 nnoremap <Leader>2 :2b<CR>
@@ -146,6 +149,6 @@ nnoremap <M-k>    :resize +2<CR>
 nnoremap <M-h>    :vertical resize -2<CR>
 nnoremap <M-l>    :vertical resize +2<CR>
 
+" Auto complete for $ in pandoc markdown
 autocmd! Filetype markdown.pandoc let b:AutoPairs = extend({'$': '$'}, g:AutoPairs, 'keep')
-
-let g:tex_flavor = "latex"
+autocmd! Filetype markdown,md let b:AutoPairs = extend({'$': '$'}, g:AutoPairs, 'keep')

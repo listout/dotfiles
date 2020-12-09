@@ -28,6 +28,7 @@ Plug 'junegunn/goyo.vim', { 'for': 'markdown.pandoc' }
 Plug 'voldikss/vim-floaterm'
 
 " Fuzzy finding
+" the_silver_surfer should be installed
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
