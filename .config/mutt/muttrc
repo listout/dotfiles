@@ -19,7 +19,10 @@ set send_charset="utf-8"
 
 set mailcap_path=~/.config/mutt/mailcap
 auto_view text/html
-alternative_order text/enriched text/plain text/html text
+auto_view text/markdown
+auto_view text/markdown.pandoc
+alternative_order text/enriched text/plain text/html
+set implicit_autoview=yes
 set sort=threads
 set sort_aux=last-date-received
 
