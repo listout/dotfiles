@@ -1,0 +1,4 @@
+[core]
+	pager = nvim -u NORC -R -
+[color]
+	ui = false
