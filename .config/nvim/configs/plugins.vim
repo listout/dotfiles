@@ -22,7 +22,7 @@ Plug 'reedes/vim-pencil'
 Plug 'reedes/vim-lexical'
 
 " Distraction free writing
-Plug 'junegunn/goyo.vim', { 'for': 'markdown.pandoc' }
+Plug 'junegunn/goyo.vim', { 'for': ['markdown', 'markdown.pandoc', 'latex', 'tex'] }
 
 " Floating scratch terminal
 Plug 'voldikss/vim-floaterm'

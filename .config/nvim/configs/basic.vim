@@ -146,9 +146,12 @@ inoremap <expr> <c-k> ("\<C-p>")
 " Use alt + hjkl to resize windows
 nnoremap <M-j>    :resize -2<CR>
 nnoremap <M-k>    :resize +2<CR>
-nnoremap <M-h>    :vertical resize -2<CR>
-nnoremap <M-l>    :vertical resize +2<CR>
+nnoremap <M-l>    :vertical resize -2<CR>
+nnoremap <M-h>    :vertical resize +2<CR>
+
+" Easier split switching from terminal mode
+tnoremap <C-w> <C-\><C-n><C-w>
 
 " Auto complete for $ in pandoc markdown
 autocmd! Filetype markdown.pandoc let b:AutoPairs = extend({'$': '$'}, g:AutoPairs, 'keep')
-autocmd! Filetype markdown,md let b:AutoPairs = extend({'$': '$'}, g:AutoPairs, 'keep')
+autocmd! Filetype markdown let b:AutoPairs = extend({'$': '$'}, g:AutoPairs, 'keep')
