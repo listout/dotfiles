@@ -47,4 +47,3 @@
 * Install `dnscypt`: [dnscypt-proxy](https://wiki.archlinux.org/index.php/Dnscrypt-proxy) and [for atrix](https://wiki.artixlinux.org/Main/Dnscrypt-proxy)
 * Update 2020-10-13: Moved to [fnm](https://github.com/Schniz/fnm) from system node version.
 * Finally fixed the encrypted `SNI` in firefox problem. Also learned that DNSCrypt-Proxy now comes with `DOH`. [Their wiki page](https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Local-DoH), but `network.trr.mode` should be set to `3` instead of `2` to pass the `DNSSEC` on `cloudflare`.
-* Testing auto sign
