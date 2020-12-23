@@ -1,4 +1,4 @@
-source "gpg -dq $HOME/ownCloud/keepass_database/mutt_pass.gpg |"
+source "gpg -dq $HOME/Nextcloud/keepass_database/mutt_pass.gpg |"
 
 ## Receive options.
 set imap_user=$my_userName@gmail.com
