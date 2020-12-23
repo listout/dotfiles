@@ -19,9 +19,9 @@ border-color = ${colors.background}
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-font-0 = TamzenForPowerline:pixelsize=14;2
+font-1 = UW Ttyp0:pixelsize=14;2
 ;font-1 = Symbols Nerd Font:size=10;2
-font-1 = Siji:pixelsize=16;2
+font-0 = Siji:pixelsize=16;2
 font-2 = Symbols Nerd Font:size=10;2
 ;font-2 = Source Code Pro:semibold:size=09;2
 
