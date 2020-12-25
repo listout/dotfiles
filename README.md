@@ -29,6 +29,5 @@
 
 #### Notes and links for me in case of a new install
 
-* Where I pure the `pure` prompt for `zsh`
 * Install `dnscypt`: [dnscypt-proxy](https://wiki.archlinux.org/index.php/Dnscrypt-proxy) and [for atrix](https://wiki.artixlinux.org/Main/Dnscrypt-proxy)
 * Update 2020-10-13: Moved to [fnm](https://github.com/Schniz/fnm) from system node version.
