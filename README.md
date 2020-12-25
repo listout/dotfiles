@@ -1,9 +1,6 @@
 # My dotfiles
 
-#### This is the experimental branch, things are still under construction here
-<p align="center">
-  <img width="200" height="200" src=".config/wallpapers/under_construction.gif">
-</p>
+###### Experimental, things change fast
 
 ## Preview
 
