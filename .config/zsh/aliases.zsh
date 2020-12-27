@@ -18,7 +18,7 @@ alias mutt='neomutt'
 
 export EDITOR=/usr/bin/nvim
 export MANPAGER="/bin/sh -c \"col -b | /usr/bin/nvim -u NORC -R -c - 'set ft=man ts=8 nomod nolist nonu noma' -\""
-export PAGER=/usr/bin/nvim
+export PAGER="/usr/bin/nvim -R -u NORC"
 export VISUAL=/usr/bin/nvim
 export BROWSER=/usr/bin/firefox
 export QT_QPA_PLATFORMTHEME=qt5ct
