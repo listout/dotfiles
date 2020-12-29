@@ -51,3 +51,4 @@ bspc rule -a "kitty"  state=floating follow=on
 bspc rule -a "ownCloud"  state=floating follow=on
 bspc rule -a "NextCloud"  state=floating follow=on
 bspc rule -a "feh"  state=floating follow=on
+bspc rule -a "matplotlib"  state=floating follow=on
