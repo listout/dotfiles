@@ -17,7 +17,7 @@ filetype plugin indent on
 set autoread
 au FocusGained,BufEnter * checktime
 
-" Remap leader key to ,
+" Remap leader key to ','
 let mapleader = ","
 
 " Turn on wild menu when typing in command mode
@@ -27,6 +27,8 @@ set showcmd
 
 " Ignore compiled files
 set wildignore=*.o,*~,*.pyc
+set wildignore+=*.bmp,*.gif,*.ico,*.jpg,*.png,*.ico
+set wildignore+=node_modules/*,bower_components/*
 if has("win16") || has("win32")
 	set wildignore+=.git\*,.hg\*,.svn\*
 else
