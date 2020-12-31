@@ -48,8 +48,9 @@ set cmdheight=2
 set splitright splitbelow
 
 " Visualize Tabs and spaces
-"set list listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·,eol:¬
-set list listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·
+" set list listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·,eol:¬
+" set list listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·
+set listchars=tab:▸\ ,trail:·,extends:#,nbsp:·
 
 " Smaller popup
 set pumheight=10
