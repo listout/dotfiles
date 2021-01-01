@@ -1,7 +1,7 @@
 " Enable true colors
 if (has("nvim"))
-  "For Neovim 0.1.3 and 0.1.4 < https://github.com/neovim/neovim/pull/2198 >
-  let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+	"For Neovim 0.1.3 and 0.1.4 < https://github.com/neovim/neovim/pull/2198 >
+	let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 endif
 
 " For correct colors when using inside tmux
@@ -48,9 +48,9 @@ set cmdheight=2
 set splitright splitbelow
 
 " Visualize Tabs and spaces
-" set list listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·,eol:¬
-" set list listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·
-set listchars=tab:▸\ ,trail:·,extends:#,nbsp:·
+"set list listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·,eol:¬
+"set list listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·
+set list listchars=tab:▸\ ,trail:·,extends:#,nbsp:·
 
 " Smaller popup
 set pumheight=10
