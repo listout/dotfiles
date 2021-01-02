@@ -15,9 +15,9 @@
 
 #### Applications
 
-- Terminal: urxvt (truecolor patch)
+- Terminal: urxvt (with truecolor patch)
 - Editor: Neovim + LSP(coc.nvim) + a bunch of plugins
-- Font: ttyp0 and ttyp0 + Siji for bar
+- Font: TamzenForPowerline and TamzenForPowerline + Siji for bar
 - Window Manager: bspwm
 - Compositor: Vanilla Picom
 - Bar: Polybar
