@@ -7,3 +7,4 @@ augroup END
 
 let g:lexical#spelllang = ['en_us',]
 let g:lexical#thesaurus = ['~/.config/nvim/thesaurus/words.txt',]
+let g:lexical#spelllang = ['en_us','en_ca',]
