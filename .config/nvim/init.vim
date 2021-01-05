@@ -20,6 +20,8 @@ let g:pandoc#syntax#codeblocks#embeds#langs = ["php", "html", "bash=sh", "java",
 " disable syntax conceal for markdown
 let g:markdown_syntax_conceal = 1
 
+let g:polyglot_disabled = ['markdown']
+
 " Install vim-plug if not found
 if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
 	silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
@@ -49,3 +51,4 @@ source $HOME/.config/nvim/configs/fzf_config.vim
 source $HOME/.config/nvim/configs/float_term_config.vim
 source $HOME/.config/nvim/configs/pencil_config.vim
 source $HOME/.config/nvim/configs/lexical_config.vim
+source $HOME/.config/nvim/configs/vimwiki_config.vim

@@ -5,6 +5,5 @@ augroup lexical
 	autocmd FileType text call lexical#init({ 'spell': 1 })
 augroup END
 
-let g:lexical#spelllang = ['en_us',]
-let g:lexical#thesaurus = ['~/.config/nvim/thesaurus/words.txt',]
-let g:lexical#spelllang = ['en_us','en_ca',]
+let g:lexical#thesaurus = ['~/.config/nvim/thesaurus/words.txt']
+let g:lexical#spelllang = ['en_us','en_ca']
