@@ -2,9 +2,9 @@
 
 URxvt.scrollBar: false
 
-URxvt.font: xft:TamzenForPowerline:pixelsize=15
-URxvt.italicFont: xft:TamzenForPowerline:pixelsize=15
-URxvt.boldFont: xft:TamzenForPowerline:bold:pixelsize=15
+URxvt.font: xft:TamzenForPowerline:pixelsize=15, xft:DejaVu\ Sans Mono
+URxvt.italicFont: xft:TamzenForPowerline:pixelsize=15, xft:DejaVu\ Sans Mono
+URxvt.boldFont: xft:TamzenForPowerline:bold:pixelsize=15, xft:DejaVu\ Sans Mono
 
 URxvt.keysym.Shift-Up: command:\033]720;1\007
 URxvt.keysym.Shift-Down: command:\033]721;1\007
