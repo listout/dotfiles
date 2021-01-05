@@ -15,6 +15,7 @@ alias cp='cp -riv'
 alias rm='rm -ir'
 alias mkdir='mkdir -vp'
 alias mutt='neomutt'
+alias less='/usr/share/nvim/runtime/macros/less.sh'
 
 export EDITOR=nvim
 export PAGER="nvim -R -c 'set ft=man' -"
