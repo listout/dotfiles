@@ -22,8 +22,6 @@ set message_cachedir = "~/.config/mutt/cache/bodies"
 set certificate_file = "~/.config/mutt/certificates"
 set move = no
 
-set sendmail = "/usr/bin/msmtp"
-
 # Custom Header
 set edit_headers = yes
 unmy_hdr *
