@@ -8,12 +8,16 @@ endif
 if $TERM != 'rxvt-unicode-256color' && $TERM != 'tmux-256color'
 	set termguicolors
 	colorscheme moonfly
-	highlight Comment cterm=italic gui=italic
 else
 	set termguicolors
 	set background=dark
 	colorscheme moonfly
 endif
+
+" make functions, identifier and comments italic
+highlight Function cterm=italic gui=italic
+highlight Indentifier cterm=italic gui=italic
+highlight Comment cterm=italic gui=italic
 
 " lightline config
 set laststatus=2
