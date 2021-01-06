@@ -131,7 +131,7 @@ font = Monospace 10
 
 	[frame]
 	width = 0
-	color = "#1c1e26"
+	color = "#080808"
 
 	[shortcuts]
 	# shortcuts are specified as [modifier+][modifier+]...key
@@ -154,18 +154,18 @@ font = Monospace 10
 	[urgency_low]
 	# IMPORTANT: colors have to be defined in quotation marks.
 	# Otherwise the '#' and following  would be interpreted as a comment.
-	background = "#1c1e26"
-	foreground = "#fab795"
+	background = "#080808"
+	foreground = "#e3c78a"
 	timeout = 10
 
 	[urgency_normal]
-	background = "#1c1e26"
-	foreground = "#fab795"
+	background = "#080808"
+	foreground = "#e3c78a"
 	timeout = 10
 
 	[urgency_critical]
-	background = "#ec6a88"
-	foreground = "#1c1e26"
+	background = "#e2637f"
+	foreground = "#080808"
 	timeout = 10
 
 
