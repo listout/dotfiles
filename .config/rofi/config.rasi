@@ -16,7 +16,7 @@ configuration {
 	window-format: "{w} {c}";
 	/*fullscreen: true;*/
 	columns: 1;
-	display-drun: "";
+	display-drun: "apps";
 
 	/* vim key bindings */
 	kb-row-up: "Up,Control+k,Shift+Tab,Shift+ISO_Left_Tab";
@@ -29,9 +29,9 @@ configuration {
 }
 
 * {
-	bg: #232530;
-	fg: #95c4ce;
-	accent: #b877db;
+	bg: #080808;
+	fg: #b2b2b2;
+	accent: #d183e8;
 
 	background-color: @bg;
 	text-color: @fg;
