@@ -7,7 +7,7 @@ endif
 " For correct colors when using inside tmux
 if $TERM != 'rxvt-unicode-256color' && $TERM != 'tmux-256color'
 	set termguicolors
-	colorscheme horizon
+	colorscheme moonfly
 	highlight Comment cterm=italic gui=italic
 else
 	set termguicolors
