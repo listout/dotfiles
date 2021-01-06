@@ -1,12 +1,12 @@
 call plug#begin('~/.config/nvim/plugged')
 
 " color schemes
-"Plug 'bluz71/vim-moonfly-colors'
+Plug 'bluz71/vim-moonfly-colors'
 "Plug 'ParamagicDev/vim-medic_chalk'
 "Plug 'rakr/vim-one'
 "Plug 'wadackel/vim-dogrun'
 "Plug 'cocopon/iceberg.vim'
-Plug 'ntk148v/vim-horizon'
+"Plug 'ntk148v/vim-horizon'
 
 " For making coding pleasureable
 Plug 'jiangmiao/auto-pairs'

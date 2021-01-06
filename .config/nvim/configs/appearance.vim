@@ -12,8 +12,7 @@ if $TERM != 'rxvt-unicode-256color' && $TERM != 'tmux-256color'
 else
 	set termguicolors
 	set background=dark
-	colorscheme horizon
-	highlight Comment cterm=italic gui=italic
+	colorscheme moonfly
 endif
 
 " lightline config
@@ -30,7 +29,7 @@ function! CocCurrentFunction()
 	return get(b:, 'coc_current_function', '')
 endfunction
 let g:lightline = {
-			\ 'colorscheme': 'horizon',
+			\ 'colorscheme': 'moonfly',
 			\ 'active': {
 			\   'left': [ [ 'mode', 'paste' ],
 			\             [ 'cocstatus', 'currentfunction', 'readonly', 'filename', 'modified' ] ]
@@ -49,7 +48,6 @@ set splitright splitbelow
 
 " Visualize Tabs and spaces
 "set list listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·,eol:¬
-"set list listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·
 set list listchars=tab:▸\ ,trail:·,extends:#,nbsp:·
 
 " Smaller popup
