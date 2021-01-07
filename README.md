@@ -4,12 +4,12 @@
 
 ## Preview
 
-![screenshoot 1](.config/screenshots/scr_shoot9.png)
+![screenshoot 1](.config/screenshots/shoot1.png)
 
 
-| ![screenshot 6](.config/screenshots/scr_shoot6.png) | ![screenshot 7](.config/screenshots/scr_shoot7.png) |
-|------------------------------------------------------|------------------------------------------------------|
-| ![screenshot 8](.config/screenshots/scr_shoot3.png) | ![screenshot 9](.config/screenshots/scr_shoot8.png) |
+| ![screenshot 6](.config/screenshots/shoot2.png) | ![screenshot 7](.config/screenshots/shoot3.png) |
+|-------------------------------------------------|-------------------------------------------------|
+| ![screenshot 8](.config/screenshots/shoot1.png) | ![screenshot 9](.config/screenshots/shoot4.png) |
 
 #### Applications
 
