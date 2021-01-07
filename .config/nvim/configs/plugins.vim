@@ -11,7 +11,7 @@ Plug 'bluz71/vim-moonfly-colors'
 " For making coding pleasureable
 Plug 'jiangmiao/auto-pairs'
 Plug 'preservim/nerdcommenter'
-Plug 'dhruvasagar/vim-table-mode'
+Plug 'dhruvasagar/vim-table-mode', { 'for': ['markdown', 'markdown.pandoc'] }
 
 " Better motions
 Plug 'tpope/vim-surround'
@@ -38,13 +38,13 @@ Plug 'SirVer/ultisnips'
 
 " Support for multiple languages
 Plug 'sheerun/vim-polyglot'
-Plug 'vim-pandoc/vim-pandoc-syntax'
+Plug 'vim-pandoc/vim-pandoc-syntax', {'for': ['markdown', 'markdown.pandoc']}
 
 " Status line
 Plug 'itchyny/lightline.vim'
 
 " Language server
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'jackguo380/vim-lsp-cxx-highlight'
+Plug 'jackguo380/vim-lsp-cxx-highlight', { 'for': ['cpp', 'c'] }
 
 call plug#end()

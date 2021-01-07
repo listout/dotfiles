@@ -20,8 +20,6 @@ let g:pandoc#syntax#codeblocks#embeds#langs = ["php", "html", "bash=sh", "java",
 " disable syntax conceal for markdown
 let g:markdown_syntax_conceal = 1
 
-let g:polyglot_disabled = ['markdown']
-
 " Install vim-plug if not found
 if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
 	silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
@@ -32,7 +30,7 @@ endif
 let g:markdown_minlines = 100
 
 " set tex flavour
-let g:tex_flavor = 'latex'
+let g:tex_flavor='latex'
 
 " sync syntax highlighting
 autocmd BufEnter,BufNewFile,BufFilePre,BufRead *.md :syntax sync fromstart
