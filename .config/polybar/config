@@ -84,7 +84,7 @@ time-format = %H:%M
 
 label-discharging =  %percentage%% %time%
 label-charging =  %percentage%%
-label-full = %percentage%%
+label-full =  %percentage%%
 label-charging-foreground = #080808
 label-charging-background = #80a0ff
 label-discharging-foreground = #080808
