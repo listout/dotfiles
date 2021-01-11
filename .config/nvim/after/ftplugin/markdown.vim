@@ -8,3 +8,6 @@ let g:vim_markdown_conceal = 0
 let g:vim_markdown_anchorexpr = "'<<'.v:anchor.'>>'"
 
 set spell spelllang=en_us
+
+" Does not highlight conceal
+highlight Conceal ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
