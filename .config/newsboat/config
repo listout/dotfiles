@@ -1,4 +1,4 @@
-include /usr/share/doc/newsboat/contrib/colorschemes/greenscreen
+include /usr/share/doc/newsboat/contrib/colorschemes/schleichfahrt
 
 # feeds
 auto-reload yes
