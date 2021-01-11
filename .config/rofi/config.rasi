@@ -30,8 +30,8 @@ configuration {
 
 * {
 	bg: #232530;
-	fg: #fab28e;
-	accent: #fab28e;
+	fg: #d3d4de;
+	accent: #d3d4de;
 
 	background-color: @bg;
 	text-color: @fg;
