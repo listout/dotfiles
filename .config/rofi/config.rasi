@@ -29,9 +29,9 @@ configuration {
 }
 
 * {
-	bg: #080808;
-	fg: #b2b2b2;
-	accent: #d183e8;
+	bg: #232530;
+	fg: #fab28e;
+	accent: #fab28e;
 
 	background-color: @bg;
 	text-color: @fg;
