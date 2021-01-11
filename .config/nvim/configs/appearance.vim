@@ -7,17 +7,18 @@ endif
 " For correct colors when using inside tmux
 if $TERM != 'rxvt-unicode-256color' && $TERM != 'tmux-256color'
 	set termguicolors
-	colorscheme one
+	colorscheme horizon
 else
 	set termguicolors
 	set background=dark
-	colorscheme one
+	colorscheme horizon
 endif
 
 " make functions, identifier and comments italic
-highlight Function cterm=italic gui=italic
-highlight Indentifier cterm=italic gui=italic
-highlight Comment cterm=italic gui=italic
+" not recquired when using horizon colorscheme
+" highlight Function cterm=italic gui=italic
+" highlight Indentifier cterm=italic gui=italic
+" highlight Comment cterm=italic gui=italic
 
 " lightline config
 set laststatus=2
@@ -33,12 +34,12 @@ function! CocCurrentFunction()
 	return get(b:, 'coc_current_function', '')
 endfunction
 let g:lightline = {
-			\ 'colorscheme': 'one',
+			\ 'colorscheme': 'horizon',
 			\ 'active': {
 			\   'left': [ [ 'mode', 'paste' ],
 			\             [ 'cocstatus', 'currentfunction', 'readonly', 'filename', 'modified' ] ]
 			\ },
-			\ 'component_function': {
+			\ 'comphorizonnt_function': {
 			\   'cocstatus': 'coc#status',
 			\   'currentfunction': 'CocCurrentFunction'
 			\ },
