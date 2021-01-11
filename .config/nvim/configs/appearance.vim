@@ -7,11 +7,11 @@ endif
 " For correct colors when using inside tmux
 if $TERM != 'rxvt-unicode-256color' && $TERM != 'tmux-256color'
 	set termguicolors
-	colorscheme moonfly
+	colorscheme one
 else
 	set termguicolors
 	set background=dark
-	colorscheme moonfly
+	colorscheme one
 endif
 
 " make functions, identifier and comments italic
@@ -33,7 +33,7 @@ function! CocCurrentFunction()
 	return get(b:, 'coc_current_function', '')
 endfunction
 let g:lightline = {
-			\ 'colorscheme': 'moonfly',
+			\ 'colorscheme': 'one',
 			\ 'active': {
 			\   'left': [ [ 'mode', 'paste' ],
 			\             [ 'cocstatus', 'currentfunction', 'readonly', 'filename', 'modified' ] ]
