@@ -17,7 +17,7 @@
 - Editor: Neovim + LSP(coc.nvim) + a bunch of plugins
 - Font: TamzenForPowerline and TamzenForPowerline + Siji for bar
 - Window Manager: bspwm
-- Compositor: Vanilla Picom
+- Compositor: Picom
 - Bar: Polybar
 - GTK Theme: Materia (for now)
 - Filemanager: Thunar and Ranger
