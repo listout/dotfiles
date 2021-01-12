@@ -34,7 +34,7 @@ set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
 " coc.nvim statusline integrations
 function! CocCurrentFunction()
-    return get(b:, 'coc_current_function', '')
+	return get(b:, 'coc_current_function', '')
 endfunction
 
 let g:lightline = {
