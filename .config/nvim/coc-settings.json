@@ -10,6 +10,7 @@
 	"signature.target": "echo",
 	"suggest.echodocSupport": true,
 	"coc.preferences.hoverTarget": "float",
+	"coc.preferences.currentFunctionSymbolAutoUpdate": true,
 	"suggest.acceptSuggestionOnCommitCharacter": true,
 	"snippets.extends": {
 		"cpp": [
