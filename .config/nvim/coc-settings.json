@@ -95,6 +95,7 @@
 		"-pdf",
 		"-interaction=nonstopmode",
 		"-synctex=1",
-		"-xelatex"
+		"-xelatex",
+		"-output-directory=/tmp/latex"
 	]
 }
