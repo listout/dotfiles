@@ -1,0 +1,10 @@
+# Colorscheme
+include base16-horizon-dark.config
+
+# Open document in fit-width mode by default
+set adjust-open "best-fit"
+
+# Fullscreen
+unmap f
+map f toggle_fullscreen
+map [fullscreen] f toggle_fullscreen
