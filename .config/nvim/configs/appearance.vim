@@ -16,9 +16,9 @@ endif
 
 " make functions, identifier and comments italic
 " not recquired when using horizon colorscheme
-" highlight Function cterm=italic gui=italic
-" highlight Indentifier cterm=italic gui=italic
-" highlight Comment cterm=italic gui=italic
+highlight Function cterm=italic gui=italic
+highlight Indentifier cterm=italic gui=italic
+highlight Comment cterm=italic gui=italic
 
 " lightline config
 set laststatus=2
