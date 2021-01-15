@@ -8,3 +8,6 @@ set adjust-open "best-fit"
 unmap f
 map f toggle_fullscreen
 map [fullscreen] f toggle_fullscreen
+
+# No statusbase
+set guioptions true
