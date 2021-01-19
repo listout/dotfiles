@@ -15,7 +15,6 @@ Plug 'dhruvasagar/vim-table-mode', { 'for': ['markdown', 'markdown.pandoc'] }
 
 " Better motions
 Plug 'tpope/vim-surround'
-Plug 'psliwka/vim-smoothie'
 
 " Better document writing
 Plug 'reedes/vim-pencil'
