@@ -93,11 +93,11 @@ command! -nargs=0 Format :call CocAction('format')
 
 " Multi Corsor Support
 nmap <silent> <C-c> <Plug>(coc-cursors-position)
-nmap <silent> <C-x> <Plug>(coc-cursors-word)
-xmap <silent> <C-x> <Plug>(coc-cursors-range)
+nmap <silent> <S-x> <Plug>(coc-cursors-word)
+xmap <silent> <S-x> <Plug>(coc-cursors-range)
 
-nmap <silent> <C-x> <Plug>(coc-cursors-word)*
-xmap <silent> <C-x> y/\V<C-r>=escape(@",'/\')<CR><CR>gN<Plug>(coc-cursors-range)gn
+nmap <silent> <S-x> <Plug>(coc-cursors-word)*
+xmap <silent> <S-x> y/\V<C-r>=escape(@",'/\')<CR><CR>gN<Plug>(coc-cursors-range)gn
 
 " use <cr> to select the completion item
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() :
