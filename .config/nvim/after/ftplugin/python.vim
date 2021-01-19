@@ -3,4 +3,4 @@ nnoremap <leader>p
 	\ --name=repl --position=right ipython\
 	\ --no-autoindent\  --TerminalInteractiveShell.colors='Linux'<cr>
 vnoremap <leader>s :FloatermSend <cr>
-nnoremap <C-r> :CocCommand python.execInTerminal <cr>
+nnoremap <S-r> :CocCommand python.execInTerminal <cr>
