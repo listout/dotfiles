@@ -8,8 +8,6 @@ set mbox_type=Maildir
 set editor=nvim
 set sendmail="/usr/bin/msmtp"
 
-set realname="Brahmajit Das"
-
 bind generic,alias,attach,browser,editor,index,compose,pager,pgp,postpone ':' noop
 
 ## Colorscheme

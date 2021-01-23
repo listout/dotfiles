@@ -25,12 +25,8 @@ set move = no
 # Custom Header
 set edit_headers = yes
 unmy_hdr *
-#unset use_from
-#unset use_domain
 unset user_agent
-## Custom Mail-User-Agent ID.
 my_hdr User-Agent: Every email client sucks, this one just sucks less.
-## OS Info.
 my_hdr X-Operating-System: `uname -s`, kernel `uname -r`
 
 # Folder in which to put deleted emails
