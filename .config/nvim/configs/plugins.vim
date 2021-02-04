@@ -38,6 +38,7 @@ Plug 'SirVer/ultisnips'
 " Support for multiple languages
 Plug 'sheerun/vim-polyglot'
 Plug 'vim-pandoc/vim-pandoc-syntax', {'for': ['markdown', 'markdown.pandoc']}
+Plug 'uiiaoo/java-syntax.vim'
 
 " Status line
 Plug 'itchyny/lightline.vim'
