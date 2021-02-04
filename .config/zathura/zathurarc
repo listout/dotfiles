@@ -1,5 +1,5 @@
 # Colorscheme
-include base16-horizon-dark.config
+include base16-cupertino.config
 
 # Open document in fit-width mode by default
 set adjust-open "best-fit"
