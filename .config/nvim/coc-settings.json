@@ -79,23 +79,77 @@
 	"java.signatureHelp.enabled": true,
 	"java.format.comments.enabled": false,
 	"java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
-	"python.jediEnabled": false,
-	"python.autoComplete.addBrackets": true,
-	"python.autoComplete.showAdvancedMembers": true,
-	"python.linting.enabled": true,
-	"python.formatting.autopep8Args": [
-		"--aggressive",
-		"--aggressive"
-	],
-	"python.linting.pylintArgs": [
-		"--unsafe-load-any-extension=y"
-	],
-	"python.sortImports.path": "isort",
 	"latex.build.args": [
 		"-pdf",
 		"-interaction=nonstopmode",
 		"-synctex=1",
 		"-xelatex",
 		"-output-directory=/tmp/latex"
-	]
+	],
+	"jedi.executable.command": "/home/gogo/.local/bin/jedi-language-server",
+	"diagnostic-languageserver.filetypes": {
+		"python": "pylint"
+	},
+	"diagnostic-languageserver.linters": {
+		"pylint": {
+			"sourceName": "pylint",
+			"command": "pylint",
+			"args": [
+				"--output-format",
+				"text",
+				"--score",
+				"no",
+				"--msg-template",
+				"'{line}:{column}:{category}:{msg} ({msg_id}:{symbol})'",
+				"%file"
+			],
+			"formatPattern": [
+				"^(\\d+?):(\\d+?):([a-z]+?):(.*)$",
+				{
+					"line": 1,
+					"column": 2,
+					"security": 3,
+					"message": 4
+				}
+			],
+			"rootPatterns": [
+				".git",
+				"pyproject.toml",
+				"setup.py"
+			],
+			"securities": {
+				"informational": "hint",
+				"refactor": "info",
+				"convention": "info",
+				"warning": "warning",
+				"error": "error",
+				"fatal": "error"
+			},
+			"offsetColumn": 1,
+			"formatLines": 1
+		}
+	},
+	"diagnostic-languageserver.formatters": {
+		"autopep8": {
+			"command": "autopep8",
+			"args": [
+				"-a",
+				"-a",
+				"-"
+			]
+		},
+		"isort": {
+			"command": "isort",
+			"args": [
+				"-q",
+				"-"
+			]
+		}
+	},
+	"diagnostic-languageserver.formatFiletypes": {
+		"python": [
+			"autopep8",
+			"isort"
+		]
+	}
 }
