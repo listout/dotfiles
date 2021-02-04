@@ -1,5 +1,6 @@
 " Show line number
-set number
+"set number
+set relativenumber number
 
 " Enable mouse scroll and other actions
 set mouse=a
