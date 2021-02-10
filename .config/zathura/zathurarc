@@ -11,3 +11,5 @@ map [fullscreen] f toggle_fullscreen
 
 # No statusbase
 set guioptions true
+
+set selection-clipboard clipboard
