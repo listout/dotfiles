@@ -86,70 +86,15 @@
 		"-xelatex",
 		"-output-directory=/tmp/latex"
 	],
-	"jedi.executable.command": "/home/gogo/.local/bin/jedi-language-server",
-	"diagnostic-languageserver.filetypes": {
-		"python": "pylint"
-	},
-	"diagnostic-languageserver.linters": {
-		"pylint": {
-			"sourceName": "pylint",
-			"command": "pylint",
-			"args": [
-				"--output-format",
-				"text",
-				"--score",
-				"no",
-				"--msg-template",
-				"'{line}:{column}:{category}:{msg} ({msg_id}:{symbol})'",
-				"%file"
-			],
-			"formatPattern": [
-				"^(\\d+?):(\\d+?):([a-z]+?):(.*)$",
-				{
-					"line": 1,
-					"column": 2,
-					"security": 3,
-					"message": 4
-				}
-			],
-			"rootPatterns": [
-				".git",
-				"pyproject.toml",
-				"setup.py"
-			],
-			"securities": {
-				"informational": "hint",
-				"refactor": "info",
-				"convention": "info",
-				"warning": "warning",
-				"error": "error",
-				"fatal": "error"
-			},
-			"offsetColumn": 1,
-			"formatLines": 1
-		}
-	},
+	"jedi.executable.command": "jedi-language-server",
+	"jedi.jediSettings.autoImportModules": ["numpy", "cv2"],
 	"diagnostic-languageserver.formatters": {
 		"autopep8": {
 			"command": "autopep8",
-			"args": [
-				"-a",
-				"-a",
-				"-"
-			]
-		},
-		"isort": {
-			"command": "isort",
-			"args": [
-				"-q",
-				"-"
-			]
+			"args": [ "-a", "-a", "-" ]
 		}
 	},
 	"diagnostic-languageserver.formatFiletypes": {
-		"python": [
-			"autopep8",
-			"isort"
-		]
+		"python": ["autopep8"]
 	}
 }
