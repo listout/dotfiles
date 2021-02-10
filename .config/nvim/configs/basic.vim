@@ -161,3 +161,9 @@ map gf :e <cfile><CR>
 " Auto complete for $ in pandoc markdown
 autocmd! Filetype markdown.pandoc let b:AutoPairs = extend({'$': '$'}, g:AutoPairs, 'keep')
 autocmd! Filetype markdown let b:AutoPairs = extend({'$': '$'}, g:AutoPairs, 'keep')
+
+" Python host
+let g:python3_host_prog='/usr/bin/python'
+
+" Caller FZF's Buffers function with <Leader>b
+nnoremap <Leader>b :Buffers<CR>
