@@ -156,11 +156,6 @@ nnoremap <M-h>    :vertical resize +2<CR>
 " Easier split switching from terminal mode
 tnoremap <C-w> <C-\><C-n><C-w>
 
-" Make `gf` create new files if not exists
-map gf :e <cfile><CR>
-" Auto complete for $ in pandoc markdown
-autocmd! Filetype markdown.pandoc let b:AutoPairs = extend({'$': '$'}, g:AutoPairs, 'keep')
-autocmd! Filetype markdown let b:AutoPairs = extend({'$': '$'}, g:AutoPairs, 'keep')
 
 " Python host
 let g:python3_host_prog='/usr/bin/python'
