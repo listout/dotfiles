@@ -156,7 +156,6 @@ nnoremap <M-h>    :vertical resize +2<CR>
 " Easier split switching from terminal mode
 tnoremap <C-w> <C-\><C-n><C-w>
 
-
 " Python host
 let g:python3_host_prog='/usr/bin/python'
 
