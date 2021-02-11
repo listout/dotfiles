@@ -5,4 +5,3 @@ let g:floaterm_position = 'bottomright'
 nnoremap <leader>fm
 			\ :FloatermNew --wintype=float --position=center
 			\ ranger<cr>
-command! Ranger FloatermNew ranger
