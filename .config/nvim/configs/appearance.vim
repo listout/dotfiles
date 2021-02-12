@@ -57,7 +57,7 @@ set splitright splitbelow
 
 " Visualize Tabs and spaces
 "set list listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·,eol:¬
-set list listchars=tab:▸\ ,trail:·,extends:#,nbsp:·
+set list listchars=tab:▸\ ,extends:›,precedes:‹,nbsp:·,trail:·
 
 " Smaller popup
 set pumheight=10
