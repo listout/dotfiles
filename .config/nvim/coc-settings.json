@@ -87,14 +87,23 @@
 		"-output-directory=/tmp/latex"
 	],
 	"jedi.executable.command": "jedi-language-server",
-	"jedi.jediSettings.autoImportModules": ["numpy", "cv2"],
+	"jedi.jediSettings.autoImportModules": [
+		"numpy",
+		"cv2"
+	],
 	"diagnostic-languageserver.formatters": {
 		"autopep8": {
 			"command": "autopep8",
-			"args": [ "-a", "-a", "-" ]
+			"args": [
+				"-a",
+				"-a",
+				"-"
+			]
 		}
 	},
 	"diagnostic-languageserver.formatFiletypes": {
-		"python": ["autopep8"]
+		"python": [
+			"autopep8"
+		]
 	}
 }
