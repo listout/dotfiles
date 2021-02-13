@@ -160,3 +160,5 @@ let g:python3_host_prog='/usr/bin/python'
 
 " Caller FZF's Buffers function with <Leader>b
 nnoremap <Leader>b :Buffers<CR>
+
+nnoremap <Leader>n :Files<CR>
