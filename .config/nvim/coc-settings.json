@@ -43,11 +43,13 @@
 	"coc.preferences.formatOnSaveFiletypes": [
 		"c",
 		"cpp",
+		"jsonc",
 		"json",
 		"python",
 		"java",
 		"html",
-		"php"
+		"php",
+		"sql"
 	],
 	"languageserver": {
 		"ccls": {
