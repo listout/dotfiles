@@ -1,0 +1,98 @@
+{
+	"coc.preferences.hoverTarget": "float",
+	"coc.preferences.currentFunctionSymbolAutoUpdate": true,
+	"coc.source.word.filetypes": [
+		"markdown",
+		"markdown.pandoc",
+		"latex",
+		"tex"
+	],
+	"coc.source.dictionary.filetypes": [
+		"markdown",
+		"markdown.pandoc",
+		"latex",
+		"tex"
+	],
+	"coc.preferences.formatOnSaveFiletypes": [
+		"java",
+		"c",
+		"cpp",
+		"jsonc",
+		"sql",
+		"python",
+		"html",
+		"php"
+	],
+	"diagnostic.refreshOnInsertMode": true,
+	"diagnostic.messageTarget": "float",
+	"diagnostic-languageserver.formatters": {
+		"autopep8": {
+			"command": "autopep8",
+			"args": [
+				"-a",
+				"-a",
+				"-"
+			]
+		}
+	},
+	"diagnostic-languageserver.formatFiletypes": {
+		"python": [
+			"autopep8"
+		]
+	},
+	"java.signatureHelp.enabled": true,
+	"java.format.comments.enabled": false,
+	"java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+	"jedi.executable.command": "jedi-language-server",
+	"jedi.jediSettings.autoImportModules": [
+		"numpy",
+		"cv2"
+	],
+	"languageserver": {
+		"ccsl": {
+			"command": "/usr/bin/ccls",
+			"filetypes": [
+				"c",
+				"cpp",
+				"objc",
+				"objcpp"
+			],
+			"rootPatterns": [
+				".ccls",
+				"compile_commands.json",
+				".git/",
+				".hg"
+			],
+			"initializationOptions": {
+				"cache": {
+					"directory": "/tmp/ccls"
+				},
+				"highlight": {
+					"lsRanges": true
+				}
+			}
+		}
+	},
+	"session.directory": "~/.config/nvim/sessions",
+	"session.saveOnVimLeave": false,
+	"suggest.noselect": false,
+	"suggest.snippetIndicator": "►",
+	"suggest.floatEnable": false,
+	"suggest.autoTrigger": "always",
+	"suggest.echodocSupport": true,
+	"suggest.acceptSuggestionOnCommitCharacter": true,
+	"snippets.extends": {
+		"cpp": [
+			"c"
+		],
+		"html": [
+			"php"
+		],
+		"php": [
+			"html"
+		],
+		"markdown.pandoc": [
+			"tex"
+		]
+	}
+}
