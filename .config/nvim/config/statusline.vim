@@ -3,6 +3,8 @@ set laststatus=2
 if !has('gui_running')
 	set t_Co=256
 endif
+
+" Current mode will not be shown
 set noshowmode
 
 " Add (Neo)Vim's native statusline support.
