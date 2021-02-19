@@ -5,3 +5,8 @@ let g:floaterm_keymap_toggle = '<leader>ft'
 
 " Ranger command
 command! Ranger FloatermNew ranger
+
+" Open ranger with shortcut
+nnoremap <leader>fm
+			\ :FloatermNew
+			\ --name=ranger ranger <cr>
