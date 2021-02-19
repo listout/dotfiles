@@ -10,7 +10,7 @@ let g:lexical#spelllang = ['en_us']
 
 augroup pencil
 	autocmd!
-	autocmd FileType markdown,mkd,markdown.pandoc call pencil#init({'wrap': 'hard', 'autoformat': 1})
+	"autocmd FileType markdown,mkd,markdown.pandoc call pencil#init({'wrap': 'hard', 'autoformat': 1})
 	autocmd FileType text call pencil#init({'wrap': 'soft', 'autoformat': 1})
 augroup END
 
