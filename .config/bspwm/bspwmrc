@@ -6,16 +6,16 @@ picom &
 sh ~/.config/polybar/launch.sh &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 #feh --bg-fill ~/.config/wallpapers/chemistry_drugs.png
-hsetroot -solid '#1c1e26' &
+hsetroot -solid '#080808' &
 dunst &
 
 wmname LG3D
 
 bspc monitor -d I II III IV V VI
 
-bspc config normal_border_color '#2e303e'
-bspc config active_border_color '#6c6f93'
-bspc config focused_border_color '#6c6f93'
+bspc config normal_border_color '#373c40'
+bspc config active_border_color '#b2b2b2'
+bspc config focused_border_color '#b2b2b2'
 
 bspc config border_width         2
 bspc config window_gap           0
