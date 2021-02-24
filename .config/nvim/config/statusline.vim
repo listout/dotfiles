@@ -18,7 +18,7 @@ function! CocCurrentFunction()
 endfunction
 
 let g:lightline = {
-			\ 'colorscheme': 'horizon',
+			\ 'colorscheme': 'moonfly',
 			\ 'active': {
 			\   'left': [ [ 'mode', 'paste' ],
 			\             [ 'cocstatus', 'currentfunction', 'readonly', 'filename', 'modified' ] ]
