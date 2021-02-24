@@ -17,8 +17,8 @@ alias mutt='neomutt'
 alias less='/usr/share/nvim/runtime/macros/less.sh'
 
 export EDITOR=nvim
-export PAGER="nvim -R -c 'set ft=man' -"
-export MANPAGER="nvim -R -c 'set ft=man' -"
+export PAGER="nvim -u NORC -R -c 'set ft=man ts=8 nomod nolist nonu noma' -"
+export MANPAGER="nvim -u NORC -R -c 'set ft=man ts=8 nomod nolist nonu noma' -"
 export VISUAL=nvim
 export BROWSER=firefox
 export QT_QPA_PLATFORMTHEME=qt5ct
