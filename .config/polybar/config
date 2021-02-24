@@ -1,7 +1,7 @@
 [colors]
 
-background     = #1c1e26
-foreground     = #1c1e26
+background     = #080808
+foreground     = #080808
 
 [bar/mybar]
 
@@ -37,16 +37,16 @@ module-margin-right = 1
 type                      = internal/bspwm
 label-focused             = x
 label-focused-padding     = 2
-label-focused-foreground  = #b877db
+label-focused-foreground  = #b2b2b2
 label-occupied            = -
 label-occupied-padding    = 2
-label-occupied-foreground = #25b0bc
+label-occupied-foreground = #b2b2b2
 label-urgent              = !
 label-urgent-padding      = 2
-label-urgent-foreground   = #e95678
+label-urgent-foreground   = #ff5454
 label-empty               = .
 label-empty-padding       = 2
-label-empty-foreground    = #d2d4de
+label-empty-foreground    = #b2b2b2
 pin-workspaces = true
 
 [module/backlight]
@@ -54,7 +54,7 @@ type = internal/backlight
 card = intel_backlight
 format = <label>
 label =  %percentage%%
-label-foreground = #09f7a0
+label-foreground = #b2b2b2
 label-padding = 1
 
 [module/pulseaudio]
@@ -65,8 +65,8 @@ sink = alsa_output.pci-0000_00_1b.0.analog-stereo
 format-volume = <label-volume>
 label-muted = 
 label-volume =  %percentage%%
-label-volume-foreground = #fab795
-label-muted-foreground = #fab795
+label-volume-foreground = #b2b2b2
+label-muted-foreground = #b2b2b2
 label-muted-padding = 1
 label-volume-padding = 1
 
@@ -85,9 +85,9 @@ time-format = %H:%M
 label-discharging =  %percentage%% %time%
 label-charging =  %percentage%%
 label-full =  %percentage%%
-label-charging-foreground = #25b0bc
-label-discharging-foreground = #25b0bc
-label-full-foreground = #25b0bc
+label-charging-foreground = #b2b2b2
+label-discharging-foreground = #b2b2b2
+label-full-foreground = #b2b2b2
 label-charging-padding = 1
 label-full-padding = 1
 label-discharging-padding = 1
@@ -101,7 +101,7 @@ type = internal/cpu
 interval = 0.5
 format = <label>
 label =  %percentage%%
-label-foreground = #fab38e
+label-foreground = #b2b2b2
 label-padding = 1
 
 [module/memory]
@@ -109,7 +109,7 @@ type = internal/memory
 interval = 3
 format = <label>
 label =  %gb_used%
-label-foreground = #6bdfe6
+label-foreground = #b2b2b2
 label-padding = 1
 
 [module/date]
@@ -121,27 +121,27 @@ time = %I:%M
 date-alt = %A, %d %B %Y
 time-alt = %I:%M:%S
 format = <label>
-label-foreground = #27d796
+label-foreground = #b2b2b2
 label-padding = 1
 
 [module/wired-network]
 type = internal/network
 interface = enp2s0
 label-connected =  %essid%
-label-connected-foreground = #95c4ce
+label-connected-foreground = #b2b2b2
 label-connected-padding = 1
 label-disconnected = 
-label-disconnected-foreground = #ec6a88
+label-disconnected-foreground = #ff5454
 label-disconnected-padding = 1
 
 [module/wireless-network]
 type = internal/network
 interface = wlp3s0
 label-connected =  %essid%
-label-connected-foreground = #95c4ce
+label-connected-foreground = #b2b2b2
 label-connected-padding = 1
 label-disconnected = 
-label-disconnected-foreground = #ec6a88
+label-disconnected-foreground = #ff5454
 label-disconnected-padding = 1
 
 [module/temperature]
@@ -152,10 +152,10 @@ base-temperature = 20
 warn-temperature = 70
 format = <label>
 label =  %temperature-c%
-label-foreground = #d2d4de
+label-foreground = #b2b2b2
 label-padding = 1
 label-warn-padding = 1
 label-warn = %temperature-c%
-label-warn-foreground = #f00
+label-warn-foreground = #ff5454
 
 ; vim: set ft=dosini nomodeline:
