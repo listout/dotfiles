@@ -1,6 +1,8 @@
 [submodule ".config/zsh/pure"]
 	path = .config/zsh/pure
 	url = https://github.com/sindresorhus/pure.git
+	branch = main
 [submodule ".config/mutt/neonwolf"]
 	path = .config/mutt/neonwolf
 	url = https://github.com/h3xx/mutt-colors-neonwolf.git
+	branch = main
