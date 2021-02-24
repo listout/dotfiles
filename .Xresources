@@ -27,4 +27,4 @@ URxvt.urlLauncher: firefox
 URxvt.underlineURLs: true
 URxvt.urlButton: 1
 
-#include ".config/xresource_colorschemes/horizon"
+#include ".config/xresource_colorschemes/moonfly"
