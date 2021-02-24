@@ -73,6 +73,7 @@
 			}
 		}
 	},
+	"signature.target": "echo",
 	"session.directory": "~/.config/nvim/sessions",
 	"session.saveOnVimLeave": false,
 	"suggest.noselect": false,
