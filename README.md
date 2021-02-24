@@ -1,15 +1,9 @@
 # My dotfiles
 
-###### Experimental, things change fast
+##### Moonfly color scheme
 
-## Preview
+##### Experimental, things change fast
 
-![screenshot 1](.config/screenshots/shoot1.png)
-
-
-| ![screenshot 2](.config/screenshots/shoot2.png) | ![screenshot 3](.config/screenshots/shoot3.png) |
-|-------------------------------------------------|-------------------------------------------------|
-| ![screenshot 4](.config/screenshots/shoot4.png) | ![screenshot 5](.config/screenshots/shoot5.png) |
 
 #### Applications
 
