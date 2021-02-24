@@ -1,5 +1,6 @@
 " Line numbering
-set relativenumber number
+" set relativenumber number
+set number
 
 " Enable mouse scroll
 set mouse=a
