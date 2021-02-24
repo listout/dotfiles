@@ -2,6 +2,7 @@ call plug#begin('~/.config/nvim/plugged')
 
 " Colorschemes
 Plug 'ntk148v/vim-horizon'
+Plug 'bluz71/vim-moonfly-colors'
 
 " Better coding experience
 Plug 'jiangmiao/auto-pairs'
