@@ -41,6 +41,8 @@ window {
 	/*padding: 100px 300px 100px 300px; // top, right, bottom, left*/
 	padding:50px;
 	border-radius: 0px;
+	border: 6;
+	border-color: @fg;
 }
 
 prompt, entry {
