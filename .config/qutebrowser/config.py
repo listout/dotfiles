@@ -1,5 +1,7 @@
 config.load_autoconfig()
 
+c.completion.height = "45%"
+
 # base16-qutebrowser (https://github.com/theova/base16-qutebrowser)
 # Base16 qutebrowser template by theova
 # IR Black scheme by Timothée Poisot (http://timotheepoisot.fr)
