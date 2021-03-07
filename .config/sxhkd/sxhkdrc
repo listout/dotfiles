@@ -20,7 +20,7 @@ super + Return
 	urxvt
 
 # other terminal emulator
-super + shift + k
+super + shift + Return
 	kitty
 
 super + w
