@@ -22,9 +22,6 @@ augroup END
 " markdown sync syntax highlighting
 autocmd BufEnter,BufNewFile,BufFilePre,BufRead *.md :syntax sync fromstart
 
-" sync syntax highlighting
-autocmd BufEnter,BufNewFile,BufFilePre,BufRead *.md :syntax sync fromstart
-
 " Source config moudules
 source $HOME/.config/nvim/config/plugins.vim
 source $HOME/.config/nvim/config/basic.vim
